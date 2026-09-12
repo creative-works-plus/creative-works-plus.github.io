@@ -97,7 +97,12 @@ html:not(.notes) .hint{display:none!important}
 /* ─────────── 3案のちがい（制作メモ層。お客様の画面には出ない） ─────────── */
 .cmp{background:#08191F;color:#fff;border-top:1px solid rgba(255,255,255,.10)}
 html:not(.notes) .cmp{display:none!important}
-.cmp__in{padding:14px 0 18px}
+.cmp__sum{display:block;cursor:pointer;list-style:none;padding-block:10px;font-size:11.5px;font-weight:700;letter-spacing:.08em;color:#F1C77A}
+.cmp__sum::-webkit-details-marker{display:none}
+.cmp__sum::before{content:"＋";display:inline-block;width:1.5em;font-weight:400;color:rgba(255,255,255,.7)}
+.cmp[open] .cmp__sum::before{content:"－"}
+.cmp__now{font-weight:400;letter-spacing:.04em;color:rgba(255,255,255,.62);margin-left:.8em}
+.cmp__in{padding-block:0 18px}
 .cmp__lb{display:block;font-size:11.5px;font-weight:700;letter-spacing:.08em;color:#F3C978;margin-bottom:9px}
 .cmp .scroll{overflow-x:auto}
 .cmp table{width:100%;min-width:520px;border-collapse:collapse;font-size:12.5px;line-height:1.6}
@@ -691,7 +696,7 @@ html:not(.notes) .ghost{display:none!important}
 
 /* ─────────── 案の切り替え（制作メモを表示しているときだけ出る） ─────────── */
 .plan{background:#06161B;border-top:1px solid rgba(255,255,255,.1)}
-.plan__in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:10px 0}
+.plan__in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding-block:10px}
 .plan__lb{font-family:var(--fb);font-size:11.5px;font-weight:700;letter-spacing:.1em;color:#7FA6B2;margin-right:4px}
 .plan a,.plan .now{
   font-size:12.5px;font-weight:500;letter-spacing:.04em;line-height:1.5;border-radius:0;padding:5px 13px;
@@ -700,6 +705,9 @@ html:not(.notes) .ghost{display:none!important}
 .plan a:hover{background:#fff;border-color:#fff;color:#06161B}
 .plan .now{background:var(--amber);border-color:var(--amber);color:#231602;font-weight:700}
 html:not(.notes) .plan{display:none!important}
+html:not(.notes) .prov{display:none!important}
+html:not(.notes) .memo-only{display:none!important}
+html:not(.notes) .provnote{display:none!important}
 
 /* ─────────── 施工事例（1件1ページ） ─────────── */
 a.case{display:block;text-decoration:none;color:inherit}

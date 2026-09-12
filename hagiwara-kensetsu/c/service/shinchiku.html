@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 契約前のため検索エンジンに出さない。ご契約いただいたらこの2行を削除する -->
+<meta name="robots" content="noindex, nofollow">
+
+<title>新築（注文住宅）｜株式会社萩原建設（茨城県筑西市）</title>
+<meta name="description" content="茨城県筑西市の株式会社萩原建設による新築（注文住宅）。進め方・費用の内訳・施工事例・よくあるご質問をまとめております。">
+<meta name="theme-color" content="#232426">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="新築（注文住宅）｜株式会社萩原建設（茨城県筑西市）">
+<meta property="og:description" content="茨城県筑西市の株式会社萩原建設による新築（注文住宅）。進め方・費用の内訳・施工事例・よくあるご質問をまとめております。">
+<meta property="og:locale" content="ja_JP">
+<!-- og:image は公開時に絶対URLへ差し替える（例：https://～/hagiwara-kensetsu/images/ogp.jpg） -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23232426'/%3E%3Cpath d='M17 13v35h34' fill='none' stroke='%23ffffff' stroke-width='6'/%3E%3Crect x='29' y='20' width='15' height='15' fill='none' stroke='%237E9BCB' stroke-width='3'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Noto+Sans+JP:wght@400;500;700&family=Josefin+Sans:wght@300;400&display=swap">
+
+<style>
+/* ─────────── トークン（萩原建設：白地・墨の一色・群青はごく小さく。設計図の方眼） ─────────── */
+:root{
+  --deep:#232426;          /* 墨：図面の線の色。ブランドの一色 */
+  --deep-2:#333538;
+  --deep-3:#4B4E52;
+  --accent:#33568C;        /* 群青：方眼・工程の番号・Q だけ */
+  --accent-lt:#7E9BCB;     /* 濃い地の上の群青 */
+  --memo:#D6901C;          /* 制作メモ層の色（デザインには使わない） */
+  --memo-ink:#855308;
+  --ink:#1D1E20;
+  --sub:#4A4C4F;
+  --muted:#7A7D81;
+  --ground:#FFFFFF;
+  --band:#F2F2F0;
+  --surface:#FFFFFF;
+  --stone:#E7E7E4;         /* 写真の枠 */
+  --line:#DBDBD7;
+  --line-2:#C3C3BE;
+  --line-soft:#EAEAE7;
+  --rule:#232426;
+  --grid:rgba(51,86,140,.12);
+
+  --w:1280px;              /* ヘッダー・ヒーロー・章をこの1つの幅にそろえる */
+  --pad:clamp(20px,4.6vw,56px);
+  --sec-y:clamp(88px,10.5vw,148px);
+  --blk-y:clamp(36px,4.6vw,60px);
+  --ken:91px;              /* 方眼の1マス＝910mm（半間）を 1/10 で */
+
+  --fd:"BIZ UDPMincho","Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+  --fb:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --fn:"Josefin Sans","Noto Sans JP",sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--fb);font-size:16px;font-weight:400;line-height:2;
+  letter-spacing:.03em;text-wrap:pretty;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--fd);font-weight:400;line-height:1.6;margin:0;letter-spacing:.07em;font-feature-settings:"palt"}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+b,strong{font-weight:700}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.nw{white-space:nowrap}
+.nwb{display:inline}
+.sp-only{display:none}
+@media(max-width:640px){.sp-only{display:inline}}
+
+.wrap{width:min(100%,var(--w));margin-inline:auto;padding-inline:var(--pad)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* ─────────── 叩き台バー（制作メモの出し入れ） ─────────── */
+.draft{background:#161718;color:rgba(255,255,255,.76);font-size:12.5px;line-height:1.7}
+.draft__in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding-block:9px;min-height:40px}
+.draft p{margin:0;flex:1;min-width:200px}
+.draft b{color:#F1C77A;font-weight:700}
+.draft button{
+  font:inherit;font-weight:500;letter-spacing:.06em;cursor:pointer;white-space:nowrap;
+  background:transparent;color:#fff;border:1px solid rgba(255,255,255,.42);
+  border-radius:0;padding:5px 14px;transition:.2s;display:inline-flex;align-items:center;gap:8px;
+}
+.draft button:hover{background:#fff;color:#161718}
+.draft button svg{width:13px;height:13px}
+html:not(.notes) .hint{display:none!important}
+/* 改行保護のspanは、必ずインラインのまま。span指定のCSSに巻き込ませない（text-indent も受け継がせない） */
+.nw{display:inline!important;text-indent:0}
+
+/* ─────────── 3案のちがい（制作メモ層） ─────────── */
+.cmp{background:#101112;color:#fff;border-top:1px solid rgba(255,255,255,.1)}
+html:not(.notes) .cmp{display:none!important}
+.cmp__sum{display:block;cursor:pointer;list-style:none;padding-block:10px;font-size:11.5px;font-weight:700;letter-spacing:.08em;color:#F1C77A}
+.cmp__sum::-webkit-details-marker{display:none}
+.cmp__sum::before{content:"＋";display:inline-block;width:1.5em;font-weight:400;color:rgba(255,255,255,.7)}
+.cmp[open] .cmp__sum::before{content:"－"}
+.cmp__now{font-weight:400;letter-spacing:.04em;color:rgba(255,255,255,.62);margin-left:.8em}
+.cmp__in{padding-block:0 18px}
+.cmp__lb{display:block;font-size:11.5px;font-weight:700;letter-spacing:.08em;color:#F1C77A;margin-bottom:9px}
+.cmp .scroll{overflow-x:auto}
+.cmp table{width:100%;min-width:520px;border-collapse:collapse;font-size:12.5px;line-height:1.6}
+.cmp th,.cmp td{padding:6px 10px;border-bottom:1px solid rgba(255,255,255,.09);text-align:left;vertical-align:top}
+.cmp thead th{color:rgba(255,255,255,.55);font-size:11px;letter-spacing:.06em;font-weight:700;white-space:nowrap;font-family:var(--fb)}
+.cmp thead th + th{text-align:center}
+.cmp tbody th{font-weight:500;color:rgba(255,255,255,.86);white-space:nowrap;font-family:var(--fb);letter-spacing:.04em}
+.cmp td{text-align:center;width:9.5em;white-space:nowrap;color:rgba(255,255,255,.5)}
+.cmp td.on{color:#F1C77A;font-weight:700}
+.cmp .cur{background:rgba(241,199,122,.13)}
+.cmp thead th.cur{color:#F1C77A}
+@media(max-width:640px){
+  .cmp table,.cmp thead,.cmp tbody{display:block}
+  .cmp .scroll table{min-width:0}
+  .cmp tr{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid rgba(255,255,255,.09)}
+  .cmp th,.cmp td{border-bottom:0;width:auto;white-space:normal;text-align:center;padding:2px 4px 8px}
+  .cmp thead th:first-child{display:none}
+  .cmp thead th{padding:4px 4px 6px}
+  .cmp tbody th{grid-column:1/-1;text-align:left;padding:8px 6px 3px;font-size:12px;color:rgba(255,255,255,.72)}
+}
+
+/* ─────────── 「この案だけ」「この案には無い」（制作メモ層） ─────────── */
+.mark__t{
+  display:inline-flex;align-items:center;gap:6px;font-family:var(--fb);font-size:11.5px;font-weight:700;letter-spacing:.04em;
+  color:#241703;background:var(--memo);border-radius:0;padding:3px 10px;margin-bottom:12px;line-height:1.6;
+  align-self:flex-start;justify-self:start;width:fit-content;max-width:100%;
+}
+html:not(.notes) .mark__t{display:none!important}
+.ghost{border:1px dashed #BCC2CB;border-radius:0;background:#F6F7F8;padding:16px 20px;margin:28px 0;max-width:52em}
+html:not(.notes) .ghost{display:none!important}
+.ghost__t{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.04em;color:#4C5663;background:#E4E8EE;border-radius:0;padding:3px 10px;margin-bottom:9px}
+.ghost .gt{font-family:var(--fd);font-size:16px;color:#323A44;margin:0 0 5px;letter-spacing:.06em}
+.ghost .d{font-size:13.2px;line-height:1.9;color:#626C78;margin:0}
+.ghost .dd{margin-top:7px;color:#8A939D}
+
+/* ─────────── ヘッダー（上＝社名と電話／下＝章への案内） ─────────── */
+.hd{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+.hd__in{display:flex;align-items:center;gap:20px;min-height:64px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;margin-right:auto;min-width:0}
+.brand svg{width:36px;height:36px;flex:none}
+.brand b{font-family:var(--fd);font-weight:400;font-size:clamp(16px,3.9vw,20px);line-height:1.3;display:block;letter-spacing:.12em;font-feature-settings:"palt"}
+.brand small{display:block;font-family:var(--fn);font-weight:400;font-size:10.5px;color:var(--muted);letter-spacing:.24em;line-height:1.4;margin-top:4px;text-transform:uppercase}
+.hd__nav{display:none;font-size:13.5px;font-weight:500;letter-spacing:.08em}
+.hd__nav a{position:relative;text-decoration:none;color:var(--ink);padding-block:11px;transition:color .2s}
+.hd__nav a::after{content:"";position:absolute;left:0;right:0;bottom:5px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.hd__nav a:hover::after{transform:scaleX(1)}
+.hd__tel{
+  display:none;align-items:center;gap:12px;text-decoration:none;color:var(--ink);white-space:nowrap;
+  font-family:var(--fn);font-weight:400;font-size:25px;letter-spacing:.08em;line-height:1.1;
+  padding-left:24px;border-left:1px solid var(--line);
+}
+.hd__tel svg{width:16px;height:16px;flex:none;color:var(--deep)}
+.hd__tel em{font-style:normal;font-family:var(--fb);font-size:10.5px;font-weight:500;letter-spacing:.1em;color:var(--muted);display:block;line-height:1.5;margin-top:4px}
+@media(min-width:900px){
+  .hd__nav,.hd__tel{display:flex}
+  .hd__in{flex-wrap:wrap;row-gap:0;padding-block:12px 0;min-height:0}
+  .brand b{white-space:nowrap}
+  .hd__nav{order:3;flex-basis:100%;gap:clamp(14px,1.8vw,28px);justify-content:flex-start;border-top:1px solid var(--line-soft);margin-top:12px}
+  .hd__nav a{white-space:nowrap;line-height:1.3}
+}
+@media(min-width:1180px){.hd__nav{justify-content:space-between;gap:18px}}
+
+/* ─────────── ヒーロー（文字だけを方眼の上に置く。下に16:10の枠を2つ） ─────────── */
+.hero{background:var(--ground)}
+.hero__in{width:min(100%,var(--w));margin-inline:auto;padding-inline:var(--pad)}
+/* 方眼の上の余白＝寸法線を引く帯 */
+.hero__sheet{position:relative;padding-top:clamp(52px,6vw,72px)}
+/* 署名：寸法線。方眼の1マス（91px＝910mm）の上に1本だけ。端に斜めの目盛り＋「910」 */
+.hero__dim{position:absolute;left:0;bottom:0;width:var(--ken);height:40px;overflow:visible;color:var(--accent)}
+.hero__dim text{font-family:var(--fn);font-weight:400;font-size:11px;letter-spacing:2px;fill:currentColor}
+/* 方眼の地。左端＝ロゴの左端から始まり、右へ行くほど薄くなる */
+.hero__plan{position:relative;isolation:isolate;padding-top:var(--ken);padding-bottom:var(--ken)}
+.hero__plan::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    linear-gradient(to right,var(--grid) 1px,transparent 1px),
+    linear-gradient(to bottom,var(--grid) 1px,transparent 1px);
+  background-size:var(--ken) var(--ken);
+  background-position:0 0;
+  -webkit-mask-image:linear-gradient(to right,#000 0,#000 58%,transparent 100%);
+          mask-image:linear-gradient(to right,#000 0,#000 58%,transparent 100%);
+}
+.hero__eyebrow{font-size:13px;font-weight:500;letter-spacing:.16em;color:var(--sub);margin-bottom:clamp(22px,3vw,34px)}
+.hero h1{
+  font-weight:400;font-size:clamp(27px,4.4vw,58px);line-height:1.55;letter-spacing:.08em;
+  margin-bottom:clamp(36px,5vw,64px);
+}
+.hero__row{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(40px,5vw,56px)}
+@media(min-width:1000px){.hero__row{grid-template-columns:minmax(0,7fr) minmax(0,5fr);column-gap:clamp(56px,7vw,112px);align-items:end}}
+.hero__lead{font-size:clamp(15.5px,1.35vw,16.5px);line-height:2.15;color:var(--sub);max-width:36em;margin-bottom:clamp(28px,3.6vw,40px)}
+.hero__lead b{color:var(--ink);font-weight:500}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
+.hero__note{margin-top:18px;font-size:13px;line-height:1.95;color:var(--muted);max-width:36em}
+/* 数字4つ＝図面の表題欄のように、罫の行で */
+.hero__facts{background:var(--surface);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.hero__facts>div{display:grid;grid-template-columns:8.2em minmax(0,1fr);column-gap:16px;align-items:baseline;padding:15px 0 14px}
+.hero__facts>div + div{border-top:1px solid var(--line)}
+.hero__facts dt{font-size:12.5px;letter-spacing:.12em;color:var(--muted);font-weight:500}
+.hero__facts dd{margin:0;font-family:var(--fd);font-size:clamp(18px,1.7vw,21px);line-height:1.6;letter-spacing:.08em;color:var(--ink)}
+.hero__facts dd small{display:block;font-family:var(--fb);font-size:12px;letter-spacing:.06em;color:var(--muted);line-height:1.7;margin-top:2px}
+.hero__facts dd .blank{min-width:2.4em}
+.hero__pair{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-top:clamp(56px,7vw,96px)}
+@media(min-width:700px){.hero__pair{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(20px,2.4vw,32px)}}
+.hero__fig{margin:0}
+.hero__fig .slot{aspect-ratio:16/10}
+.hero__fig figcaption{display:flex;align-items:baseline;gap:14px;padding-top:14px;font-family:var(--fd);font-size:16px;letter-spacing:.1em;color:var(--ink);border-bottom:1px solid var(--line);padding-bottom:12px;background:var(--surface)}
+.hero__fig figcaption span{font-family:var(--fn);font-weight:400;font-size:11.5px;letter-spacing:.24em;color:var(--muted);text-transform:uppercase}
+
+/* ─────────── ボタン（長方形・細枠・右に矢印） ─────────── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:14px;
+  min-height:58px;padding:12px 26px;text-decoration:none;border-radius:0;
+  font-family:var(--fb);font-weight:500;font-size:14.5px;letter-spacing:.1em;line-height:1.5;
+  border:1px solid transparent;transition:background-color .25s,color .25s,border-color .25s;
+}
+.btn svg{width:16px;height:16px;flex:none}
+.btn--solid,.btn--line,.btn--ghost{justify-content:space-between}
+.btn--solid::after,.btn--line::after,.btn--ghost::after{
+  content:"";width:24px;height:7px;flex:none;margin-left:12px;background:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 7'%3E%3Cpath d='M0 6.5h23L17 .5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") no-repeat center/contain;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 7'%3E%3Cpath d='M0 6.5h23L17 .5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") no-repeat center/contain;
+  transition:transform .3s cubic-bezier(.2,.7,.2,1);
+}
+.btn:hover::after{transform:translateX(4px)}
+.btn--solid{background:var(--deep);color:#fff}
+.btn--solid:hover{background:#000}
+.btn--line,.btn--ghost{border-color:var(--rule);color:var(--ink);background:transparent}
+.btn--line:hover,.btn--ghost:hover{background:var(--deep);border-color:var(--deep);color:#fff}
+.sec--deep .btn--ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.sec--deep .btn--ghost:hover{background:#fff;border-color:#fff;color:var(--deep)}
+.btn--tel{background:var(--deep);color:#fff;flex-direction:column;align-items:flex-start;gap:4px;padding:13px 34px 14px 28px}
+.btn--tel b{font-family:var(--fn);font-size:29px;font-weight:400;letter-spacing:.08em;line-height:1.15;display:flex;align-items:center;gap:12px}
+.btn--tel b svg{width:17px;height:17px}
+.btn--tel span{font-size:11.5px;font-weight:500;letter-spacing:.1em;opacity:.74}
+.btn--tel:hover{background:#000}
+.sec--deep .btn--tel,.calm .btn--tel{background:#fff;color:var(--deep)}
+.sec--deep .btn--tel:hover,.calm .btn--tel:hover{background:var(--band)}
+
+/* ─────────── 章（左の列に欧文・右の列に見出しとリード。4：8） ─────────── */
+.sec{padding-block:var(--sec-y)}
+.sec--white{background:var(--surface)}
+.sec--band{background:var(--band)}
+.sec--deep{background:var(--deep);color:#fff}
+.sec__hd{display:grid;grid-template-columns:minmax(0,1fr);margin-bottom:clamp(44px,5.5vw,76px)}
+.sec__en{
+  font-family:var(--fn);font-weight:300;font-size:clamp(22px,2.6vw,34px);line-height:1.2;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--deep);margin:0 0 clamp(14px,2vw,20px);
+}
+.sec--deep .sec__en{color:#fff}
+.sec__hd h2{font-size:clamp(23px,2.6vw,33px);line-height:1.65;letter-spacing:.09em}
+.sec__hd>p:not(.sec__en){margin-top:22px;color:var(--sub);font-size:16px;line-height:2.1;max-width:40em}
+.sec--deep .sec__hd>p:not(.sec__en){color:rgba(255,255,255,.8)}
+@media(min-width:960px){
+  .sec__hd{grid-template-columns:minmax(0,4fr) minmax(0,8fr);column-gap:clamp(40px,5vw,80px);align-items:start}
+  .sec__en{grid-column:1;grid-row:1/span 4;margin:.5em 0 0}
+  .sec__hd>*:not(.sec__en){grid-column:2}
+  .sec__hd>p:not(.sec__en) + p{margin-top:14px}
+}
+
+/* ─────────── 差し替えの注記（叩き台のあいだだけ出す） ─────────── */
+.hint{
+  display:flex;gap:12px;align-items:flex-start;
+  background:#FFF8E9;border:0;border-left:2px solid var(--memo);
+  border-radius:0;padding:14px 18px;font-size:13px;line-height:1.9;color:#5B4111;
+  margin-top:32px;letter-spacing:.03em;
+}
+.hint svg{width:15px;height:15px;flex:none;margin-top:4px;color:var(--memo-ink)}
+.hint b{color:#3D2B0B}
+.sec--deep .hint{background:rgba(214,144,28,.12);color:#F1DDB4}
+.sec--deep .hint b{color:#fff}
+.sec--deep .hint svg{color:var(--memo)}
+
+/* 〔　〕の空欄 */
+.blank{display:inline-block;min-width:5.5em;padding:0 .25em;background:#FFF0D0;border-bottom:1px dashed var(--memo);color:var(--memo-ink);font-weight:500;text-indent:0}
+.sec--deep .blank,.calm .blank{background:rgba(214,144,28,.17);color:#F1C77A}
+
+/* ─────────── お約束（罫の行。左に見出し・右に本文） ─────────── */
+.promise{border-top:1px solid var(--rule)}
+.promise>li{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;padding:30px 0 34px;border-bottom:1px solid var(--line)}
+@media(min-width:960px){.promise>li{grid-template-columns:minmax(0,4fr) minmax(0,8fr);column-gap:clamp(40px,5vw,80px);padding:36px 0 40px}}
+.promise h3{font-size:clamp(19px,1.9vw,23px);line-height:1.7;letter-spacing:.08em}
+.promise p{font-size:15.5px;line-height:2.1;color:var(--sub);max-width:42em}
+.promise p b{color:var(--ink);font-weight:500}
+.promise__sign{margin-top:28px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 24px;font-size:13.5px;color:var(--sub)}
+.promise__sign b{font-family:var(--fd);font-weight:400;font-size:17px;letter-spacing:.12em;color:var(--ink)}
+.promise__sign a{color:var(--ink);font-weight:500;text-underline-offset:5px;text-decoration-thickness:1px}
+
+/* ─────────── 建て替えか、リフォームか ─────────── */
+.judge{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--rule)}
+@media(min-width:720px){.judge{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(32px,4vw,56px)}}
+@media(min-width:1100px){
+  .judge{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:0}
+  .judge>li{padding-inline:28px;border-left:1px solid var(--line)}
+  .judge>li:first-child{padding-left:0;border-left:0}
+  .judge>li:last-child{padding-right:0}
+}
+.judge>li{padding-block:28px 36px;border-bottom:1px solid var(--line)}
+.judge h3{font-size:clamp(18px,1.7vw,20px);line-height:1.75;letter-spacing:.07em;margin-bottom:14px}
+.judge p{font-size:15px;line-height:2.05;color:var(--sub)}
+.calm{
+  margin-top:clamp(52px,6.5vw,88px);background:var(--deep);color:#fff;
+  padding:clamp(32px,5vw,64px);display:grid;gap:18px;grid-template-columns:minmax(0,1fr);
+}
+@media(min-width:960px){
+  .calm{grid-template-columns:minmax(0,4fr) minmax(0,8fr);column-gap:clamp(40px,5vw,80px);row-gap:16px}
+  .calm h3{grid-column:1;grid-row:1/span 4}
+  .calm>*:not(h3){grid-column:2}
+}
+.calm h3{font-size:clamp(20px,2.1vw,25px);line-height:1.8;letter-spacing:.08em;color:#fff}
+.calm p{font-size:15.5px;line-height:2.1;color:rgba(255,255,255,.8)}
+.calm b{color:#fff;font-weight:500}
+.calm .btn b,.sec--deep .btn b{color:inherit}
+.calm__cta{margin-top:10px}
+
+/* ─────────── 承っている工事（罫の行：見出し4・本文5・写真の枠3） ─────────── */
+.works{border-top:1px solid var(--rule)}
+.work{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;padding:36px 0 40px;border-bottom:1px solid var(--line)}
+@media(min-width:900px){
+  .work{grid-template-columns:minmax(0,4fr) minmax(0,5fr) minmax(0,3fr);column-gap:clamp(32px,4vw,64px);align-items:start;padding:44px 0 48px}
+}
+.work h3{font-size:clamp(21px,2.2vw,27px);letter-spacing:.1em;line-height:1.6}
+.work h3 small{display:block;font-size:.62em;letter-spacing:.08em;color:var(--sub);margin-top:4px}
+.work__body{display:flex;flex-direction:column;gap:16px;min-width:0}
+.work p{font-size:15.5px;line-height:2.1;color:var(--sub)}
+.work p b{color:var(--ink);font-weight:500}
+.work__tags{display:flex;flex-wrap:wrap;row-gap:2px;padding-top:4px}
+.work__tags li{font-size:13px;color:var(--sub);letter-spacing:.06em;line-height:1.9}
+.work__tags li:not(:last-child)::after{content:"／";margin:0 .6em;color:var(--line-2)}
+.work__slot{aspect-ratio:4/3;padding:14px}
+.work__slot .slot__t{font-size:12px}
+
+/* ─────────── 写真の枠（図面の画像枠：対角線の×＋中央に説明） ─────────── */
+.slot{
+  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:8px;text-align:center;padding:24px;margin:0;border:0;color:var(--sub);
+  background:
+    linear-gradient(to top right,transparent calc(50% - .6px),rgba(35,36,38,.13) 50%,transparent calc(50% + .6px)),
+    linear-gradient(to bottom right,transparent calc(50% - .6px),rgba(35,36,38,.13) 50%,transparent calc(50% + .6px)),
+    var(--stone);
+}
+.slot>svg{display:none}
+.slot__t{font-size:12.8px;font-weight:500;line-height:1.8;max-width:24em;color:var(--sub);background:var(--stone);padding:6px 14px;letter-spacing:.04em}
+.slot__t b{color:var(--ink);font-weight:700}
+.slot__d{font-family:var(--fn);font-weight:400;font-size:12px;letter-spacing:.14em;color:var(--muted);background:var(--stone);padding:0 10px;line-height:1.7}
+.slot__d--note{font-family:var(--fb);font-size:11.5px;font-weight:700;letter-spacing:.04em;color:#241703;background:var(--memo);padding:3px 10px}
+.slot--dark{
+  color:rgba(255,255,255,.8);
+  background:
+    linear-gradient(to top right,transparent calc(50% - .6px),rgba(255,255,255,.12) 50%,transparent calc(50% + .6px)),
+    linear-gradient(to bottom right,transparent calc(50% - .6px),rgba(255,255,255,.12) 50%,transparent calc(50% + .6px)),
+    #3A3C3F;
+}
+.slot--dark .slot__t{color:rgba(255,255,255,.9);background:#3A3C3F}
+.slot--dark .slot__t b{color:#fff}
+.slot--dark .slot__d{color:rgba(255,255,255,.66);background:#3A3C3F}
+
+/* ─────────── 費用 ─────────── */
+.price{width:100%;border-collapse:collapse;background:transparent;font-size:15px}
+.price caption{text-align:left;font-size:12.5px;color:var(--muted);padding-bottom:16px;line-height:1.9}
+.price caption b{color:var(--sub)}
+.price th,.price td{border:0;border-bottom:1px solid var(--line);padding:22px 18px;text-align:left;vertical-align:middle}
+.price th:first-child{padding-left:0}
+.price thead th{background:none;color:var(--muted);font-family:var(--fb);font-weight:500;font-size:12px;letter-spacing:.14em;border-bottom:1px solid var(--rule);padding-block:12px}
+.price tbody th{font-weight:400;color:var(--ink);width:34%;font-family:var(--fd);font-size:16.5px;letter-spacing:.06em;line-height:1.7}
+.price tbody th small{display:block;font-family:var(--fb);font-weight:400;color:var(--muted);font-size:12.5px;letter-spacing:.04em}
+.price td.num{font-family:var(--fn);font-weight:300;font-size:27px;letter-spacing:.04em;line-height:1.2;white-space:nowrap;color:var(--deep);width:24%}
+.price td.num small{font-family:var(--fb);font-size:12.5px;font-weight:500;margin-left:4px;color:var(--sub);letter-spacing:.04em}
+.price td.note{font-size:13.5px;color:var(--sub);line-height:1.9}
+.price td.note b{color:var(--ink);font-weight:500}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.scroll table{min-width:560px}
+@media(max-width:640px){
+  .scroll table.price{min-width:0}
+  .price thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .price caption{display:block;line-height:1.8}
+  .price tbody{display:grid;border-top:1px solid var(--rule)}
+  .price tr{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;column-gap:14px;padding:18px 0 16px;border-bottom:1px solid var(--line)}
+  .price th,.price td{display:block;border:0;padding:0}
+  .price tbody th{width:auto;font-size:16px;line-height:1.6}
+  .price td.num{text-align:right;white-space:nowrap;font-size:24px}
+  .price td.note{grid-column:1/-1;margin-top:10px;line-height:1.85}
+  .price td.note + td.note{margin-top:6px}
+  .unit td.u{justify-self:end;font-size:12px;font-weight:500;color:var(--muted);white-space:nowrap;letter-spacing:.06em}
+  .unit td.u::before{content:"単位 "}
+  .unit td.n{grid-column:1/-1;margin-top:6px}
+}
+
+/* ─────────── 事例 ─────────── */
+.cases{display:grid;gap:52px 28px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:640px){.cases{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.cases{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:36px}}
+.case{background:none;border:0}
+.case .slot{aspect-ratio:4/3;transition:filter .3s}
+.case__b{padding:18px 0 0}
+.case__b h3{font-size:17px;line-height:1.75;letter-spacing:.06em;margin-bottom:10px}
+.case__meta{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+.cases.is-folded>.case:nth-child(n+7){display:none}
+.cases-more{margin-top:48px}
+.cases-more button{font:inherit;cursor:pointer;min-width:min(100%,360px)}
+
+/* ─────────── 流れ（本当に順番があるので番号を振る） ─────────── */
+.flow{counter-reset:s;display:grid;border-top:1px solid var(--rule)}
+.flow>li{counter-increment:s;position:relative;display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:14px;padding:26px 0 28px;border-bottom:1px solid var(--line)}
+.flow>li::before{content:counter(s,decimal-leading-zero);grid-row:1/span 2;font-family:var(--fn);font-weight:300;font-size:28px;line-height:1.2;letter-spacing:.06em;color:var(--accent)}
+.flow h3{font-size:18px;line-height:1.7;letter-spacing:.08em;margin-bottom:8px}
+.flow p{font-size:15px;line-height:2.05;color:var(--sub)}
+.flow p b{color:var(--ink);font-weight:500}
+@media(min-width:960px){
+  .flow>li{grid-template-columns:minmax(0,1fr) minmax(0,3fr) minmax(0,8fr);column-gap:clamp(32px,4vw,64px);padding:32px 0 34px}
+  .flow>li::before{grid-row:auto;font-size:36px;line-height:1}
+  .flow h3{margin:0;font-size:19px}
+}
+
+/* ─────────── お客様の声 ─────────── */
+.voices{display:grid;gap:44px clamp(28px,3vw,48px);grid-template-columns:minmax(0,1fr)}
+@media(min-width:820px){.voices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.voice{border-top:1px solid var(--rule);padding:24px 0 0;display:flex;flex-direction:column;gap:16px}
+.voice__q{width:20px;height:15px;color:var(--accent);flex:none}
+.voice__body{font-size:15px;line-height:2.05;color:var(--sub);background:var(--band);padding:20px 22px;flex:1}
+.voice__who{font-size:12.5px;color:var(--muted);letter-spacing:.08em}
+.voice__sheet{aspect-ratio:16/10;margin-top:44px;max-width:640px}
+
+/* ─────────── 土地・住まい探し（不動産部） ─────────── */
+.land{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid rgba(255,255,255,.34)}
+@media(min-width:900px){
+  .land{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .land>li{padding:32px 32px 38px;border-left:1px solid rgba(255,255,255,.14)}
+  .land>li:first-child{padding-left:0;border-left:0}
+  .land>li:last-child{padding-right:0}
+}
+.land>li{padding-block:28px 34px;border-bottom:1px solid rgba(255,255,255,.14)}
+.land h3{font-size:19px;color:#fff;margin-bottom:12px;letter-spacing:.08em}
+.land p{font-size:15px;line-height:2.05;color:rgba(255,255,255,.76)}
+.land__biz{margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:minmax(0,1fr);gap:14px 0}
+@media(min-width:960px){.land__biz{grid-template-columns:minmax(0,4fr) minmax(0,8fr);column-gap:clamp(40px,5vw,80px)}}
+.land__biz h3{font-size:17px;letter-spacing:.08em;color:#fff}
+.land__biz p{font-size:15px;line-height:2.05;color:rgba(255,255,255,.76)}
+.land__go{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+
+/* ─────────── 採用 ─────────── */
+.rec{display:grid;gap:clamp(32px,4vw,64px);grid-template-columns:minmax(0,1fr);align-items:start}
+@media(min-width:900px){.rec{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}}
+.rec__cta{background:var(--surface);padding:clamp(26px,3.6vw,40px);display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.rec__cta>p{font-size:15px;line-height:2.05;color:var(--sub)}
+.rec__sub{font-size:13px;line-height:1.95;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:4px}
+
+/* ─────────── ごあいさつ ─────────── */
+.greet{display:grid;gap:clamp(28px,5vw,80px);grid-template-columns:minmax(0,1fr);align-items:start;margin-bottom:clamp(64px,8vw,120px)}
+@media(min-width:860px){.greet{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}}
+.greet__slot{aspect-ratio:3/4;max-width:420px}
+.greet__body{display:flex;flex-direction:column;gap:24px}
+.greet__body h3{font-size:clamp(22px,2.5vw,29px);line-height:1.6;letter-spacing:.14em}
+.greet__lead{font-size:16px;line-height:2.2;color:var(--sub);border-left:1px solid var(--rule);padding:4px 0 4px clamp(20px,3vw,32px)}
+.greet__lead b{color:var(--ink);font-weight:500}
+.greet__sign{font-family:var(--fd);font-size:22px;letter-spacing:.16em;color:var(--ink)}
+.greet__sign .role{display:block;font-family:var(--fb);font-size:12.5px;color:var(--muted);font-weight:500;letter-spacing:.14em;margin-bottom:4px}
+.sub2{font-family:var(--fd);font-weight:400;font-size:clamp(19px,2vw,23px);line-height:1.7;letter-spacing:.09em;color:var(--ink);margin:clamp(64px,8vw,104px) 0 26px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+
+/* ─────────── 会社概要 ─────────── */
+.about{display:grid;gap:clamp(40px,5vw,80px);grid-template-columns:minmax(0,1fr);align-items:start}
+@media(min-width:900px){.about{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}}
+.profile{width:100%;border-collapse:collapse;font-size:15px;border-top:1px solid var(--rule)}
+.profile th,.profile td{border-bottom:1px solid var(--line);padding:15px 0;text-align:left;vertical-align:top;line-height:1.95}
+.profile th{width:32%;font-family:var(--fb);font-weight:500;font-size:13.5px;letter-spacing:.08em;color:var(--muted);white-space:nowrap;padding-right:20px}
+.profile td{color:var(--ink)}
+.profile td b{color:var(--ink);font-weight:500}
+.wp__box .profile th{width:46%}
+.licence{background:transparent;color:var(--ink);border-top:1px solid var(--rule);padding-top:24px;display:flex;flex-direction:column;gap:14px}
+.licence + .licence{margin-top:36px}
+.licence h3{font-size:18px;letter-spacing:.08em;color:var(--ink)}
+.licence h3 svg{display:none}
+.licence__no{font-family:var(--fd);font-size:clamp(22px,2.4vw,28px);letter-spacing:.1em;color:var(--deep);line-height:1.6}
+.licence ul{display:flex;flex-wrap:wrap}
+.licence ul li{font-size:14px;font-weight:500;letter-spacing:.06em;color:var(--ink);line-height:1.9}
+.licence ul li + li::before{content:"／";margin:0 .6em;color:var(--line-2)}
+.licence p{font-size:14px;line-height:2;color:var(--sub)}
+.licence .profile{border-top:1px solid var(--line)}
+
+/* ─────────── 保証とお支払い ─────────── */
+.wp{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(44px,5vw,60px) clamp(40px,5vw,80px)}
+@media(min-width:860px){.wp{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.wp__box{border-top:1px solid var(--rule);padding:26px 0 0}
+.wp__box h3{font-size:clamp(18px,1.9vw,21px);letter-spacing:.08em;margin-bottom:12px}
+.wp__box h3 svg{display:none}
+.wp__box .profile{border-top:0}
+.wp__note{margin-top:18px;font-size:13px;line-height:1.95;color:var(--muted)}
+.wp__note b{color:var(--sub);font-weight:500}
+.wp__box--wide{grid-column:1/-1}
+.wp__box--wide p{font-size:15.5px;line-height:2.1;color:var(--sub);max-width:52em}
+.wp__box--wide p + p{margin-top:12px}
+.wp__box--wide b{color:var(--ink);font-weight:500}
+.wp__jio{font-family:var(--fd);font-size:clamp(19px,2vw,23px);line-height:1.8;letter-spacing:.08em;color:var(--ink);margin-bottom:6px}
+
+/* ─────────── アクセス ─────────── */
+.access{display:grid;gap:clamp(36px,4.5vw,72px);grid-template-columns:minmax(0,1fr);align-items:start}
+@media(min-width:960px){.access{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}}
+.access__bar{display:flex;align-items:center;gap:10px;padding:0 0 14px;border-bottom:1px solid var(--line);font-size:13px;color:var(--sub);letter-spacing:.04em}
+.access__bar svg{width:14px;height:14px;color:var(--accent);flex:none}
+.access__bar b{color:var(--ink);font-family:var(--fd);font-weight:400;letter-spacing:.08em}
+.access__frame{position:relative;aspect-ratio:4/3;background:var(--stone)}
+@media(min-width:960px){.access__frame{aspect-ratio:16/10}}
+.access__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;filter:grayscale(.5)}
+.access__info{display:flex;flex-direction:column;gap:30px}
+.access__addr{font-family:var(--fd);font-size:clamp(18px,2vw,22px);line-height:1.85;letter-spacing:.08em;color:var(--ink)}
+.access__addr .lbl{display:block;font-family:var(--fn);font-weight:400;font-size:12px;letter-spacing:.28em;color:var(--muted);margin-bottom:10px}
+.access__rows{display:grid;border-top:1px solid var(--line)}
+.access__rows>div{display:grid;grid-template-columns:6em minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.9}
+.access__rows dt{font-weight:500;font-size:13.5px;letter-spacing:.08em;color:var(--muted)}
+.access__rows dd{margin:0;color:var(--ink)}
+.access__btns{display:flex;flex-wrap:wrap;gap:12px}
+.access__btns .btn{font-size:14px}
+
+/* ─────────── エリア ─────────── */
+.area{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--rule);column-gap:24px}
+@media(min-width:760px){.area{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.area li{font-family:var(--fd);font-size:16px;letter-spacing:.08em;color:var(--ink);padding:20px 8px;border-bottom:1px solid var(--line)}
+.area li.is-blank{color:var(--memo-ink);outline:1px dashed var(--memo);outline-offset:-7px;padding-inline:14px}
+
+/* ─────────── FAQ ─────────── */
+.faq{display:grid;border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:26px 56px 26px 46px;position:relative;font-family:var(--fd);font-size:17px;line-height:1.8;letter-spacing:.06em;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";position:absolute;left:2px;top:25px;font-family:var(--fn);font-weight:300;font-size:26px;line-height:1.3;color:var(--accent)}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;transform:translateY(-50%);
+  background:linear-gradient(currentColor,currentColor) center/16px 1px no-repeat,linear-gradient(currentColor,currentColor) center/1px 16px no-repeat;
+  transition:transform .3s;
+}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(90deg);background:linear-gradient(currentColor,currentColor) center/1px 16px no-repeat}
+.faq__a{margin:0 0 0 46px;padding:0 48px 30px 0;font-size:15px;line-height:2.1;color:var(--sub)}
+.faq__a b{color:var(--ink);font-weight:500}
+
+/* ─────────── お問い合わせ ─────────── */
+.contact{display:grid;gap:clamp(48px,6vw,96px);grid-template-columns:minmax(0,1fr)}
+@media(min-width:900px){.contact{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}}
+.contact__card{border-top:1px solid rgba(255,255,255,.34);padding-top:30px}
+.contact__card h3{font-size:19px;letter-spacing:.1em;margin-bottom:14px;color:#fff}
+.contact__card>p{font-size:15px;line-height:2.05;color:rgba(255,255,255,.76);margin-bottom:26px}
+.contact__tel{display:inline-flex;flex-direction:column;gap:8px;text-decoration:none;color:#fff}
+.contact__tel b{font-family:var(--fn);font-weight:300;font-size:clamp(38px,6vw,64px);letter-spacing:.06em;line-height:1.05;display:flex;align-items:center;gap:16px;color:#fff}
+.contact__tel b svg{width:.36em;height:.36em;flex:none;opacity:.8}
+.contact__tel span{font-size:12.5px;letter-spacing:.08em;color:rgba(255,255,255,.62)}
+.contact__hours{margin-top:22px;font-size:14px;line-height:2;color:rgba(255,255,255,.8)}
+.contact__staff{aspect-ratio:16/10;margin-top:26px;max-width:560px}
+.sns{display:grid;gap:12px}
+.sns a{display:flex;align-items:center;gap:14px;text-decoration:none;border:1px solid rgba(255,255,255,.4);padding:20px 24px;font-size:14.5px;font-weight:500;letter-spacing:.1em;color:#fff;transition:background-color .25s,color .25s}
+.sns a::after{
+  content:"";width:24px;height:7px;margin-left:auto;background:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 7'%3E%3Cpath d='M0 6.5h23L17 .5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") no-repeat center/contain;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 7'%3E%3Cpath d='M0 6.5h23L17 .5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") no-repeat center/contain;
+}
+.sns a:hover{background:#fff;color:var(--deep)}
+.sns svg{width:18px;height:18px;flex:none}
+
+/* ─────────── フッター ─────────── */
+.ft{background:#18191A;color:rgba(255,255,255,.64);padding-block:clamp(56px,7vw,96px) 110px;font-size:13.5px}
+@media(min-width:900px){.ft{padding-bottom:44px}}
+.ft__in{display:grid;gap:40px}
+@media(min-width:760px){.ft__in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start}}
+.ft b{color:#fff;font-family:var(--fd);font-weight:400;font-size:20px;letter-spacing:.14em;display:block;margin-bottom:16px}
+.ft address{font-style:normal;line-height:2.1}
+.ft a{color:#fff}
+.ft__nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;font-size:13px;border-top:1px solid rgba(255,255,255,.14);padding-top:18px}
+@media(min-width:1000px){.ft__nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ft__nav a{color:rgba(255,255,255,.7);text-decoration:none;letter-spacing:.06em}
+.ft__nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.ft__cr{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:11.5px;color:rgba(255,255,255,.42);font-family:var(--fn);letter-spacing:.2em;text-transform:uppercase}
+
+/* ─────────── スマホ下部の呼び出しバー ─────────── */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1.25fr 1fr;background:var(--surface);border-top:1px solid var(--line)}
+.dock a{display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;padding:15px 8px;font-weight:500;font-size:14.5px;letter-spacing:.08em;line-height:1.3}
+.dock a svg{width:17px;height:17px;flex:none}
+.dock__tel{background:var(--deep);color:#fff}
+.dock__mail{background:var(--surface);color:var(--ink)}
+@media(min-width:900px){.dock{display:none}}
+
+/* ─────────── お見積書の見本 ─────────── */
+.est{display:grid;gap:clamp(28px,4vw,56px);grid-template-columns:minmax(0,1fr);align-items:start}
+@media(min-width:860px){.est{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}}
+.est .slot{aspect-ratio:3/4;max-width:380px}
+.est ol{counter-reset:e;display:grid;border-bottom:1px solid var(--line)}
+.est li{position:relative;padding:20px 0;border-top:1px solid var(--line);font-size:15px;line-height:2;color:var(--sub)}
+.est li b{color:var(--ink);font-family:var(--fd);font-weight:400;letter-spacing:.06em;margin-right:.6em}
+
+/* ─────────── 大工・現場監督 ─────────── */
+.crew{display:grid;gap:40px 20px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:860px){.crew{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:28px}}
+.crew__p{display:grid;gap:12px;align-content:start}
+.crew__p .slot{aspect-ratio:3/4;padding:12px}
+.crew__p .slot__t{font-size:12px}
+.crew__n{font-family:var(--fd);font-size:17px;letter-spacing:.1em;color:var(--ink)}
+.crew__p dl{display:grid;gap:2px;font-size:13px;line-height:1.85;color:var(--sub);margin:0}
+.crew__p dl div{display:flex;gap:10px}
+.crew__p dt{flex:none;color:var(--muted)}
+.crew__p dd{margin:0}
+.crew__w{font-size:12.8px;line-height:1.85;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+
+/* ─────────── 出現演出（JSなし・動きを減らす設定では出ない） ─────────── */
+.rv{opacity:1;transform:none}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.is-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1!important;transform:none!important;transition:none}
+  *{animation-duration:.001s!important}
+}
+@media print{
+  .hd,.dock,.hint{display:none!important}
+  body{background:#fff}
+  .sec{padding-block:24px;break-inside:avoid}
+}
+
+/* ─────────── 仮の内容であることの印（制作メモを隠しても消さない） ─────────── */
+.draft .pv{background:var(--memo);color:#241703;padding:1px 6px;font-size:11.5px;letter-spacing:.06em}
+.prov{
+  display:inline-flex;align-items:center;gap:5px;vertical-align:middle;margin-left:14px;
+  font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.1em;line-height:1;
+  color:var(--memo-ink);background:#FFF3DA;border:1px solid #E6CB91;border-radius:0;padding:5px 9px;white-space:nowrap;
+  position:relative;top:-.12em;
+}
+.sec--deep .prov{color:#F4DDAC;background:rgba(214,144,28,.16);border-color:rgba(214,144,28,.45)}
+.provnote{font-size:13px;line-height:1.9;color:#6A4D13;background:#FFF8E9;border-left:2px solid var(--memo);padding:11px 16px;border-radius:0;margin-top:16px;max-width:48em;letter-spacing:.03em}
+.provnote b{color:#3D2B0B}
+.sec--deep .provnote{color:#F1DDB4;background:rgba(214,144,28,.13)}
+.sec--deep .provnote b{color:#fff}
+
+/* ─────────── 案の切り替え（制作メモを表示しているときだけ出る） ─────────── */
+.plan{background:#0C0D0E;border-top:1px solid rgba(255,255,255,.1)}
+.plan__in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding-block:10px}
+.plan__lb{font-family:var(--fb);font-size:11.5px;font-weight:700;letter-spacing:.1em;color:#9AA9C0;margin-right:4px}
+.plan a,.plan .now{font-size:12.5px;font-weight:500;letter-spacing:.04em;line-height:1.5;border-radius:0;padding:5px 13px;border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.8);text-decoration:none}
+.plan a:hover{background:#fff;border-color:#fff;color:#0C0D0E}
+.plan .now{background:var(--memo);border-color:var(--memo);color:#241703;font-weight:700}
+html:not(.notes) .plan{display:none!important}
+html:not(.notes) .prov{display:none!important}
+html:not(.notes) .memo-only{display:none!important}
+html:not(.notes) .provnote{display:none!important}
+
+/* ─────────── 施工事例（1件1ページ） ─────────── */
+a.case{display:block;text-decoration:none;color:inherit}
+a.case:hover .slot{filter:brightness(.95)}
+a.case:hover h3{color:var(--accent)}
+.case__tag{display:block;font-size:12px;font-weight:500;letter-spacing:.12em;color:var(--muted);margin-bottom:8px}
+.case__go{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding-bottom:4px;font-size:13px;font-weight:500;letter-spacing:.08em;color:var(--ink);border-bottom:1px solid var(--rule)}
+.case__go svg{width:12px;height:12px}
+.filter{display:grid;gap:12px;margin-bottom:44px;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.filter__row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filter__lb{font-family:var(--fb);font-size:12px;font-weight:500;letter-spacing:.14em;color:var(--muted);margin-right:6px;min-width:3em}
+.filter button{font-family:var(--fb);font-size:13.5px;font-weight:500;letter-spacing:.05em;cursor:pointer;border-radius:0;padding:8px 16px;border:1px solid var(--line);background:var(--surface);color:var(--sub);transition:.2s}
+.filter button:hover{border-color:var(--rule);color:var(--ink)}
+.filter button[aria-pressed="true"]{background:var(--deep);border-color:var(--deep);color:#fff}
+.filter__n{font-family:var(--fn);font-weight:400;font-size:17px;letter-spacing:.1em;color:var(--muted);justify-self:end}
+
+/* ─────────── 工事ごとの内訳・概算 ─────────── */
+.unit td.n{font-family:var(--fn);font-weight:400;font-size:17px;color:var(--deep);letter-spacing:.05em;white-space:nowrap}
+.sim{background:var(--band);padding:clamp(24px,4vw,44px);display:grid;gap:22px}
+.sim__rows{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:720px){.sim__rows{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.sim label{display:block;font-family:var(--fb);font-weight:500;font-size:13px;letter-spacing:.1em;color:var(--muted);margin-bottom:8px}
+.sim select{width:100%;font-family:inherit;font-size:15px;padding:13px 14px;border:1px solid var(--line-2);border-radius:0;background:#fff;color:var(--ink)}
+.sim__out{background:var(--deep);color:#fff;padding:24px 28px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 20px}
+.sim__out>span{font-size:13px;letter-spacing:.1em;color:rgba(255,255,255,.7)}
+.sim__out b{font-family:var(--fn);font-weight:300;font-size:clamp(28px,4.6vw,40px);letter-spacing:.05em;color:#fff;line-height:1.2}
+.sim__out small{font-size:12.8px;color:rgba(255,255,255,.72);line-height:1.9}
+
+/* ─────────── 事例の詳細ページ・工事別ページ ─────────── */
+.crumb{font-size:12.5px;letter-spacing:.06em;color:var(--muted);padding-block:22px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.crumb a{color:var(--sub);text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:3px}
+.crumb a:hover{color:var(--ink)}
+.wk__hd h1{font-size:clamp(24px,3.2vw,36px);font-weight:400;line-height:1.6;letter-spacing:.08em;color:var(--ink)}
+.wk__hd .case__tag{margin-bottom:14px}
+.wk__ba{display:grid;gap:16px;grid-template-columns:minmax(0,1fr);margin-top:clamp(32px,4vw,48px)}
+@media(min-width:760px){.wk__ba{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.wk__ba .slot{aspect-ratio:4/3}
+.wk__cap{font-family:var(--fn);font-size:12.5px;font-weight:400;letter-spacing:.2em;color:var(--muted);margin-bottom:10px}
+.wk__grid{display:grid;gap:clamp(36px,5vw,72px);grid-template-columns:minmax(0,1fr);margin-top:clamp(40px,5vw,64px)}
+.wk__grid>*{min-width:0}
+@media(min-width:960px){.wk__grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:start}}
+.wk__steps{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.wk__steps .slot{aspect-ratio:4/3;padding:12px}
+.wk__steps .slot__t{font-size:12px}
+.wk__rel{display:grid;gap:44px 28px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:700px){.wk__rel{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.wk__back{display:inline-flex;align-items:center;gap:10px;font-family:var(--fb);font-weight:500;font-size:14px;letter-spacing:.08em;color:var(--ink);text-decoration:none;border:1px solid var(--rule);border-radius:0;padding:14px 26px;background:transparent;transition:.25s}
+.wk__back:hover{background:var(--deep);color:#fff}
+.wk__back svg{width:13px;height:13px}
+</style>
+</head>
+<body>
+<!-- ══════════ 叩き台バー ══════════ -->
+<div class="draft">
+  <div class="wrap draft__in">
+    <p><span class="nw">ご依頼を</span><span class="nw">いただく</span><span class="nw">前に</span><span class="nw">お作りした</span><b><span class="nw">叩き</span>台</b><span class="nw">です。</span><b><span class="nw">写真・</span><span class="nw">費用・</span><span class="nw">保証の</span><span class="nw">年数・</span><span class="nw">お客様の</span><span class="nw">お声は、</span><span class="nw">こちらで</span><span class="nw">仮に</span><span class="nw">入れた</span><span class="nw">もの</span></b><span class="nw">で、</span><span class="nw">御社の</span><span class="nw">数字ではありません。</span><b class="pv">仮</b>の<span class="nw">付いた</span><span class="nw">場所は、</span><span class="nw">お話を</span><span class="nw">伺ってから</span><span class="nw">入れ</span><span class="nw">替えます。</span></p>
+    <button type="button" id="notesBtn" aria-pressed="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span id="notesLbl">制作メモを表示</span>
+    </button>
+  </div>
+</div>
+<div class="plan">
+  <div class="wrap plan__in">
+    <span class="plan__lb">3案を見くらべる</span>
+    <a href="../../a/">A案 確かめに来た方に見せる</a>
+    <a href="../../">B案 比べている方に選ばれる</a>
+    <span class="now">C案 探している方に見つけてもらう</span>
+  </div>
+</div>
+
+<!-- ══════════ ヘッダー ══════════ -->
+<header class="hd">
+  <div class="wrap hd__in">
+    <a class="brand" href="../#top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#232426"/><path d="M17 13v35h34" fill="none" stroke="#fff" stroke-width="6"/><rect x="29" y="20" width="15" height="15" fill="none" stroke="#7E9BCB" stroke-width="3"/></svg>
+      <span>
+        <b>株式会社萩原建設</b>
+        <small style="letter-spacing:.14em">茨城県筑西市 大島</small>
+      </span>
+    </a>
+    <nav class="hd__nav" aria-label="サイト内">
+      <a href="../#judge">建て替えかリフォームか</a>
+      <a href="../#works">工事の内容</a>
+      <a href="../#price">費用</a>
+      <a href="../#warranty">保証</a>
+      <a href="../#cases">施工事例</a>
+      <a href="../#land">土地探し</a>
+      <a href="../#about">会社概要</a>
+      <a href="../#access">アクセス</a>
+      <a href="../#recruit">求人</a>
+      <a href="../#contact">お問い合わせ</a>
+    </nav>
+    <a class="hd__tel" href="tel:0296572097">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      <span>0296-57-2097<em>新築・リフォームのご相談</em></span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="wrap"><p class="crumb"><a href="../"><span class="nw">ホーム</span></a> ／ <a href="../#works"><span class="nwb"><span class="nw">承っている</span><span class="nw">工事</span></span></a> ／ <span><span class="nw">新築</span><span class="nw">（注文住宅）</span></span></p></div>
+
+<section class="sec sec--white" style="padding-top:6px">
+  <div class="wrap">
+    <div class="wk__hd rv">
+      <span class="mark__t">C案だけ</span>
+      <h1><span class="nw">新築</span><span class="nw">（注文住宅）</span><span class="prov">仮</span></h1>
+      <p class="provnote"><b><span class="nw">この</span><span class="nw">文章は、</span><span class="nw">こちらで</span><span class="nw">用意した</span><span class="nw">下書きです。</span></b><span class="nw">御社が</span><span class="nw">実際に</span><span class="nw">お客様へ</span><span class="nw">説明しておられる</span><span class="nw">言い</span><span class="nw">方に</span><span class="nw">書き</span><span class="nw">替えます。</span></p>
+      <p style="font-size:15.8px;line-height:2.1;color:var(--sub);margin-top:20px;max-width:46em"><span class="nw">注文住宅は、</span><span class="nw">間取りを</span><span class="nw">決める</span><span class="nw">前に</span><span class="nw">敷地を</span><span class="nw">拝見する</span><span class="nw">ところから</span><span class="nw">始めます。</span><span class="nw">同じ</span><span class="nw">三十坪の</span><span class="nw">家でも、</span><span class="nw">敷地の</span><span class="nw">形・</span><span class="nw">日当たり・</span><span class="nw">道路の</span><span class="nw">向きで、</span><span class="nw">合う</span><span class="nw">間取りは</span><span class="nw">変わります。</span><span class="nw">建て</span><span class="nw">替えの</span><span class="nw">場合は、</span><span class="nw">いまの</span><span class="nw">家の</span><span class="nw">解体と、</span><span class="nw">仮住まいの</span><span class="nw">段取りから</span><span class="nw">お手伝い</span><span class="nw">いたします。</span></p>
+    </div>
+
+    <div class="slot rv" style="aspect-ratio:21/9;margin-top:clamp(32px,4vw,48px)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><span class="slot__t">ここに<b>上棟の日の骨組み</b>の写真が入ります</span><span class="slot__d">1600 × 700 px</span></div>
+
+    <h2 class="sub2 rv"><span class="nw">進め</span>方</h2>
+    <ol class="flow rv">
+        <li><h3><span class="nw">敷地の</span><span class="nw">拝見と</span><span class="nw">ご要望の</span><span class="nw">伺い</span></h3><p><span class="nw">敷地の</span><span class="nw">広さ・</span><span class="nw">形・</span><span class="nw">道路との</span><span class="nw">関係・</span><span class="nw">水道の</span><span class="nw">引き</span><span class="nw">込みを</span><span class="nw">確かめます。</span><span class="nw">ご家族の</span><span class="nw">暮らし</span><span class="nw">方と、</span><span class="nw">ご予算の</span><span class="nw">上限も、</span><span class="nw">この</span><span class="nw">ときに</span><span class="nw">伺います。</span></p></li>
+        <li><h3><span class="nw">地盤の</span><span class="nw">調査</span></h3><p><span class="nw">建てる</span><span class="nw">前に、</span><span class="nw">地盤の</span><span class="nw">強さを</span><span class="nw">調べます。</span><span class="nw">改良の</span><span class="nw">工事が</span><span class="nw">要るかどうかは、</span><span class="nw">ご契約の</span><span class="nw">前に</span><span class="nw">お伝え</span><span class="nw">いたします。</span></p></li>
+        <li><h3><span class="nw">間取りと</span><span class="nw">お見積り</span></h3><p><span class="nw">間取りの</span><span class="nw">案と、</span><span class="nw">工事ごとに</span><span class="nw">分けた</span><span class="nw">お見積書を</span><span class="nw">お出しします。</span><span class="nw">間取りは、</span><span class="nw">ご家族で</span><span class="nw">お話し</span><span class="nw">いただきながら</span><span class="nw">直してまいります。</span></p></li>
+        <li><h3><span class="nw">確認の</span><span class="nw">申請・</span><span class="nw">ご契約</span></h3><p><span class="nw">建築確認の</span><span class="nw">申請などの</span><span class="nw">手続きは</span><span class="nw">当社で</span><span class="nw">行います。</span><span class="nw">工事の</span><span class="nw">日程も、</span><span class="nw">この</span><span class="nw">ときに</span><span class="nw">お決めします。</span></p></li>
+        <li><h3><span class="nw">基礎の</span><span class="nw">工事</span></h3><p><span class="nw">鉄筋を</span><span class="nw">組み</span><span class="nw">終えた</span><span class="nw">ところで、</span><span class="nw">隠れる</span><span class="nw">前に</span><span class="nw">写真に</span><span class="nw">撮って</span><span class="nw">ご報告いたします。</span></p></li>
+        <li><h3><span class="nw">上棟</span><span class="nw">（骨組み）</span></h3><p><span class="nw">柱と</span><span class="nw">梁を</span><span class="nw">組み</span><span class="nw">上げ、</span><span class="nw">屋根の</span><span class="nw">骨組みまでを</span><span class="nw">仕上げます。</span></p></li>
+        <li><h3><span class="nw">屋根・</span><span class="nw">外壁・</span><span class="nw">内装</span></h3><p><span class="nw">雨を</span><span class="nw">防ぐ</span><span class="nw">屋根と</span><span class="nw">外壁を</span><span class="nw">先に</span><span class="nw">仕上げ、</span><span class="nw">断熱・</span><span class="nw">配管・</span><span class="nw">内装へと</span><span class="nw">進みます。</span><span class="nw">給水・</span><span class="nw">排水の</span><span class="nw">配管は</span><span class="nw">当社で</span><span class="nw">行います。</span></p></li>
+        <li><h3><span class="nw">お立ち</span><span class="nw">会い・</span><span class="nw">お引き</span><span class="nw">渡し</span></h3><p><span class="nw">仕上がりを</span><span class="nw">ご一緒に</span><span class="nw">確かめ、</span><span class="nw">設備の</span><span class="nw">使い</span><span class="nw">方を</span><span class="nw">ご説明して、</span><span class="nw">保証書を</span><span class="nw">お渡しします。</span></p></li>
+    </ol>
+
+    <h2 class="sub2 rv"><span class="nw">お見積書の</span><span class="nw">内訳</span><span class="nw">（新築）</span><span class="prov">仮</span></h2>
+    <p class="provnote rv"><b><span class="nw">下の</span><span class="nw">欄は、</span><span class="nw">御社の</span><span class="nw">金額に</span><span class="nw">入れ</span><span class="nw">替える</span><span class="nw">ところです。</span></b><span class="nw">この</span><span class="nw">表を</span><span class="nw">置いておくと、</span><span class="nw">お客様は</span><span class="nw">全体でいくらになるかを、</span><span class="nw">お電話の</span><span class="nw">前に</span><span class="nw">確かめられます。</span></p>
+    <div class="scroll rv">
+      <table class="price unit">
+        <thead><tr><th scope="col"><span class="nw">項目</span></th><th scope="col"><span class="nw">単位</span></th><th scope="col"><span class="nw">金額</span></th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><span class="nw">仮設の</span><span class="nw">工事</span></th><td class="u"><span class="nw">一式</span></td><td class="n"><span class="blank">〔　　　〕</span>円</td></tr>
+          <tr><th scope="row"><span class="nw">基礎の</span><span class="nw">工事</span></th><td class="u">㎡</td><td class="n"><span class="blank">〔　　　〕</span>円</td></tr>
+          <tr><th scope="row"><span class="nw">木工事</span><span class="nw">（骨組み・</span><span class="nw">床・</span><span class="nw">壁の</span><span class="nw">下地）</span></th><td class="u">坪</td><td class="n"><span class="blank">〔　　　〕</span>円</td></tr>
+          <tr><th scope="row"><span class="nw">屋根・</span><span class="nw">外壁の</span><span class="nw">工事</span></th><td class="u">㎡</td><td class="n"><span class="blank">〔　　　〕</span>円</td></tr>
+          <tr><th scope="row"><span class="nw">内装の</span><span class="nw">工事</span></th><td class="u">坪</td><td class="n"><span class="blank">〔　　　〕</span>円</td></tr>
+          <tr><th scope="row"><span class="nw">住宅の</span><span class="nw">設備</span></th><td class="u"><span class="nw">一式</span></td><td class="n"><span class="blank">〔　　　〕</span>円</td></tr>
+          <tr><th scope="row"><span class="nw">設計・</span><span class="nw">申請</span></th><td class="u"><span class="nw">一式</span></td><td class="n"><span class="blank">〔　　　〕</span>円</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="sub2 rv"><span class="nw">新築の</span><span class="nw">施工事例</span><span class="prov">仮</span></h2>
+    <div class="cases rv">
+      <a class="case" href="../works/w01.html" data-cat="shinchiku" data-bk="house">
+        <div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><span class="slot__t">工事の前・あとの<b>2枚</b>が入ります</span><span class="slot__d">1200 × 900 px</span></div>
+        <div class="case__b">
+          <span class="case__tag">新築（注文住宅）</span>
+          <h3><span class="nw">筑西市</span> ／ <span class="nw">木造二階建ての</span><span class="nw">注文住宅</span></h3>
+          <p class="case__meta"><span><span class="nw">費用</span> 〔　　　<span class="nw">〕万円</span></span><span><span class="nw">工期</span> 〔　　〕</span><span>〔　　<span class="nw">〕年</span>〔　<span class="nw">〕月</span></span></p>
+          <span class="case__go">この工事のページを見る<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+        </div>
+      </a>
+      <a class="case" href="../works/w05.html" data-cat="shinchiku" data-bk="house">
+        <div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><span class="slot__t">工事の前・あとの<b>2枚</b>が入ります</span><span class="slot__d">1200 × 900 px</span></div>
+        <div class="case__b">
+          <span class="case__tag">新築（注文住宅）</span>
+          <h3>〔　　　<span class="nw">市〕</span> ／ <span class="nw">平屋の</span><span class="nw">注文住宅</span></h3>
+          <p class="case__meta"><span><span class="nw">費用</span> 〔　　　<span class="nw">〕万円</span></span><span><span class="nw">工期</span> 〔　　〕</span><span>〔　　<span class="nw">〕年</span>〔　<span class="nw">〕月</span></span></p>
+          <span class="case__go">この工事のページを見る<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+        </div>
+      </a>
+      <a class="case" href="../works/w11.html" data-cat="shinchiku" data-bk="house">
+        <div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><span class="slot__t">工事の前・あとの<b>2枚</b>が入ります</span><span class="slot__d">1200 × 900 px</span></div>
+        <div class="case__b">
+          <span class="case__tag">新築（注文住宅）</span>
+          <h3><span class="nw">筑西市</span> ／ <span class="nw">二世帯住宅の</span><span class="nw">新築</span></h3>
+          <p class="case__meta"><span><span class="nw">費用</span> 〔　　　<span class="nw">〕万円</span></span><span><span class="nw">工期</span> 〔　　〕</span><span>〔　　<span class="nw">〕年</span>〔　<span class="nw">〕月</span></span></p>
+          <span class="case__go">この工事のページを見る<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+        </div>
+      </a>
+      <a class="case" href="../works/w16.html" data-cat="shinchiku" data-bk="house">
+        <div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><span class="slot__t">工事の前・あとの<b>2枚</b>が入ります</span><span class="slot__d">1200 × 900 px</span></div>
+        <div class="case__b">
+          <span class="case__tag">新築（注文住宅）</span>
+          <h3>〔　　　<span class="nw">市〕</span> ／ <span class="nw">解体から</span><span class="nw">始めた</span><span class="nw">建て</span><span class="nw">替え</span></h3>
+          <p class="case__meta"><span><span class="nw">費用</span> 〔　　　<span class="nw">〕万円</span></span><span><span class="nw">工期</span> 〔　　〕</span><span>〔　　<span class="nw">〕年</span>〔　<span class="nw">〕月</span></span></p>
+          <span class="case__go">この工事のページを見る<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+        </div>
+      </a>
+      <a class="case" href="../works/w21.html" data-cat="shinchiku" data-bk="house">
+        <div class="slot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><span class="slot__t">工事の前・あとの<b>2枚</b>が入ります</span><span class="slot__d">1200 × 900 px</span></div>
+        <div class="case__b">
+          <span class="case__tag">新築（注文住宅）</span>
+          <h3>〔　　　<span class="nw">市〕</span> ／ <span class="nw">土地探しから</span><span class="nw">始めた</span><span class="nw">新築</span></h3>
+          <p class="case__meta"><span><span class="nw">費用</span> 〔　　　<span class="nw">〕万円</span></span><span><span class="nw">工期</span> 〔　　〕</span><span>〔　　<span class="nw">〕年</span>〔　<span class="nw">〕月</span></span></p>
+          <span class="case__go">この工事のページを見る<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+        </div>
+      </a>
+    </div>
+
+    <h2 class="sub2 rv"><span class="nw">新築について、</span><span class="nw">よく</span><span class="nw">いただく</span><span class="nw">ご質問</span></h2>
+    <div class="faq rv">
+      <details><summary><span class="nw">土地がまだ</span><span class="nw">決まっていません。</span></summary><p class="faq__a"><span class="nw">当社の</span><span class="nw">不動産部で、</span><span class="nw">建てたい</span><span class="nw">家に</span><span class="nw">合う</span><span class="nw">土地から</span><span class="nw">お探しします。</span><span class="nw">土地の</span><span class="nw">代金と</span><span class="nw">建物の</span><span class="nw">工事の</span><span class="nw">金額を</span><span class="nw">合わせて、</span><span class="nw">全体でいくらになるかを</span><span class="nw">先に</span><span class="nw">お出し</span><span class="nw">いたします。</span></p></details>
+      <details><summary><span class="nw">建て</span><span class="nw">替えの</span><span class="nw">間は、</span><span class="nw">どこに</span><span class="nw">住めばよいですか。</span></summary><p class="faq__a"><span class="nw">工事の</span><span class="nw">期間は</span><span class="nw">一般に</span><span class="nw">四か</span><span class="nw">月から</span><span class="nw">六か</span><span class="nw">月ほどです。</span><span class="nw">仮住まいの</span><span class="nw">探し</span><span class="nw">方と、</span><span class="nw">お引っ</span><span class="nw">越しの</span><span class="nw">段取りも</span><span class="nw">ご相談ください。</span></p></details>
+      <details><summary><span class="nw">平屋も</span><span class="nw">建てられますか。</span></summary><p class="faq__a"><span class="nw">はい。</span><span class="nw">平屋は</span><span class="nw">階段が</span><span class="nw">無く、</span><span class="nw">年を</span><span class="nw">重ねてからも</span><span class="nw">暮らしやすい</span><span class="nw">造りです。</span><span class="nw">そのぶん</span><span class="nw">広い</span><span class="nw">敷地が</span><span class="nw">要ります</span><span class="nw">ので、</span><span class="nw">敷地の</span><span class="nw">広さと</span><span class="nw">合わせて</span><span class="nw">ご提案いたします。</span></p></details>
+    </div>
+
+    <p style="margin-top:clamp(30px,5vw,46px)"><a class="wk__back" href="../#works"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg><span class="nwb"><span class="nw">承っている</span><span class="nw">工事へもどる</span></span></a></p>
+  </div>
+</section>
+
+<section class="sec sec--deep">
+  <div class="wrap">
+    <div class="sec__hd rv" style="margin-bottom:22px">
+      <p class="sec__en" aria-hidden="true">Consultation</p>
+      <h2><span class="nw">新築の</span><span class="nw">ご相談</span></h2>
+      <p><span class="nw">まず</span><span class="nw">現地を</span><span class="nw">拝見して、</span><span class="nw">どう</span><span class="nw">進めるのがよいかを</span><span class="nw">お伝え</span><span class="nw">いたします。</span><span class="nw">まだ</span><span class="nw">何も</span><span class="nw">決まっていない</span><span class="nw">段階でも</span><span class="nw">構いません。</span></p>
+    </div>
+    <p><a class="btn btn--tel" href="tel:0296572097"><b>0296-57-2097</b><span><span class="nw">「新築の</span><span class="nw">ページを</span><span class="nw">見ました」と</span><span class="nw">お伝え</span><span class="nw">ください</span></span></a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap ft__in">
+    <div>
+      <b>株式会社萩原建設</b>
+      <address>
+        〒309-1125 茨城県筑西市大島79番地1<br>
+        TEL <a href="tel:0296572097">0296-57-2097</a><br>
+        茨城県知事許可 第002337号（建築工事業・管工事業ほか）<br>
+        JIO（日本住宅保証検査機構）届出事業者
+      </address>
+    </div>
+    <nav class="ft__nav" aria-label="フッター">
+      <a href="../#judge">建て替えかリフォームか</a>
+      <a href="../#works">工事の内容</a>
+      <a href="../service/shinchiku.html">新築（注文住宅）</a>
+      <a href="../service/reform.html">リフォーム・増改築</a>
+      <a href="../service/tochi.html">土地探し</a>
+
+      <a href="../#price">費用の目安</a>
+      <a href="../#warranty">保証とお支払い</a>
+      <a href="../#cases">施工事例</a>
+      <a href="../#flow">工事の流れ</a>
+      <a href="../#voice">お施主様のお声</a>
+      <a href="../#land">土地・住まい探し</a>
+      <a href="../#about">会社概要</a>
+      <a href="../#access">アクセス</a>
+      <a href="../#area">対応エリア</a>
+      <a href="../#faq">よくあるご質問</a>
+      <a href="../#recruit">求人</a>
+
+      <a href="../#contact">お問い合わせ</a>
+    </nav>
+  </div>
+  <div class="wrap"><p class="ft__cr">&copy; Hagiwara Kensetsu Co., Ltd.</p></div>
+</footer>
+
+<!-- スマホ下部の呼び出しバー -->
+<div class="dock">
+  <a class="dock__tel" href="tel:0296572097">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    お電話する
+  </a>
+  <a class="dock__mail" href="../#contact">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+    お問い合わせ
+  </a>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(function(el){ el.classList.add('is-in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  els.forEach(function(el){ io.observe(el); });
+  requestAnimationFrame(function(){
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top < innerHeight) el.classList.add('is-in');
+    });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var btn = document.getElementById('notesBtn'), lbl = document.getElementById('notesLbl'), root = document.documentElement;
+  function set(on){
+    root.classList.toggle('notes', on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    lbl.textContent = on ? 'お客様に見える状態で見る' : '制作メモを表示する';
+    try { localStorage.setItem('hagiwara-notes', on ? '1' : '0'); } catch (e) {}
+  }
+  var saved = '1';
+  try { saved = localStorage.getItem('hagiwara-notes') || '1'; } catch (e) {}
+  set(saved === '1');
+  btn.addEventListener('click', function(){ set(!root.classList.contains('notes')); });
+})();
+</script>
+
+</body>
+</html>

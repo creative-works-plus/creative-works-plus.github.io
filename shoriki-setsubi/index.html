@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 契約前のため検索エンジンに出さない。ご契約いただいたらこの2行を削除する -->
+<meta name="robots" content="noindex, nofollow">
+
+<title>正力設備 - 公式サイト｜埼玉県川口市 水道工事店</title>
+<meta name="description" content="埼玉県川口市大字木曽呂の水道工事店。川口市 指定給水装置工事事業者・川口市 指定排水設備工事店として、給湯器の取り替え、トイレ・浴室・洗面台の工事、水漏れ・地下漏水の修繕を承ります。">
+<meta name="theme-color" content="#4A5A6A">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="正力設備｜川口市の給排水設備工事店">
+<meta property="og:description" content="川口市大字木曽呂の水道工事店。給湯器の取り替えを中心に、トイレ・浴室・洗面台の水まわり、水漏れ・地下漏水の修繕まで承ります。">
+<meta property="og:locale" content="ja_JP">
+<!-- og:image は公開時に絶対URLへ差し替える（例：https://～/shoriki-setsubi/images/ogp.jpg） -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%234A5A6A'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='34' font-family='sans-serif' font-weight='800' fill='%23ffffff'%3E%E6%AD%A3%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;800&family=Archivo:wght@500;600&display=swap">
+
+<style>
+/* ─────────── トークン（正力設備：白地・鉄紺鼠の一色、炎の差し色はごく小さく） ─────────── */
+:root{
+  --deep:#4A5A6A;          /* 鉄紺鼠：ブランドの一色 */
+  --deep-2:#3A4855;
+  --accent:#E07A2E;        /* 炎：号数の数字・アイコンだけ */
+  --accent-ink:#A8551A;    /* 小さな文字はこちら（コントラスト確保） */
+  --memo:#CE8C22;
+  --memo-ink:#7C5210;
+  --ink:#1B2226;
+  --sub:#3E4952;
+  --muted:#5B6670;
+  --ground:#FCFCFC;
+  --band:#EBEEF1;
+  --surface:#FCFCFC;
+  --line:#DBDFE3;
+  --line-2:#C1C7CC;
+  --rule:#4A5A6A;
+
+  --w:1200px;
+  --pad:clamp(16px,4.4vw,52px);
+  --sec-y:clamp(80px,8.5vw,112px);
+
+  --fd:"M PLUS 1p","Hiragino Sans","Yu Gothic",sans-serif;
+  --fb:"M PLUS 1p","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --fn:"Archivo","M PLUS 1p",sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ground);color:var(--ink);overflow-x:hidden;
+  font-family:var(--fb);font-size:16px;font-weight:400;line-height:1.98;
+  letter-spacing:.02em;text-wrap:pretty;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--fd);font-weight:800;line-height:1.5;margin:0;letter-spacing:.03em;font-feature-settings:"palt"}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+b,strong{font-weight:700}
+table{border-collapse:collapse}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.nw{white-space:nowrap}
+.nwb{display:inline}
+.nw{display:inline!important;text-indent:0}
+.sp-only{display:none}
+@media(max-width:640px){.sp-only{display:inline}}
+.wrap{width:min(100%,var(--w));margin-inline:auto;padding-inline:var(--pad)}
+
+/* ─────────── 叩き台バー ─────────── */
+.draft{background:#1D262E;color:rgba(255,255,255,.78);font-size:12.5px;line-height:1.7}
+.draft__in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding-block:9px;min-height:40px}
+.draft p{flex:1;min-width:200px;margin:0}
+.draft b{color:#F0C48B;font-weight:700}
+.draft .pv{background:var(--memo);color:#241703;padding:1px 6px;font-size:11.5px;letter-spacing:.06em}
+.draft button{
+  font:inherit;font-weight:500;letter-spacing:.06em;cursor:pointer;white-space:nowrap;
+  background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:0;
+  padding:5px 14px;display:inline-flex;align-items:center;gap:8px;transition:background-color .2s,color .2s;
+}
+.draft button:hover{background:#fff;color:#1D262E}
+.draft button svg{width:13px;height:13px}
+
+html:not(.notes) .hint,
+html:not(.notes) .prov,
+html:not(.notes) .provnote,
+html:not(.notes) .memo-only{display:none!important}
+.hint{
+  display:flex;gap:12px;align-items:flex-start;margin-top:36px;max-width:56em;
+  background:#FFF8E9;border-left:2px solid var(--memo);padding:14px 18px;
+  font-size:13px;line-height:1.9;color:#5B4111;letter-spacing:.01em;
+}
+.hint svg{width:15px;height:15px;flex:none;margin-top:4px;color:var(--memo-ink)}
+.hint b{color:#3D2B0B}
+.sec--deep .hint{background:rgba(206,140,34,.16);color:#F1DDB4}
+.sec--deep .hint b{color:#fff}
+.sec--deep .hint svg{color:var(--memo)}
+.prov{
+  display:inline-block;vertical-align:middle;margin-left:14px;position:relative;top:-.1em;
+  font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.1em;line-height:1;
+  color:var(--memo-ink);background:#FFF3DA;border:1px solid #E6CB91;padding:5px 9px;white-space:nowrap;
+}
+.sec--deep .prov{color:#F4DDAC;background:rgba(206,140,34,.18);border-color:rgba(206,140,34,.48)}
+.provnote{font-family:var(--fb);font-size:13px;line-height:1.9;color:#6A4D13;background:#FFF8E9;border-left:2px solid var(--memo);padding:11px 16px;margin-top:18px;max-width:50em;letter-spacing:.01em}
+.provnote b{color:#3D2B0B}
+.sec--deep .provnote{color:#F1DDB4;background:rgba(206,140,34,.15)}
+.sec--deep .provnote b{color:#fff}
+.blank{display:inline-block;min-width:4.5em;padding:0 .25em;background:#FFF0D0;border-bottom:1px dashed var(--memo);color:var(--memo-ink);font-weight:500;text-indent:0}
+.sec--deep .blank{background:rgba(206,140,34,.2);color:#FBE3BC}
+
+/* ─────────── ヘッダー（型C：ナビなし・社名左・右に電話だけ） ─────────── */
+.hd{position:sticky;top:0;z-index:60;background:rgba(252,252,252,.97);border-bottom:1px solid var(--line)}
+.hd__in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:block;text-decoration:none}
+.brand b{display:block;font-family:var(--fd);font-weight:800;font-size:clamp(19px,3.6vw,23px);line-height:1.35;letter-spacing:.06em;color:var(--deep)}
+.brand small{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.06em;margin-top:4px}
+.hd__tel{
+  display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--deep);white-space:nowrap;
+  font-family:var(--fn);font-weight:600;font-size:clamp(17px,3vw,24px);letter-spacing:.01em;line-height:1.05;
+}
+.hd__tel svg{width:16px;height:16px;flex:none}
+.hd__tel em{display:none;font-style:normal;font-family:var(--fb);font-size:10.5px;font-weight:500;letter-spacing:.04em;color:var(--muted)}
+@media(min-width:760px){.hd__tel em{display:block;margin-top:3px}}
+
+/* ─────────── ボタン ─────────── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:space-between;gap:14px;
+  min-height:56px;padding:12px 24px;text-decoration:none;border-radius:0;
+  font-family:var(--fb);font-weight:500;font-size:14.5px;letter-spacing:.05em;line-height:1.5;
+  border:1px solid transparent;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s;
+}
+.btn--line::after{
+  content:"";width:24px;height:7px;flex:none;margin-left:12px;background:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 7'%3E%3Cpath d='M0 6.5h23L17 .5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") no-repeat center/contain;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 7'%3E%3Cpath d='M0 6.5h23L17 .5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") no-repeat center/contain;
+  transition:transform .3s cubic-bezier(.2,.7,.2,1);
+}
+.btn:hover::after{transform:translateX(4px)}
+.btn--line{border-color:var(--deep);color:var(--ink);background:transparent}
+.btn--line:hover{background:var(--deep);color:#fff}
+.sec--deep .btn--line{border-color:rgba(255,255,255,.5);color:#fff}
+.sec--deep .btn--line:hover{background:#fff;color:var(--deep)}
+.btn--tel{background:var(--deep);color:#fff;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;padding:14px 30px 15px 26px}
+.btn--tel b{font-family:var(--fn);font-weight:600;font-size:29px;letter-spacing:.01em;line-height:1.15;display:flex;align-items:center;gap:12px}
+.btn--tel b svg{width:17px;height:17px;flex:none}
+.btn--tel span{font-size:11.5px;font-weight:500;letter-spacing:.05em;opacity:.85}
+.btn--tel:hover{background:var(--deep-2)}
+.sec--deep .btn--tel{background:#fff;color:var(--deep)}
+.sec--deep .btn--tel:hover{background:var(--band)}
+
+/* ─────────── ヒーロー（写真は置かない） ─────────── */
+.hero{padding-block:clamp(48px,6vw,84px) clamp(64px,7vw,96px)}
+.hero__in{width:min(100%,var(--w));margin-inline:auto;padding-inline:var(--pad)}
+.hero__place{font-size:12.5px;font-weight:500;letter-spacing:.1em;color:var(--sub)}
+.hero__cred{margin-top:14px;padding-top:14px;border-top:1px solid var(--deep);font-size:13.5px;line-height:1.9;color:var(--sub);max-width:34em}
+.hero__cred b{color:var(--ink);font-weight:600}
+
+.hero h1{font-size:clamp(34px,6.4vw,66px);line-height:1.42;letter-spacing:.02em;margin-top:clamp(28px,3.4vw,42px);color:var(--deep)}
+.hero__lead{font-family:var(--fb);font-size:16px;line-height:1.98;color:var(--ink);margin-top:18px;max-width:30em}
+.hero__small{font-size:14px;line-height:1.9;color:var(--sub);margin-top:10px}
+
+.svc{margin-top:clamp(30px,3.6vw,42px);display:flex;flex-wrap:wrap;gap:6px 0;overflow:hidden;margin-left:calc(-1 * clamp(14px,1.8vw,22px))}
+.svc li{font-family:var(--fd);font-weight:500;font-size:14.5px;letter-spacing:.03em;color:var(--ink);padding:6px clamp(14px,1.8vw,22px);border-left:1px solid var(--line-2);margin-left:-1px}
+
+.hero__cta{margin-top:clamp(32px,3.8vw,46px)}
+.hero__hours{font-size:13px;line-height:1.7;letter-spacing:.02em;color:var(--sub);margin-top:12px}
+
+/* ─────────── 章 ─────────── */
+.sec{padding-block:var(--sec-y)}
+.sec--white{background:var(--surface)}
+.sec--band{background:var(--band)}
+.sec--deep{background:var(--deep);color:#fff}
+.sec__hd{display:grid;grid-template-columns:minmax(0,1fr);margin-bottom:clamp(42px,5vw,66px)}
+.sec__en{font-family:var(--fn);font-size:13px;font-weight:600;letter-spacing:.28em;color:var(--accent-ink);margin-bottom:15px;line-height:1.4}
+.sec--deep .sec__en{color:#F9CDA0}
+.sec__hd h2{font-size:clamp(24px,2.8vw,36px);line-height:1.55;letter-spacing:.03em}
+.sec__hd>p:not(.sec__en){margin-top:20px;color:var(--sub);font-size:15.5px;line-height:2.1;max-width:40em}
+.sec--deep .sec__hd>p:not(.sec__en){color:rgba(255,255,255,.82)}
+@media(min-width:960px){
+  .sec__hd{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,80px);align-items:end}
+  .sec__en{grid-column:1/-1}
+  .sec__hd h2{grid-column:1}
+  .sec__hd>p:not(.sec__en){grid-column:2;margin-top:0}
+  .sec__hd>.after-note,.sec__hd>.provnote{grid-column:1/-1!important;margin-top:20px!important}
+}
+.sub2{font-family:var(--fd);font-weight:800;font-size:clamp(19px,2vw,22px);line-height:1.6;letter-spacing:.03em;color:var(--ink);margin:clamp(52px,6.4vw,80px) 0 22px;max-width:none}
+.after-note{font-size:14px;line-height:1.98;color:var(--sub);margin-top:8px;max-width:50em}
+.table-note{font-size:13.5px;line-height:1.9;color:var(--sub);margin-top:10px}
+
+/* ─────────── 承っている工事（罫の行） ─────────── */
+.works{border-top:1px solid var(--rule)}
+.work{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;padding:26px 0;border-bottom:1px solid var(--line-2)}
+@media(min-width:820px){.work{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,80px);align-items:start;padding:26px 0}}
+.work h3{font-size:clamp(19px,1.9vw,23px);letter-spacing:.03em;line-height:1.5}
+.work h3 small{display:block;font-family:var(--fn);font-weight:500;font-size:11.5px;letter-spacing:.12em;color:var(--accent-ink);margin-top:6px}
+.work p{font-size:15px;line-height:2.06;color:var(--sub);max-width:36em}
+.work p b{color:var(--ink);font-weight:500}
+
+/* ─────────── 給湯器の号数別 費用表 ─────────── */
+.htable{width:100%;border-collapse:collapse;margin-top:8px}
+.htable caption{text-align:left;font-size:13px;color:var(--muted);margin-bottom:10px}
+.htable th,.htable td{border:1px solid var(--line-2);padding:18px 20px;text-align:left;vertical-align:middle;font-size:14.5px;line-height:1.7}
+.htable thead th{background:var(--band);font-family:var(--fd);font-weight:800;font-size:13.5px;letter-spacing:.03em;color:var(--ink)}
+.htable tbody th,.htable tbody td{background:var(--surface)}
+.htable tbody th{font-family:var(--fd);font-weight:800;font-size:15.5px;letter-spacing:.03em;color:var(--deep);white-space:nowrap}
+.htable td .amt{font-family:var(--fn);font-weight:600;font-size:clamp(20px,1.8vw,24px);color:var(--ink);white-space:nowrap}
+.htable td .rn{display:block;margin-top:4px;font-size:11.5px;letter-spacing:.02em;color:var(--muted)}
+@media(max-width:620px){
+  .htable,.htable caption,.htable thead,.htable tbody,.htable th,.htable td,.htable tr{display:block;width:100%;white-space:normal}
+  .htable thead{display:none}
+  .htable tbody tr{border:1px solid var(--line-2);margin-bottom:12px;padding:12px 14px}
+  .htable tbody th{border:0;padding:0 0 8px}
+  .htable tbody td{border:0;padding:6px 0;display:flex;justify-content:space-between;gap:12px}
+  .htable tbody td::before{content:attr(data-h);font-size:12px;color:var(--muted);flex:none}
+}
+
+.itemlist{border-top:1px solid var(--rule);max-width:none}
+.itemlist li{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;column-gap:clamp(14px,2vw,32px);padding-block:clamp(15px,1.8vw,20px);border-bottom:1px solid var(--line-2)}
+.itemlist b{display:block;font-family:var(--fd);font-weight:800;font-size:clamp(16px,1.6vw,18px);letter-spacing:.02em;line-height:1.5;color:var(--ink)}
+.itemlist small{display:block;font-size:12.5px;color:var(--muted);letter-spacing:.01em;line-height:1.7;margin-top:2px}
+.itemlist .amt{font-family:var(--fn);font-weight:600;font-size:clamp(20px,3.6vw,26px);line-height:1.1;color:var(--deep);white-space:nowrap;text-align:right}
+.itemlist .amt .rn{display:block;margin-top:5px;font-size:11px;font-weight:400;letter-spacing:.02em;color:var(--muted)}
+@media(max-width:480px){.itemlist li{grid-template-columns:minmax(0,1fr)}.itemlist .amt{text-align:left;margin-top:6px}}
+
+/* ─────────── 施工事例（写真は使わず、文字と罫だけの枠） ─────────── */
+.cases{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-top:1px solid var(--rule)}
+@media(min-width:700px){.cases{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1060px){.cases{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.case{padding:26px 0 28px;border-bottom:1px solid var(--line-2)}
+@media(min-width:700px){.case{padding:28px clamp(22px,3vw,38px) 30px 0}}
+@media(min-width:700px) and (max-width:1059px){.case:nth-child(2n){padding-right:0}}
+@media(min-width:1060px){.case:nth-child(3n){padding-right:0}}
+.case h3{font-size:clamp(17px,1.7vw,18.5px);letter-spacing:.03em;line-height:1.5}
+.case h3 small{display:block;font-family:var(--fb);font-weight:400;font-size:12.5px;letter-spacing:.01em;color:var(--sub);margin-top:6px}
+.case__facts{display:grid;margin:15px 0 0}
+.case__facts>div{display:grid;grid-template-columns:5em minmax(0,1fr);gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.8}
+.case__facts>div:first-child{border-top:1px solid var(--line)}
+.case__facts dt{font-weight:500;font-size:12px;letter-spacing:.03em;color:var(--muted)}
+.case__facts dd{margin:0}
+
+/* ─────────── 会社概要（表） ─────────── */
+.profile{width:100%;border-collapse:collapse;font-size:15px}
+.profile th,.profile td{border-bottom:1px solid var(--line);padding:15px 0;text-align:left;vertical-align:top;line-height:1.92}
+.profile tr:first-child th,.profile tr:first-child td{border-top:1px solid var(--line)}
+.profile th{width:34%;font-weight:500;font-size:13.5px;letter-spacing:.03em;color:var(--muted);padding-right:18px}
+@media(min-width:960px){.profile th{width:53.3%}}
+.profile td b{font-weight:700}
+.telk{color:var(--deep);font-weight:700;text-decoration:none}
+
+/* ─────────── 会社の場所 ─────────── */
+.access{display:grid;gap:clamp(34px,4.5vw,70px);grid-template-columns:minmax(0,1fr);align-items:start}
+@media(min-width:960px){.access{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}}
+.access__info{display:flex;flex-direction:column;gap:28px}
+.access__addr{font-family:var(--fd);font-weight:800;font-size:clamp(17px,1.9vw,20px);line-height:1.8;letter-spacing:.03em;color:var(--ink)}
+.access__addr .lbl{display:block;font-family:var(--fn);font-weight:600;font-size:12px;letter-spacing:.22em;color:var(--muted);margin-bottom:10px}
+.access__rows{display:grid;border-top:1px solid var(--line);margin:0}
+.access__rows>div{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.9}
+.access__rows dt{font-weight:500;font-size:13.5px;letter-spacing:.03em;color:var(--muted)}
+.access__rows dd{margin:0}
+.access__btns{display:flex;flex-wrap:wrap;gap:16px}
+.access__btns .btn{font-size:14px;width:240px;min-height:52px;flex:none}
+@media(min-width:960px){.access__btns .btn{width:calc(50% - 8px)}}
+@media(max-width:640px){.access__btns .btn{width:100%;flex:1 1 100%}}
+.access__frame{position:relative;aspect-ratio:4/3;background:var(--band)}
+@media(min-width:960px){.access__frame{aspect-ratio:16/10}}
+.access__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;filter:grayscale(.5)}
+
+/* ─────────── お伺いしている地域 ─────────── */
+.area{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--rule);column-gap:24px}
+.area li:first-child{grid-column:1/-1}
+@media(min-width:760px){.area{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.area li{font-family:var(--fd);font-weight:800;font-size:16px;letter-spacing:.03em;padding:20px 8px;border-bottom:1px solid var(--line-2)}
+.area li.is-blank{color:var(--memo-ink);outline:1px dashed var(--memo);outline-offset:-7px;padding-inline:14px}
+.area-note{font-size:14.5px;line-height:2.0;color:var(--sub);margin-top:24px;max-width:46em}
+
+/* ─────────── よくあるご質問 ─────────── */
+.faq{border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--line-2)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 50px 22px 42px;position:relative;font-family:var(--fd);font-weight:800;font-size:16.5px;line-height:1.7;letter-spacing:.02em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";position:absolute;left:2px;top:22px;font-family:var(--fn);font-weight:600;font-size:19px;line-height:1.4;color:var(--accent-ink)}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;transform:translateY(-50%);
+  background:linear-gradient(currentColor,currentColor) center/16px 1px no-repeat,linear-gradient(currentColor,currentColor) center/1px 16px no-repeat;
+}
+.faq details[open] summary::after{background:linear-gradient(currentColor,currentColor) center/16px 1px no-repeat}
+.faq__a{margin:0 0 0 42px;padding:0 42px 26px 0;font-size:15px;line-height:2.06;color:var(--sub)}
+.faq__a b{color:var(--ink);font-weight:500}
+
+/* ─────────── お問い合わせ ─────────── */
+.contact{display:grid;gap:clamp(44px,5.6vw,80px);grid-template-columns:minmax(0,1fr)}
+.contact__card{border-top:1px solid rgba(255,255,255,.36);padding-top:28px;max-width:44em}
+.contact__card h3{font-size:19px;letter-spacing:.03em;margin-bottom:14px;color:#fff}
+.contact__card>p{font-size:15px;line-height:2.02;color:rgba(255,255,255,.8);margin-bottom:24px}
+.contact__tel{display:inline-flex;flex-direction:column;gap:8px;text-decoration:none;color:#fff}
+.contact__tel b{font-family:var(--fn);font-weight:600;font-size:clamp(32px,6vw,54px);letter-spacing:.01em;line-height:1.08;display:flex;align-items:center;gap:16px}
+.contact__tel b svg{width:.36em;height:.36em;flex:none;opacity:.85}
+.contact__tel span{font-size:12.5px;letter-spacing:.04em;color:rgba(255,255,255,.78)}
+.contact__hours{font-size:13.5px;line-height:1.95;color:rgba(255,255,255,.85);margin-top:20px}
+.contact__hours>div{display:grid;grid-template-columns:8em minmax(0,1fr);gap:16px;padding:5px 0}
+.contact__hours dt{font-weight:500;letter-spacing:.03em;color:rgba(255,255,255,.78);white-space:nowrap}
+.contact__hours dd{margin:0}
+@media(min-width:1040px){
+  .contact__card{max-width:none;border-top:1px solid rgba(255,255,255,.36);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:80px;align-items:start}
+  .contact__card h3,.contact__card>p{grid-column:1}
+  .contact__tel,.contact__hours{grid-column:2}
+  .contact__hours{margin-top:20px}
+}
+
+/* ─────────── フッター ─────────── */
+.ft{background:#1D262E;color:rgba(255,255,255,.68);padding-block:clamp(54px,7vw,92px) 110px;font-size:13.5px}
+@media(min-width:900px){.ft{padding-bottom:44px}}
+.ft__in{display:grid;gap:38px}
+@media(min-width:760px){.ft__in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start}}
+.ft b{display:block;color:#fff;font-family:var(--fd);font-weight:800;font-size:19px;letter-spacing:.05em;margin-bottom:16px}
+.ft address{font-style:normal;line-height:2.08}
+.ft a{color:#fff}
+.ft__nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 26px;font-size:13px;border-top:1px solid rgba(255,255,255,.14);padding-top:18px}
+@media(min-width:1000px){.ft__nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ft__nav a{color:rgba(255,255,255,.74);text-decoration:none;letter-spacing:.02em}
+.ft__nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.ft__cr{margin-top:52px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:11.5px;color:rgba(255,255,255,.56);font-family:var(--fn);letter-spacing:.14em}
+
+/* ─────────── スマホ下部の呼び出しバー ─────────── */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1.25fr 1fr;background:var(--surface);border-top:1px solid var(--line)}
+.dock a{display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;padding:15px 8px;font-weight:500;font-size:14.5px;letter-spacing:.05em;line-height:1.3}
+.dock a svg{width:17px;height:17px;flex:none}
+.dock__tel{background:var(--deep);color:#fff}
+.dock__mail{color:var(--ink)}
+@media(min-width:900px){.dock{display:none}}
+
+/* ─────────── 出現演出 ─────────── */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.is-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1!important;transform:none!important;transition:none}
+}
+@media print{
+  .hd,.dock,.hint,.draft{display:none!important}
+  .sec{padding-block:24px;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════ 叩き台バー ══════════ -->
+<div class="draft">
+  <div class="wrap draft__in">
+    <p><span class="nw">ご依頼を</span><span class="nw">いただく</span><span class="nw">前に</span><span class="nw">お作りした</span><b><span class="nw">叩き</span>台</b><span class="nw">です。</span><b><span class="nw">分からない</span><span class="nw">数字は</span>〔　<span class="nw">〕のまま</span></b><span class="nw">にして</span><span class="nw">おります。</span><b class="pv">仮</b>の<span class="nw">付いた</span><span class="nw">場所は、</span><span class="nw">お話を</span><span class="nw">伺ってから</span><span class="nw">入れ替えます。</span></p>
+    <button type="button" id="notesBtn" aria-pressed="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span id="notesLbl">制作メモを表示</span>
+    </button>
+  </div>
+</div>
+<!-- ══════════ ヘッダー（型C：ナビなし・社名左・右に電話だけ） ══════════ -->
+<header class="hd">
+  <div class="wrap hd__in">
+    <a class="brand" href="#top">
+      <b>正力設備</b>
+      <small>川口市木曽呂 ／ 給排水設備工事</small>
+    </a>
+    <a class="hd__tel" href="tel:0482968978">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      <span>048-296-8978<em>水道・給湯器のご相談</em></span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ══════════ ヒーロー（写真は置かない） ══════════ -->
+<section class="hero">
+  <div class="hero__in">
+    <p class="hero__place"><span class="nw">埼玉県川口市大字木曽呂</span> ／ <span class="nw">給排水設備工事</span></p>
+
+    <p class="hero__cred"><b><span class="nw">川口市</span> <span class="nw">指定給水装置工事事業者</span></b>／ <b><span class="nw">川口市</span> <span class="nw">指定排水設備工事店</span></b><span class="nw">（市内工事店）</span></p>
+
+    <h1><span class="nw">お湯が</span><span class="nw">出ない、</span><br>の<span class="nw">日に。</span></h1>
+
+    <p class="hero__lead"><span class="nw">給湯器の</span><span class="nw">取り替えを</span><span class="nw">中心に、</span><span class="nw">トイレ・</span><span class="nw">浴室・</span><span class="nw">洗面台の</span><span class="nw">水まわり、</span><span class="nw">水漏れ・</span><span class="nw">地下漏水の</span><span class="nw">修繕まで</span><span class="nw">承ります。</span></p>
+    <p class="hero__small"><span class="nw">蛇口ひとつ、</span><span class="nw">1か</span><span class="nw">所からの</span><span class="nw">ご依頼でも</span><span class="nw">伺います。</span></p>
+
+    <ul class="svc">
+      <li><span class="nw">給湯器</span></li>
+      <li><span class="nw">トイレ</span></li>
+      <li><span class="nw">浴室シャワー</span></li>
+      <li><span class="nw">洗面台</span></li>
+      <li><span class="nw">漏水</span></li>
+    </ul>
+
+    <div class="hero__cta">
+      <a class="btn btn--tel" href="tel:0482968978">
+        <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>048-296-8978</b>
+        <span>お電話でのご相談・お宅へ伺うご依頼</span>
+      </a>
+      <p class="hero__hours"><span class="nw">受付</span>　<span class="blank">〔　〕</span><span class="nw">時〜</span><span class="blank">〔　〕</span>時</p>
+      <p class="hero__hours"><span class="nw">お急ぎの</span><span class="nw">ときも、</span><span class="nw">まず</span><span class="nw">お電話ください。</span><span class="nw">伺える</span><span class="nw">日をその</span><span class="nw">場で</span><span class="nw">お伝え</span><span class="nw">いたします。</span></p>
+    </div>
+
+    <p class="hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span><b><span class="nw">この</span><span class="nw">叩き</span><span class="nw">台には、</span><span class="nw">写真を</span><span class="nw">1枚も</span><span class="nw">入れておりません。</span></b><span class="nw">川口市の</span><span class="nw">指定を</span><span class="nw">受けた</span><span class="nw">工事店である</span><span class="nw">ことを、</span><span class="nw">文字と</span><span class="nw">罫の</span><span class="nw">組み</span><span class="nw">方で</span><span class="nw">お見せして</span><span class="nw">おります。</span><span class="nw">写真を</span><span class="nw">お使いになりたい</span><span class="nw">場合は、</span><span class="nw">あとから</span><span class="nw">枠を</span><span class="nw">お作りできます。</span></span>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ 給湯器の取り替え ══════════ -->
+<section class="sec sec--white" id="heater">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">WATER HEATER</p>
+      <h2><span class="nw">給湯器の</span><br><span class="nw">取り替え</span></h2>
+      <p><span class="nw">お湯が</span><span class="nw">出ない、</span><span class="nw">点火しない、</span><span class="nw">給湯器から</span><span class="nw">音がする——そうした</span><span class="nw">ご連絡から、</span><span class="nw">号数の</span><span class="nw">確かめと</span><span class="nw">お取り替えまでを</span><span class="nw">承ります。</span><span class="nw">急な</span><span class="nw">お申し付けほど、</span><span class="nw">まず</span><span class="nw">お電話ください。</span></p>
+      <p class="provnote"><b><span class="nw">取り</span><span class="nw">扱いの</span><span class="nw">給湯器メーカー・</span><span class="nw">型番は、</span><span class="nw">御社の</span><span class="nw">仕入れ</span><span class="nw">先を</span><span class="nw">伺ってから</span><span class="nw">記します。</span></b><span class="nw">いまは</span><span class="nw">工事の</span><span class="nw">内容だけを</span><span class="nw">書いて</span><span class="nw">おります。</span></p>
+    </div>
+
+    <div class="works rv">
+      <article class="work">
+        <h3><span class="nw">給湯器の</span><span class="nw">交換</span><small>WATER HEATER</small></h3>
+        <p><span class="nw">いま</span><span class="nw">お使いの</span><span class="nw">給湯器と</span><span class="nw">同じ</span><span class="nw">号数への</span><span class="nw">取り替えのほか、</span><span class="nw">ご家族の</span><span class="nw">人数が</span><span class="nw">増えた・</span><span class="nw">お湯の</span><span class="nw">出が</span><span class="nw">悪いといった</span><span class="nw">ご相談から、</span><span class="nw">号数を</span><span class="nw">見直す</span><span class="nw">お取り替えも</span><span class="nw">承ります。</span></p>
+      </article>
+      <article class="work">
+        <h3><span class="nw">給排水設備工事</span><small>DRAIN</small></h3>
+        <p><span class="nw">給湯器の</span><span class="nw">入れ替えにあわせた</span><span class="nw">配管の</span><span class="nw">直し、</span><span class="nw">新設の</span><span class="nw">給水・</span><span class="nw">排水の</span><span class="nw">工事も、</span><b><span class="nw">川口市の</span><span class="nw">指定を</span><span class="nw">受けた</span><span class="nw">工事店として</span></b><span class="nw">あわせて</span><span class="nw">承ります。</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 号数と費用の目安 ══════════ -->
+<section class="sec sec--band" id="price">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">SIZE &amp; ESTIMATE</p>
+      <h2><span class="nw">号数と、</span><br><span class="nw">費用の</span><span class="nw">目安</span><span class="prov">仮</span></h2>
+      <p><span class="nw">給湯器は</span><span class="nw">号数</span><span class="nw">（お湯の</span><span class="nw">出る</span><span class="nw">量）と、</span><span class="nw">追いだき</span><span class="nw">機能の</span><span class="nw">有無で</span><span class="nw">金額が</span><span class="nw">変わります。</span><span class="nw">まずは</span><span class="nw">号数別の</span><span class="nw">目安です。</span></p>
+    </div>
+
+    <table class="htable rv">
+      <caption>給湯器の取り替え・号数別の目安</caption>
+      <thead>
+        <tr><th scope="col"><span class="nw">号数</span></th><th scope="col"><span class="nw">給湯のみ</span></th><th scope="col"><span class="nw">追いだき</span><span class="nw">付き</span></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><span class="nw">16号</span></th>
+          <td data-h="給湯のみ"><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></span><span class="rn"><span class="nw">＊器具の</span><span class="nw">型番で</span><span class="nw">変わります</span></span></td>
+          <td data-h="追いだき付き"><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></span><span class="rn"><span class="nw">＊器具の</span><span class="nw">型番で</span><span class="nw">変わります</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row"><span class="nw">20号</span></th>
+          <td data-h="給湯のみ"><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></span><span class="rn"><span class="nw">＊器具の</span><span class="nw">型番で</span><span class="nw">変わります</span></span></td>
+          <td data-h="追いだき付き"><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></span><span class="rn"><span class="nw">＊器具の</span><span class="nw">型番で</span><span class="nw">変わります</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row"><span class="nw">24号</span></th>
+          <td data-h="給湯のみ"><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></span><span class="rn"><span class="nw">＊器具の</span><span class="nw">型番で</span><span class="nw">変わります</span></span></td>
+          <td data-h="追いだき付き"><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></span><span class="rn"><span class="nw">＊器具の</span><span class="nw">型番で</span><span class="nw">変わります</span></span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-note rv"><span class="nw">本体</span><span class="nw">〔込み／</span><span class="nw">別〕</span></p>
+
+    <h3 class="sub2"><span class="nw">ほかの</span><span class="nw">器具の</span><span class="nw">目安</span></h3>
+    <ul class="itemlist rv">
+      <li><span><b><span class="nw">トイレの</span><span class="nw">修理・</span><span class="nw">交換</span></b><small><span class="nw">温水洗浄便座の</span><span class="nw">取り付けをふくむ</span></small></span><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span><span class="rn"><span class="nw">＊便器の</span><span class="nw">種類で</span><span class="nw">変わります</span></span></span></li>
+      <li><span><b><span class="nw">浴室・</span><span class="nw">シャワーの</span><span class="nw">修理と</span><span class="nw">工事</span></b><small><span class="nw">水栓の</span><span class="nw">交換をふくむ</span></small></span><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span><span class="rn"><span class="nw">＊拝見してから</span><span class="nw">お伝えします</span></span></span></li>
+      <li><span><b><span class="nw">洗面台の</span><span class="nw">交換</span></b><small><span class="nw">浄水器の</span><span class="nw">取り付けも</span><span class="nw">ご相談ください</span></small></span><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span><span class="rn"><span class="nw">＊拝見してから</span><span class="nw">お伝えします</span></span></span></li>
+      <li><span><b><span class="nw">水漏れ・</span><span class="nw">地下漏水の</span><span class="nw">修繕</span></b><small><span class="nw">宅内配管・</span><span class="nw">地下埋設管をふくむ</span></small></span><span class="amt"><span class="blank">〔　　　〕</span><span class="nw">円〜</span><span class="rn"><span class="nw">＊漏れている</span><span class="nw">場所で</span><span class="nw">変わります</span></span></span></li>
+    </ul>
+
+    <p class="after-note rv"><span class="nw">お宅に</span><span class="nw">お伺いして、</span><span class="nw">号数と</span><span class="nw">状態を</span><span class="nw">確かめたうえで</span><span class="nw">金額を</span><span class="nw">お伝えします。</span></p>
+  </div>
+</section>
+
+<!-- ══════════ トイレ・浴室・洗面 ══════════ -->
+<section class="sec sec--white" id="fixtures">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">TOILET</p>
+      <h2><span class="nw">トイレ・</span><span class="nw">浴室・</span><br><span class="nw">洗面台</span></h2>
+      <p><span class="nw">給湯器だけでなく、</span><span class="nw">水まわりの</span><span class="nw">一式を</span><span class="nw">承ります。</span><span class="nw">1か</span><span class="nw">所からの</span><span class="nw">ご依頼で</span><span class="nw">構いません。</span></p>
+    </div>
+
+    <div class="works rv">
+      <article class="work">
+        <h3><span class="nw">トイレの</span><span class="nw">修理・</span><span class="nw">交換</span><small>TOILET</small></h3>
+        <p><span class="nw">水が</span><span class="nw">止まらない、</span><span class="nw">流れが</span><span class="nw">悪いといった</span><span class="nw">修理から、</span><span class="nw">便器その</span><span class="nw">ものの</span><span class="nw">お取り替え、</span><span class="nw">温水洗浄便座の</span><span class="nw">取り付けまで</span><span class="nw">承ります。</span></p>
+      </article>
+      <article class="work">
+        <h3><span class="nw">浴室・</span><span class="nw">シャワーの</span><span class="nw">修理と</span><span class="nw">工事</span><small>BATH</small></h3>
+        <p><span class="nw">シャワー</span><span class="nw">水栓の</span><span class="nw">水漏れ・</span><span class="nw">お湯の</span><span class="nw">温度が</span><span class="nw">安定しないといった</span><span class="nw">ご相談を</span><span class="nw">承ります。</span></p>
+      </article>
+      <article class="work">
+        <h3><span class="nw">洗面台の</span><span class="nw">交換</span><small>WASHBASIN</small></h3>
+        <p><span class="nw">洗面台の</span><span class="nw">入れ替え、</span><span class="nw">蛇口の</span><span class="nw">交換を</span><span class="nw">承ります。</span><span class="nw">あわせて</span><span class="nw">浄水器の</span><span class="nw">取り付けも</span><span class="nw">ご相談ください。</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 漏水と給排水 ══════════ -->
+<section class="sec sec--band" id="leak">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">LEAK</p>
+      <h2><span class="nw">漏水と、</span><br><span class="nw">給排水設備工事</span></h2>
+      <p><span class="nw">水道メーターが</span><span class="nw">回り</span><span class="nw">続けている、</span><span class="nw">庭の</span><span class="nw">一角だけ</span><span class="nw">地面が</span><span class="nw">湿っている——そうした</span><span class="nw">ご相談から、</span><span class="nw">地下の</span><span class="nw">漏水を</span><span class="nw">確かめる</span><span class="nw">工事まで</span><span class="nw">承ります。</span></p>
+      <p class="provnote"><b><span class="nw">難しい</span><span class="nw">部類に</span><span class="nw">入る</span><span class="nw">地下の</span><span class="nw">漏水修繕も、</span><span class="nw">これまでに</span><span class="nw">お受けした</span><span class="nw">実績が</span><span class="nw">ございます。</span></b><span class="nw">ここでは</span><span class="nw">工事の</span><span class="nw">内容だけを</span><span class="nw">ご案内して</span><span class="nw">おります。</span></p>
+    </div>
+
+    <div class="works rv">
+      <article class="work">
+        <h3><span class="nw">水漏れ・</span><span class="nw">地下漏水の</span><span class="nw">修繕</span><small>LEAK</small></h3>
+        <p><span class="nw">蛇口・</span><span class="nw">配管からの</span><span class="nw">水漏れのほか、</span><span class="nw">地面の</span><span class="nw">下で</span><span class="nw">漏れている</span><span class="nw">場合の</span><span class="nw">調査・</span><span class="nw">修繕も</span><span class="nw">承ります。</span><b><span class="nw">メーターの</span><span class="nw">動きで</span><span class="nw">漏れの</span><span class="nw">有無を</span><span class="nw">確かめ、</span><span class="nw">漏れている</span><span class="nw">場所は</span><span class="nw">お宅を</span><span class="nw">拝見して</span><span class="nw">探します。</span></b></p>
+      </article>
+      <article class="work">
+        <h3><span class="nw">給排水設備工事</span><small>DRAIN</small></h3>
+        <p><span class="nw">給水管の</span><span class="nw">新設・</span><span class="nw">引き</span><span class="nw">直し、</span><span class="nw">排水設備の</span><span class="nw">新設・</span><span class="nw">修繕を、</span><b><span class="nw">川口市の</span><span class="nw">指定を</span><span class="nw">受けた</span><span class="nw">工事店として</span></b><span class="nw">承ります。</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 施工事例 ══════════ -->
+<section class="sec sec--white" id="cases">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">WORKS</p>
+      <h2><span class="nw">施工事例</span><span class="prov">仮</span></h2>
+      <p><span class="nw">これまでに</span><span class="nw">お手伝いさせて</span><span class="nw">いただいた</span><span class="nw">工事の</span><span class="nw">形を、</span><span class="nw">6件分の</span><span class="nw">枠で</span><span class="nw">お示しして</span><span class="nw">おります。</span></p>
+      <p class="provnote"><b><span class="nw">ここに</span><span class="nw">並んでいる</span><span class="nw">6件は、</span><span class="nw">形を</span><span class="nw">お見せする</span><span class="nw">ための</span><span class="nw">仮の</span><span class="nw">枠です。</span></b><span class="nw">工事の</span><span class="nw">種類だけこちらで</span><span class="nw">置いてあり、</span><span class="nw">建物・</span><span class="nw">施工年月は</span><span class="nw">空欄です。</span><span class="nw">実際に</span><span class="nw">お手伝いされた</span><span class="nw">工事に、</span><span class="nw">一件ずつ</span><span class="nw">入れ替えます。</span><span class="nw">費用・</span><span class="nw">工期は、</span><span class="nw">載せたい</span><span class="nw">事例だけ</span><span class="nw">お入れします。</span></p>
+    </div>
+
+    <div class="cases rv">
+      <article class="case">
+        <h3><span class="nw">給湯器の</span><span class="nw">交換</span><small><span class="nw">号数の</span><span class="nw">見直し</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">トイレの</span><span class="nw">交換</span><small><span class="nw">温水洗浄便座の</span><span class="nw">取り付け</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">浴室シャワーの</span><span class="nw">修理</span><small><span class="nw">水栓の</span><span class="nw">交換</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">洗面台の</span><span class="nw">交換</span><small><span class="nw">設置工事</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">地下漏水の</span><span class="nw">修繕</span><small><span class="nw">埋設管の</span><span class="nw">直し</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">給排水設備工事</span><small><span class="nw">給水管の</span><span class="nw">引き</span><span class="nw">直し</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+    </div>
+
+    <p class="hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span><b><span class="nw">現場で</span><span class="nw">スマホで</span><span class="nw">撮った</span><span class="nw">写真を</span><span class="nw">お送り</span><span class="nw">いただければ、</span><span class="nw">こちらでこの</span><span class="nw">形に</span><span class="nw">整えて</span><span class="nw">追加いたします。</span></b><span class="nw">文章を</span><span class="nw">書いて</span><span class="nw">いただく</span><span class="nw">必要はございません。</span><span class="nw">費用・</span><span class="nw">工期は、</span><span class="nw">載せたい</span><span class="nw">事例だけ</span><span class="nw">行を</span><span class="nw">足せます。</span></span>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ 会社概要 ══════════ -->
+<section class="sec sec--band" id="about">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">PROFILE</p>
+      <h2><span class="nw">会社概要</span></h2>
+    </div>
+
+    <table class="profile rv">
+      <tbody>
+        <tr><th scope="row"><span class="nw">屋号</span></th><td><b><span class="nw">有限会社正力設備</span></b><span class="nw">（しょうりきせつび）</span></td></tr>
+        <tr><th scope="row"><span class="nw">所在地</span></th><td>〒333-0831<br><span class="nw">埼玉県川口市大字木曽呂</span>829-5</td></tr>
+        <tr><th scope="row"><span class="nw">電話番号</span></th><td><a class="telk" href="tel:0482968978">048-296-8978</a></td></tr>
+        <tr><th scope="row"><span class="nw">指定</span></th><td><span class="nw">川口市</span> <span class="nw">指定給水装置工事事業者</span><br><span class="nw">川口市</span> <span class="nw">指定排水設備工事店</span><span class="nw">（市内工事店）</span></td></tr>
+        <tr><th scope="row"><span class="nw">主な</span><span class="nw">事業</span></th><td><span class="nw">給湯器の</span><span class="nw">交換・</span><span class="nw">トイレ／</span><span class="nw">浴室／</span><span class="nw">洗面台の</span><span class="nw">工事・</span><span class="nw">水漏れ／</span><span class="nw">地下漏水の</span><span class="nw">修繕・</span><span class="nw">給排水設備工事</span></td></tr>
+        <tr><th scope="row"><span class="nw">対応エリア</span></th><td><span class="nw">川口市</span></td></tr>
+      </tbody>
+    </table>
+
+    <p class="hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span><b><span class="nw">屋号・</span><span class="nw">所在地・</span><span class="nw">電話・</span><span class="nw">法人番号・</span><span class="nw">指定の</span><span class="nw">内容は、</span><span class="nw">川口市上下水道局の</span><span class="nw">名簿と</span><span class="nw">法人番号公表サイトから</span><span class="nw">確かめた</span><span class="nw">ものです。</span></b><span class="nw">代表者の</span><span class="nw">お名前・</span><span class="nw">創業の</span><span class="nw">年・</span><span class="nw">建設業の</span><span class="nw">許可は、</span><span class="nw">確かな</span><span class="nw">出典が</span><span class="nw">見つからなかった</span><span class="nw">ため</span><span class="nw">掲載しておりません。</span><span class="nw">伺ってから</span><span class="nw">正しく</span><span class="nw">入れます。</span></span>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ 会社の場所 ══════════ -->
+<section class="sec sec--white" id="access">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">ACCESS</p>
+      <h2><span class="nw">正力設備の</span><span class="nw">場所</span></h2>
+      <p><span class="nw">川口市大字木曽呂に</span><span class="nw">ございます。</span><span class="nw">ご相談は、</span><span class="nw">お電話で</span><span class="nw">承って</span><span class="nw">おります。</span></p>
+    </div>
+
+    <div class="access rv">
+      <div class="access__info">
+        <p class="access__addr"><span class="lbl">ADDRESS</span>〒333-0831<br><span class="nw">埼玉県川口市大字木曽呂</span>829-5</p>
+
+        <dl class="access__rows">
+          <div><dt><span class="nw">お電話</span></dt><dd><a class="telk" href="tel:0482968978">048-296-8978</a></dd></div>
+          <div><dt><span class="nw">目印</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+        </dl>
+
+        <div class="access__btns">
+          <a class="btn btn--line" href="https://www.google.com/maps/dir/?api=1&amp;destination=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E5%8F%A3%E5%B8%82%E5%A4%A7%E5%AD%97%E6%9C%A8%E6%9B%BD%E5%91%82829-5" target="_blank" rel="noopener">道順を調べる</a>
+          <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%AD%A3%E5%8A%9B%E8%A8%AD%E5%82%99%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E5%8F%A3%E5%B8%82%E5%A4%A7%E5%AD%97%E6%9C%A8%E6%9B%BD%E5%91%82829-5" target="_blank" rel="noopener">地図アプリで開く</a>
+        </div>
+      </div>
+
+      <div class="access__frame">
+        <iframe title="正力設備の所在地（Googleマップ）" src="https://maps.google.com/maps?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E5%8F%A3%E5%B8%82%E5%A4%A7%E5%AD%97%E6%9C%A8%E6%9B%BD%E5%91%82829-5&amp;hl=ja&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ お伺いしている地域 ══════════ -->
+<section class="sec sec--band" id="area">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">AREA</p>
+      <h2><span class="nw">お伺いしている</span><span class="nw">地域</span><span class="prov">仮</span></h2>
+      <p><span class="nw">川口市を</span><span class="nw">中心に</span><span class="nw">承って</span><span class="nw">おります。</span><span class="nw">下記以外の</span><span class="nw">地域でも、</span><span class="nw">まずは</span><span class="nw">お電話で</span><span class="nw">ご相談ください。</span></p>
+      <p class="provnote"><b><span class="nw">点線で</span><span class="nw">囲った</span><span class="nw">市は、</span><span class="nw">川口市の</span><span class="nw">隣接市からこちらで</span><span class="nw">推測した</span><span class="nw">ものです。</span></b><span class="nw">実際にどこまで</span><span class="nw">お伺いになるかを</span><span class="nw">伺って</span><span class="nw">直します。</span></p>
+    </div>
+    <ul class="area rv">
+      <li><span class="nw">埼玉県</span> <span class="nw">川口市</span></li>
+      <li class="is-blank">〔 <span class="nw">蕨市</span> 〕</li>
+      <li class="is-blank">〔 <span class="nw">戸田市</span> 〕</li>
+      <li class="is-blank">〔 <span class="nw">さいたま</span>市 〕</li>
+      <li class="is-blank">〔 <span class="nw">草加市</span> 〕</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ よくあるご質問 ══════════ -->
+<section class="sec sec--white" id="faq">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">QUESTIONS</p>
+      <h2><span class="nw">よく</span><span class="nw">いただく</span><span class="nw">ご質問</span></h2>
+    </div>
+
+    <div class="faq rv">
+      <details open>
+        <summary><span class="nw">急ぎの</span><span class="nw">ときは、</span><span class="nw">どうすればよいですか。</span></summary>
+        <p class="faq__a"><b><span class="nw">まず</span><span class="nw">お電話ください。</span><span class="nw">伺える</span><span class="nw">日をその</span><span class="nw">場で</span><span class="nw">お伝え</span><span class="nw">いたします。</span></b>今<span class="nw">お使いの</span><span class="nw">給湯器の</span><span class="nw">号数・</span><span class="nw">メーカーが</span><span class="nw">分かりますと、</span><span class="nw">そのぶん</span><span class="nw">早く</span><span class="nw">ご用意ができます。</span></p>
+      </details>
+      <details open>
+        <summary><span class="nw">給湯器の</span><span class="nw">号数が</span><span class="nw">分かりません。</span><span class="nw">大丈夫ですか。</span></summary>
+        <p class="faq__a"><span class="nw">号数は、</span><span class="nw">給湯器本体の</span><span class="nw">側面や</span><span class="nw">下側の</span><span class="nw">ラベルに</span><span class="nw">記されて</span><span class="nw">おります。</span><span class="nw">分からない</span><span class="nw">場合は、</span><span class="nw">伺ってから</span><span class="nw">確かめます。</span></p>
+      </details>
+      <details open>
+        <summary><span class="nw">トイレ</span><span class="nw">1か</span><span class="nw">所の</span><span class="nw">修理の</span><span class="nw">ような、</span><span class="nw">小さな</span><span class="nw">工事でも</span><span class="nw">頼めますか。</span></summary>
+        <p class="faq__a"><span class="nw">はい、</span><span class="nw">承ります。</span><span class="nw">蛇口の</span><span class="nw">水漏れ、</span><span class="nw">トイレの</span><span class="nw">不調といった</span><span class="nw">ご依頼も、</span><span class="nw">1か</span><span class="nw">所から</span><span class="nw">お受けして</span><span class="nw">おります。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">指定工事店でないと、</span><span class="nw">できない</span><span class="nw">工事がある</span><span class="nw">のですか。</span></summary>
+        <p class="faq__a"><span class="nw">はい。</span><span class="nw">道路の</span><span class="nw">本管から</span><span class="nw">分かれて、</span><span class="nw">お宅の</span><span class="nw">蛇口までの</span><span class="nw">給水装置の</span><span class="nw">工事と、</span><span class="nw">排水設備の</span><span class="nw">工事には、</span><b><span class="nw">市の</span><span class="nw">指定を</span><span class="nw">受けた</span><span class="nw">工事店である</span><span class="nw">ことが</span><span class="nw">必要です。</span></b><span class="nw">正力設備は、</span><span class="nw">川口市の</span><span class="nw">給水装置工事事業者、</span><span class="nw">排水設備指定工事店として、</span><span class="nw">どちらの</span><span class="nw">指定も</span><span class="nw">受けて</span><span class="nw">おります。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">水道メーターが</span><span class="nw">回り</span><span class="nw">続けています。</span><span class="nw">どうすればよいですか。</span></summary>
+        <p class="faq__a"><span class="nw">家じゅうの</span><span class="nw">蛇口を</span><span class="nw">閉めても</span><span class="nw">メーターが</span><span class="nw">動いていれば、</span><span class="nw">どこかで</span><span class="nw">水が</span><span class="nw">漏れて</span><span class="nw">おります。</span><b><span class="nw">まずは</span><span class="nw">お電話ください。</span></b><span class="nw">地面の</span><span class="nw">下で</span><span class="nw">漏れている</span><span class="nw">場合も</span><span class="nw">ございます</span><span class="nw">ので、</span><span class="nw">拝見して</span><span class="nw">確かめます。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">見積りだけでも</span><span class="nw">お願いできますか。</span></summary>
+        <p class="faq__a"><span class="nw">はい。</span><span class="nw">お伺いして</span><span class="nw">拝見したうえで、</span><span class="nw">金額を</span><span class="nw">お伝え</span><span class="nw">いたします。</span><span class="nw">拝見と</span><span class="nw">お見積りの</span><span class="nw">費用は</span><span class="blank">〔　　〕</span><span class="nw">です。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">川口市以外でも</span><span class="nw">来てもらえますか。</span></summary>
+        <p class="faq__a"><span class="nw">川口市を</span><span class="nw">中心に</span><span class="nw">承って</span><span class="nw">おります。</span><span class="nw">近隣の</span><span class="nw">市でも</span><span class="nw">ご相談いただけます</span><span class="nw">ので、</span><span class="nw">まずは</span><span class="nw">お電話ください。</span></p>
+      </details>
+    </div>
+    <p class="hint"><span><b><span class="nw">ご質問と</span><span class="nw">答えは、</span><span class="nw">給湯器と</span><span class="nw">水道の</span><span class="nw">工事で</span><span class="nw">一般によくある</span><span class="nw">ご相談をもとに、</span><span class="nw">こちらで</span><span class="nw">下書きした</span><span class="nw">ものです。</span></b><span class="nw">実際によく</span><span class="nw">お受けになる</span><span class="nw">ご質問を</span><span class="nw">伺って、</span><span class="nw">入れ替えます。</span></span></p>
+  </div>
+</section>
+
+<!-- ══════════ お問い合わせ ══════════ -->
+<section class="sec sec--deep" id="contact">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">CONTACT</p>
+      <h2><span class="nw">給湯器・</span><span class="nw">水道の</span><span class="nw">ことは、</span><br><span class="nw">まず</span><span class="nw">お電話で</span><span class="nw">ご相談ください</span></h2>
+      <p><span class="nw">「お湯が</span><span class="nw">出ないだけ」</span><span class="nw">「号数が</span><span class="nw">分からない」という</span><span class="nw">段階でも</span><span class="nw">構いません。</span><span class="nw">拝見して、</span><span class="nw">いまの</span><span class="nw">状態を</span><span class="nw">お伝え</span><span class="nw">いたします。</span></p>
+    </div>
+
+    <div class="contact rv">
+      <div class="contact__card">
+        <h3><span class="nw">お電話での</span><span class="nw">お問い合わせ</span></h3>
+        <p><span class="nw">いちばん</span><span class="nw">早く</span><span class="nw">お答えできます。</span><span class="nw">伺うのは、</span><span class="nw">ご住所・</span><span class="nw">気になっている</span><span class="nw">場所・</span><span class="nw">いつごろからか、</span>の<span class="nw">三つです。</span><span class="nw">その</span><span class="nw">場で</span><span class="nw">日取りを</span><span class="nw">お決め</span><span class="nw">いただく</span><span class="nw">必要はございません。</span></p>
+        <a class="contact__tel" href="tel:0482968978">
+          <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>048-296-8978</b>
+          <span>正力設備（埼玉県川口市大字木曽呂829-5）</span>
+        </a>
+        <dl class="contact__hours">
+          <div><dt><span class="nw">お電話の</span><span class="nw">受付</span></dt><dd><span class="blank">〔　〕</span><span class="nw">時〜</span><span class="blank">〔　　〕</span>時</dd></div>
+          <div><dt><span class="nw">定休日</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <p class="hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span><b><span class="nw">LINE公式・</span><span class="nw">Instagram・</span><span class="nw">X・</span><span class="nw">Facebookは、</span><span class="nw">いずれも</span><span class="nw">見つかりませんでした。</span></b><span class="nw">連絡の</span><span class="nw">窓口は、</span><span class="nw">いまは</span><span class="nw">お電話のみです。</span><span class="nw">お作りになりたい</span><span class="nw">場合は</span><span class="nw">ご相談ください。</span></span>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ フッター ══════════ -->
+<footer class="ft">
+  <div class="wrap ft__in">
+    <div>
+      <b>正力設備</b>
+      <address>
+        〒333-0831 埼玉県川口市大字木曽呂829-5<br>
+        TEL <a href="tel:0482968978">048-296-8978</a><br>
+        給排水設備工事／川口市 指定工事店
+      </address>
+    </div>
+    <nav class="ft__nav" aria-label="フッター">
+      <a href="#heater">給湯器の取り替え</a>
+      <a href="#price">号数と費用の目安</a>
+      <a href="#fixtures">トイレ・浴室・洗面</a>
+      <a href="#leak">漏水と給排水</a>
+      <a href="#cases">施工事例</a>
+      <a href="#about">会社概要</a>
+      <a href="#access">会社の場所</a>
+      <a href="#area">お伺いしている地域</a>
+      <a href="#faq">よくあるご質問</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+  <div class="wrap"><p class="ft__cr">&copy; SHORIKI SETSUBI</p></div>
+</footer>
+
+<!-- スマホ下部の呼び出しバー -->
+<div class="dock">
+  <a class="dock__tel" href="tel:0482968978">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    お電話する
+  </a>
+  <a class="dock__mail" href="#contact">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+    お問い合わせ
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "正力設備",
+  "legalName": "有限会社正力設備",
+  "description": "埼玉県川口市大字木曽呂の水道工事店。川口市 指定給水装置工事事業者・川口市 指定排水設備工事店として、給湯器の取り替え、トイレ・浴室・洗面台の工事、水漏れ・地下漏水の修繕を承っています。",
+  "telephone": "+81-48-296-8978",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "333-0831",
+    "addressCountry": "JP",
+    "addressRegion": "埼玉県",
+    "addressLocality": "川口市",
+    "streetAddress": "大字木曽呂829-5"
+  },
+  "areaServed": { "@type": "City", "name": "川口市" },
+  "knowsAbout": ["給湯器の交換", "水道工事", "給水装置工事", "排水設備工事", "トイレの修理・交換", "浴室・シャワーの工事", "洗面台の交換", "水漏れの修理", "地下漏水の修繕"]
+}
+</script>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(function(el){ el.classList.add('is-in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  els.forEach(function(el){ io.observe(el); });
+  requestAnimationFrame(function(){
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top < innerHeight) el.classList.add('is-in');
+    });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var btn = document.getElementById('notesBtn'), lbl = document.getElementById('notesLbl'), root = document.documentElement;
+  function set(on){
+    root.classList.toggle('notes', on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    lbl.textContent = on ? 'お客様に見える状態で見る' : '制作メモを表示する';
+    try { localStorage.setItem('shoriki-notes', on ? '1' : '0'); } catch (e) {}
+  }
+  var saved = '1';
+  try { saved = localStorage.getItem('shoriki-notes') || '1'; } catch (e) {}
+  set(saved === '1');
+  btn.addEventListener('click', function(){ set(!root.classList.contains('notes')); });
+})();
+</script>
+</body>
+</html>

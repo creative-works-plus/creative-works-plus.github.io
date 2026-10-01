@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 契約前のため検索エンジンに出さない。ご契約いただいたらこの2行を削除する -->
+<meta name="robots" content="noindex, nofollow">
+<!-- open-log:start サイトが開かれたかの記録（契約前の叩き台だけ。ご契約いただいたら noindex の2行と一緒に削除する）→ Claude/docs/サイト開封の記録.md -->
+<script>
+(function(){try{
+  var L=location,N=navigator,S=window.localStorage,ua=N.userAgent,D=document;
+  if(L.hostname!=="creative-works-plus.github.io"||N.webdriver||/bot|crawl|spider|slurp|lighthouse|headless|pagerenderer|externalhit/i.test(ua))return;
+  var rh="",rp="";try{var u=new URL(D.referrer);rh=u.hostname;rp=u.pathname;}catch(e){}
+  if(/[?&]nolog\b/.test(L.search)||/(^|\.)google\.(com|co\.jp)$/.test(rh)||(rh===L.hostname&&/^\/restaurant-sites\/(sales\/|reform-list\/|index\.html$|$)/.test(rp)))S.setItem("cwp_staff","1");
+  if(S.getItem("cwp_staff"))return;
+  var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"";}catch(e){}
+  if(tz&&tz!=="Asia/Tokyo")return;
+  var v=S.getItem("cwp_vid");if(!v){v=Math.random().toString(36).slice(2,10);S.setItem("cwp_vid",v);}
+  var d=/iPhone|iPod/.test(ua)?"iPhone":(/iPad/.test(ua)||(/Macintosh/.test(ua)&&N.maxTouchPoints>1))?"iPad":/Android/.test(ua)?"Android":"PC";
+  var a=/\bLine\//.test(ua)?"LINE":/Instagram/.test(ua)?"Instagram":/FBAN|FBAV/.test(ua)?"Facebook":"";
+  var q="https://script.google.com/macros/s/AKfycbxZS01VRTnOmXFSFJHHMEj4ldINTl6C6wY5esP-eJbTv8z5FGAllPmMqc6sS7LMM6-BNg/exec?p="+encodeURIComponent(L.pathname)+"&r="+encodeURIComponent(rh===L.hostname?rp:rh)+"&d="+d+"&a="+a+"&w="+screen.width+"&v="+v,t=0,done=0;
+  function go(){if(!done){done=1;new Image().src=q;}}
+  function arm(){clearTimeout(t);if(D.visibilityState!=="hidden")t=setTimeout(go,4000);}
+  D.addEventListener("visibilitychange",arm);arm();
+}catch(e){}})();
+</script>
+<!-- open-log:end -->
+
+<title>山本造園土木 - 公式サイト｜栃木県下野市 造園・外構</title>
+<meta name="description" content="栃木県下野市の造園・外構の会社。個人のお宅の庭づくり、花壇、塀と垣根、庭木の剪定と伐採、年間の草取り・芝刈りまで承ります。小さなお手入れのご相談も承ります。">
+<meta name="theme-color" content="#1F2A1A">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="山本造園土木｜下野市の造園・外構">
+<meta property="og:description" content="庭をつくる、整える、守る。下野市の造園・外構の会社が、お庭づくりから年間の手入れまで承ります。">
+<meta property="og:locale" content="ja_JP">
+<!-- og:image は公開時に絶対URLへ差し替える（例：https://～/yamamoto-zoen/images/ogp.jpg） -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231F2A1A'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='36' font-family='serif' fill='%23ffffff'%3E%E5%B1%B1%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Spectral:wght@400;500;600&display=swap">
+
+<style>
+/* ─────────── トークン（山本造園土木：墨緑の一色・若葉は罫と小さな印だけ） ─────────── */
+:root{
+  --deep:#1F2A1A;          /* 墨緑：ブランドの一色 */
+  --deep-2:#2D3B27;
+  --accent:#A8B83A;        /* 若葉：濃い地の上と罫だけ（白地の文字には使わない） */
+  --accent-ink:#5E6B14;    /* 若葉の文字用（白地で 5.6:1／帯の上で 4.9:1） */
+  --memo:#CB8B1E;          /* 制作メモ層の色（デザインには使わない） */
+  --memo-ink:#7A5310;
+  --ink:#1B2217;
+  --sub:#3E4639;
+  --muted:#566050;         /* 地で 6.4:1／帯で 5.5:1 */
+  --ground:#FAFBF7;
+  --band:#E8ECE0;
+  --surface:#FFFFFF;
+  --line:#D5DBC8;
+  --line-2:#BFC8AE;
+  --rule:#1F2A1A;
+
+  --w:1200px;              /* ヘッダー・ヒーロー・章をこの1つの幅にそろえる */
+  --pad:clamp(16px,4.4vw,52px);
+  --sec-y:clamp(80px,8.5vw,116px);
+
+  --fd:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+  --fb:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --fn:"Spectral","Noto Serif JP",serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ground);color:var(--ink);overflow-x:hidden;
+  font-family:var(--fb);font-size:16px;font-weight:400;line-height:1.98;
+  letter-spacing:.03em;text-wrap:pretty;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--fd);font-weight:500;line-height:1.62;margin:0;letter-spacing:.05em;font-feature-settings:"palt"}
+h1,h2{font-weight:700}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+b,strong{font-weight:700}
+table{border-collapse:collapse}
+:focus-visible{outline:2px solid var(--accent-ink);outline-offset:3px}
+.nw{white-space:nowrap}
+.nwb{display:inline}
+/* 改行保護のspanは、必ずインラインのまま（text-indent も受け継がせない） */
+.nw{display:inline!important;text-indent:0}
+.sp-only{display:none}
+@media(max-width:640px){.sp-only{display:inline}}
+.wrap{width:min(100%,var(--w));margin-inline:auto;padding-inline:var(--pad)}
+
+/* ─────────── 叩き台バー（制作メモの出し入れ） ─────────── */
+.draft{background:#141B11;color:rgba(255,255,255,.82);font-size:12.5px;line-height:1.7}
+.draft__in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding-block:9px;min-height:40px}
+.draft p{flex:1;min-width:200px;margin:0}
+.draft b{color:#D9E58A;font-weight:700}
+.draft .pv{background:var(--memo);color:#241703;padding:1px 6px;font-size:11.5px;letter-spacing:.06em}
+.draft button{
+  font:inherit;font-weight:500;letter-spacing:.06em;cursor:pointer;white-space:nowrap;
+  background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:0;
+  padding:5px 14px;display:inline-flex;align-items:center;gap:8px;transition:background-color .2s,color .2s;
+}
+.draft button:hover{background:#fff;color:#141B11}
+.draft button svg{width:13px;height:13px}
+
+/* 制作メモ層：ボタンで隠せるもの */
+html:not(.notes) .hint,
+html:not(.notes) .prov,
+html:not(.notes) .provnote,
+html:not(.notes) .memo-only{display:none!important}
+.hint{
+  display:flex;gap:12px;align-items:flex-start;margin-top:36px;max-width:56em;
+  background:#FFF8E9;border-left:2px solid var(--memo);padding:14px 18px;
+  font-size:13px;line-height:1.9;color:#5B4111;letter-spacing:.02em;
+}
+.hint svg{width:15px;height:15px;flex:none;margin-top:4px;color:var(--memo-ink)}
+.hint b{color:#3D2B0B}
+.sec--deep .hint{background:rgba(203,139,30,.16);color:#F1DDB4}
+.sec--deep .hint b{color:#fff}
+.sec--deep .hint svg{color:var(--memo)}
+.prov{
+  display:inline-block;vertical-align:middle;margin-left:14px;position:relative;top:-.1em;
+  font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.1em;line-height:1;
+  color:var(--memo-ink);background:#FFF3DA;border:1px solid #E6CB91;padding:5px 9px;white-space:nowrap;
+}
+.provnote{font-family:var(--fb);font-size:13px;line-height:1.9;color:#6A4D13;background:#FFF8E9;border-left:2px solid var(--memo);padding:11px 16px;margin-top:18px;max-width:50em;letter-spacing:.02em}
+.provnote b{color:#3D2B0B}
+.sec--deep .provnote{color:#F1DDB4;background:rgba(203,139,30,.16)}
+.sec--deep .provnote b{color:#fff}
+/* 〔　　〕の空欄（制作メモを隠しても残す） */
+.blank{display:inline-block;min-width:4.5em;padding:0 .25em;background:#FFF0D0;border-bottom:1px dashed var(--memo);color:var(--memo-ink);font-weight:500;text-indent:0}
+.sec--deep .blank{background:rgba(203,139,30,.22);color:#F3C987}
+
+/* ─────────── ヘッダー（型B：社名は中央、ナビはその下の段） ─────────── */
+.hd{position:sticky;top:0;z-index:60;background:rgba(250,251,247,.97);border-bottom:1px solid var(--line)}
+.hd__in{display:flex;flex-direction:column;gap:0;padding-block:9px 0}
+.hd__row{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;justify-items:center}
+@media(min-width:1040px){.hd__row{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}}
+.brand{display:block;text-align:center;text-decoration:none;grid-column:1}
+@media(min-width:1040px){.brand{grid-column:2}}
+.brand b{display:block;font-family:var(--fd);font-weight:700;font-size:clamp(20px,4.4vw,25px);line-height:1.4;letter-spacing:.14em;color:var(--deep)}
+.brand small{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-top:3px}
+.hd__tel{
+  display:none;align-items:center;gap:10px;text-decoration:none;color:var(--deep);white-space:nowrap;
+  grid-column:3;justify-self:end;
+  font-family:var(--fn);font-weight:600;font-size:25px;letter-spacing:.01em;line-height:1.05;
+}
+.hd__tel svg{width:17px;height:17px;flex:none}
+.hd__tel em{font-style:normal;font-family:var(--fb);font-size:10.5px;font-weight:500;letter-spacing:.05em;color:var(--muted);display:block;line-height:1.5;margin-top:3px}
+@media(min-width:1040px){.hd__tel{display:flex}}
+.hd__nav{display:none;justify-content:center;flex-wrap:wrap;gap:0 clamp(14px,1.9vw,28px);font-size:13px;font-weight:500;letter-spacing:.04em;margin-top:7px}
+.hd__nav a{position:relative;text-decoration:none;color:var(--ink);padding-block:9px;white-space:nowrap}
+.hd__nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:var(--accent-ink);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.hd__nav a:hover::after{transform:scaleX(1)}
+@media(min-width:900px){.hd__nav{display:flex}}
+@media(max-width:899px){.hd__in{padding-bottom:9px}}
+
+/* ─────────── ボタン（長方形・細枠・右に矢印。電話だけ濃い色の塊） ─────────── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:space-between;gap:14px;
+  min-height:56px;padding:12px 24px;text-decoration:none;border-radius:0;
+  font-family:var(--fb);font-weight:500;font-size:14.5px;letter-spacing:.06em;line-height:1.5;
+  border:1px solid transparent;cursor:pointer;transition:background-color .25s,color .25s,border-color .25s;
+}
+.btn--line::after{
+  content:"";width:24px;height:7px;flex:none;margin-left:12px;background:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 7'%3E%3Cpath d='M0 6.5h23L17 .5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") no-repeat center/contain;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 7'%3E%3Cpath d='M0 6.5h23L17 .5' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E") no-repeat center/contain;
+  transition:transform .3s cubic-bezier(.2,.7,.2,1);
+}
+.btn:hover::after{transform:translateX(4px)}
+.btn--line{border-color:var(--deep);color:var(--ink);background:transparent}
+.btn--line:hover{background:var(--deep);color:#fff}
+.btn--tel{background:var(--deep);color:#fff;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;padding:14px 30px 15px 26px}
+.btn--tel b{font-family:var(--fn);font-weight:600;font-size:29px;letter-spacing:.02em;line-height:1.15;display:flex;align-items:center;gap:12px}
+.btn--tel b svg{width:17px;height:17px;flex:none}
+.btn--tel span{font-size:11.5px;font-weight:500;letter-spacing:.07em;opacity:.85}
+.btn--tel:hover{background:var(--deep-2)}
+
+/* ─────────── ヒーロー（写真は置かない。「つくる」「整える」「守る」を左に特大・大見出しとリードは右・電話はその下） ─────────── */
+.hero{padding-block:clamp(48px,6vw,88px) clamp(64px,7vw,100px)}
+.hero__in{width:min(100%,var(--w));margin-inline:auto;padding-inline:var(--pad);display:grid;grid-template-columns:minmax(0,1fr);row-gap:clamp(30px,4vw,40px)}
+@media(min-width:960px){
+  .hero__in{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,80px);align-items:stretch}
+  .trio{display:grid;grid-template-rows:repeat(3,minmax(0,1fr))}
+  .hero__trio{grid-column:1;grid-row:1}
+  .hero__txt{grid-column:2;grid-row:1}
+}
+.hero__place{font-size:12.5px;font-weight:500;letter-spacing:.12em;color:var(--sub)}
+.hero h1{font-size:clamp(26px,3.2vw,42px);line-height:1.62;letter-spacing:.045em;margin-top:clamp(20px,2.6vw,30px);color:var(--deep)}
+.hero__lead{font-size:16px;line-height:1.98;color:var(--ink);margin-top:18px;max-width:30em}
+.hero__note{margin-top:12px;font-size:15px;line-height:1.9;color:var(--sub);max-width:30em}
+.hero__cta{margin-top:clamp(22px,2.8vw,34px)}
+.hero__hours{font-size:15px;line-height:1.7;letter-spacing:.02em;color:var(--sub);margin-top:10px}
+
+/* 三語の縦積み（罫だけで区切る） */
+.trio{border-top:1px solid var(--deep)}
+.trio__row{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:clamp(16px,2.4vw,28px);padding:clamp(14px,2.4vw,24px) 0;border-bottom:1px solid var(--line-2)}
+.trio__w{font-family:var(--fd);font-weight:700;font-size:clamp(40px,4.4vw,64px);line-height:1.2;letter-spacing:.04em;color:var(--deep)}
+.trio__t{font-size:14px;line-height:1.85;color:var(--sub);letter-spacing:.03em}
+@media(min-width:960px){.trio__row{align-content:center;grid-template-columns:calc(clamp(40px,4.4vw,64px)*3.3) minmax(0,1fr)}}
+@media(max-width:959px){
+  .hero__txt{order:-1}
+}
+@media(max-width:640px){
+  .hero{padding-block:16px 40px}
+  .hero__in{row-gap:26px}
+  .hero h1{margin-top:12px}
+  .hero__lead{margin-top:8px}
+  .hero__note{margin-top:6px;font-size:14.5px}
+  .hero__cta{margin-top:12px}
+  .btn--tel{padding:11px 26px 12px 22px}
+  .hero__hours{margin-top:8px}
+}
+
+/* ─────────── 章 ─────────── */
+.sec{padding-block:var(--sec-y)}
+.sec--white{background:var(--surface)}
+.sec--band{background:var(--band)}
+.sec--deep{background:var(--deep);color:#fff}
+.sec__hd{display:grid;grid-template-columns:minmax(0,1fr);margin-bottom:clamp(42px,5vw,66px)}
+.sec__en{font-family:var(--fn);font-weight:500;font-size:13px;letter-spacing:.06em;color:var(--accent-ink);margin-bottom:15px;line-height:1.4}
+.sec--deep .sec__en{color:var(--accent)}
+.sec__hd h2{font-size:clamp(24px,2.8vw,36px);line-height:1.62;letter-spacing:.05em}
+.sec__hd>p:not(.sec__en){margin-top:20px;color:var(--sub);font-size:15.5px;line-height:2.1;max-width:40em}
+.sec--deep .sec__hd>p:not(.sec__en){color:rgba(255,255,255,.84)}
+@media(min-width:960px){
+  .sec__hd{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,80px);align-items:end}
+  .sec__en{grid-column:1/-1}
+  .sec__hd h2{grid-column:1}
+  .sec__hd>p:not(.sec__en){grid-column:2;margin-top:0}
+  .sec__hd>.after-note,.sec__hd>.provnote{grid-column:1/-1!important;margin-top:20px!important}
+}
+.after-note{font-size:14px;line-height:1.98;color:var(--sub);margin-top:14px;max-width:50em}
+
+/* ─────────── 庭の三つの仕事（欧文を大きく・和文は小さく。ヒーローとは逆の組み） ─────────── */
+.three{border-top:1px solid var(--rule);display:grid;grid-template-columns:minmax(0,1fr)}
+@media(min-width:900px){.three{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.three>article{padding:30px 0 34px;border-bottom:1px solid var(--line-2)}
+@media(min-width:900px){
+  .three>article{padding:34px clamp(20px,3vw,40px) 40px 0;border-bottom:0;border-right:1px solid var(--line-2)}
+  .three>article+article{padding-left:clamp(20px,3vw,40px)}
+  .three>article:last-child{border-right:0;padding-right:0}
+}
+.three__en{font-family:var(--fn);font-weight:500;font-size:clamp(40px,4.6vw,60px);line-height:1.1;margin-top:0;letter-spacing:.02em;color:var(--deep)}
+.three h3{font-size:19px;letter-spacing:.08em;margin-top:10px}
+.three>article>p:not(.three__en){font-size:15px;line-height:2.02;color:var(--sub);margin-top:10px}
+.three ul{margin-top:14px;border-top:1px solid var(--line)}
+.three li{font-size:14px;line-height:1.8;padding:9px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+
+/* ─────────── 承っている工事（罫の行：見出しと本文だけ） ─────────── */
+.works{border-top:1px solid var(--rule)}
+.work{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;padding:26px 0;border-bottom:1px solid var(--line-2)}
+@media(min-width:820px){.work{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,80px);align-items:start}}
+.work h3{font-size:clamp(19px,1.9vw,23px);letter-spacing:.05em;line-height:1.6}
+.work p{font-size:15px;line-height:2.06;color:var(--sub);max-width:36em}
+.work p b{color:var(--ink);font-weight:500}
+
+/* ─────────── 費用の目安（三つの仕事の表） ─────────── */
+.price3{width:100%;border-collapse:collapse;margin-top:8px}
+.price3 thead th{border-top:1px solid var(--rule);border-bottom:1px solid var(--line-2);padding:0 10px 12px;text-align:left;font-weight:500;font-size:12.5px;letter-spacing:.06em;color:var(--muted)}
+.price3 thead th:first-child{padding-left:0}
+.price3 tbody th,.price3 tbody td{border-bottom:1px solid var(--line);padding:15px 10px;text-align:left;vertical-align:baseline;line-height:1.8}
+.price3 tbody th{font-family:var(--fd);font-weight:500;font-size:15.5px;letter-spacing:.04em;color:var(--ink);padding-left:0;width:34%}
+.price3 tbody th small{display:block;font-family:var(--fn);font-size:11.5px;letter-spacing:.12em;color:var(--muted);margin-top:2px;font-weight:500}
+.price3 tbody td{font-family:var(--fn);font-weight:600;font-size:17px;letter-spacing:0;color:var(--deep);white-space:nowrap}
+.price3 tbody td .blank{font-family:var(--fb);font-weight:500;font-size:14px}
+.price3 tbody td.u{font-family:var(--fb);font-weight:400;font-size:13.5px;color:var(--sub);white-space:normal}
+.price3 tbody tr.g th,.price3 tbody tr.g td{border-top:1px solid var(--line-2)}
+@media(max-width:600px){
+  .price3 thead{display:none}
+  .price3 tbody tr{display:grid;grid-template-columns:minmax(0,1fr);padding:14px 0;border-bottom:1px solid var(--line-2)}
+  .price3 tbody th,.price3 tbody td{border-bottom:0;border-top:0!important;padding:3px 0;width:auto}
+  .price3 tbody td::before{content:attr(data-lbl);display:inline-block;min-width:6em;font-family:var(--fb);font-size:12.5px;font-weight:400;color:var(--muted)}
+}
+.price-note{font-size:14.5px;line-height:2;color:var(--sub);margin-top:26px;max-width:44em}
+
+/* ─────────── 庭づくりとエクステリア／年間の手入れ（左に見出しと要点・右に本文） ─────────── */
+.split{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(30px,4vw,50px);border-top:1px solid var(--rule);padding-top:28px}
+@media(min-width:960px){.split{grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:clamp(48px,6vw,96px)}}
+.split__l h3{font-size:clamp(19px,2vw,22px);letter-spacing:.06em;line-height:1.68}
+.split__l ul{margin-top:18px;border-top:1px solid var(--line)}
+.split__l li{font-size:14.5px;line-height:1.8;padding:11px 0;border-bottom:1px solid var(--line)}
+.split__r p{font-size:15.5px;line-height:2.1;color:var(--sub)}
+.split__r p+p{margin-top:18px}
+.split__r b{color:var(--ink);font-weight:500}
+
+/* ─────────── 施工事例（写真は使わず、文字と罫だけの枠） ─────────── */
+.cases{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-top:1px solid var(--rule)}
+@media(min-width:700px){.cases{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1060px){.cases{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.case{padding:26px 0 28px;border-bottom:1px solid var(--line-2)}
+@media(min-width:700px){.case{padding:28px clamp(22px,3vw,38px) 30px 0}}
+@media(min-width:700px) and (max-width:1059px){.case:nth-child(2n){padding-right:0}}
+@media(min-width:1060px){.case:nth-child(3n){padding-right:0}}
+.case h3{font-size:clamp(17px,1.7vw,18.5px);letter-spacing:.05em;line-height:1.62}
+.case h3 small{display:block;font-family:var(--fb);font-weight:400;font-size:12.5px;letter-spacing:.02em;color:var(--sub);margin-top:6px}
+.case__facts{display:grid;margin:15px 0 0}
+.case__facts>div{display:grid;grid-template-columns:5em minmax(0,1fr);gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.8}
+.case__facts>div:first-child{border-top:1px solid var(--line)}
+.case__facts dt{font-weight:500;font-size:12px;letter-spacing:.04em;color:var(--muted)}
+.case__facts dd{margin:0}
+
+/* ─────────── 工事の流れ（番号はここだけ） ─────────── */
+.flow{counter-reset:s;border-top:1px solid var(--rule)}
+.flow>li{counter-increment:s;display:grid;grid-template-columns:46px minmax(0,1fr);column-gap:14px;padding:24px 0 26px;border-bottom:1px solid var(--line-2)}
+.flow>li::before{content:counter(s,decimal-leading-zero);grid-row:1/span 2;font-family:var(--fn);font-weight:500;font-size:24px;line-height:1.3;letter-spacing:.02em;color:var(--accent-ink)}
+.flow h3{font-size:17.5px;line-height:1.68;letter-spacing:.05em;margin-bottom:8px}
+.flow p{font-size:14.5px;line-height:2.02;color:var(--sub)}
+.flow p b{color:var(--ink);font-weight:500}
+@media(min-width:960px){
+  .flow>li{grid-template-columns:minmax(0,2fr) minmax(0,10fr) minmax(0,13fr);column-gap:clamp(30px,4vw,56px);padding:28px 0 30px}
+  .flow>li::before{grid-row:auto;font-size:32px;line-height:1.1}
+  .flow h3{margin:0;font-size:18px}
+}
+
+/* ─────────── 会社概要（表） ─────────── */
+.profile{width:100%;border-collapse:collapse;font-size:15px}
+.profile th,.profile td{border-bottom:1px solid var(--line);padding:15px 0;text-align:left;vertical-align:top;line-height:1.92}
+.profile tr:first-child th,.profile tr:first-child td{border-top:1px solid var(--line)}
+.profile th{width:34%;font-weight:500;font-size:13.5px;letter-spacing:.04em;color:var(--muted);padding-right:18px}
+.profile td b{font-weight:700}
+.telk{color:var(--deep);font-weight:700;text-decoration:none}
+
+/* ─────────── 会社の場所 ─────────── */
+.access{display:grid;gap:clamp(34px,4.5vw,70px);grid-template-columns:minmax(0,1fr);align-items:start}
+@media(min-width:960px){.access{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}}
+.access__info{display:flex;flex-direction:column;gap:28px}
+.access__addr{font-family:var(--fd);font-size:clamp(18px,2vw,21px);line-height:1.85;letter-spacing:.05em;color:var(--ink)}
+.access__addr .lbl{display:block;font-family:var(--fn);font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:10px}
+.access__rows{display:grid;border-top:1px solid var(--line);margin:0}
+.access__rows>div{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font-size:14.5px;line-height:1.9}
+.access__rows dt{font-weight:500;font-size:13.5px;letter-spacing:.04em;color:var(--muted)}
+.access__rows dd{margin:0}
+.access__btns{display:flex;flex-wrap:wrap;gap:16px}
+.access__btns .btn{font-size:14px;width:240px;min-height:52px;flex:none}
+@media(min-width:960px){.access__btns .btn{width:100%}}
+@media(max-width:640px){.access__btns .btn{width:100%;flex:1 1 100%}}
+.access__frame{position:relative;aspect-ratio:4/3;background:var(--surface);border:1px solid var(--line-2)}
+@media(min-width:960px){.access__frame{aspect-ratio:16/10}}
+.access__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;filter:grayscale(.5)}
+
+/* ─────────── お伺いしている地域 ─────────── */
+.area{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--rule);column-gap:24px}
+@media(min-width:480px){.area{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:760px){.area{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.area li{font-family:var(--fd);font-weight:500;font-size:16px;letter-spacing:.05em;padding:20px 0;border-bottom:1px solid var(--line-2)}
+.area li.is-blank{color:var(--memo-ink);outline:1px dashed var(--memo);outline-offset:-7px;padding-inline:14px}
+
+/* ─────────── よくあるご質問 ─────────── */
+.faq{border-top:1px solid var(--rule)}
+.faq details{border-bottom:1px solid var(--line-2)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 50px 22px 42px;position:relative;font-family:var(--fd);font-weight:500;font-size:16.5px;line-height:1.78;letter-spacing:.03em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";position:absolute;left:2px;top:21px;font-family:var(--fn);font-weight:500;font-size:21px;line-height:1.4;color:var(--accent-ink)}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;transform:translateY(-50%);
+  background:linear-gradient(currentColor,currentColor) center/16px 1px no-repeat,linear-gradient(currentColor,currentColor) center/1px 16px no-repeat;
+}
+.faq details[open] summary::after{background:linear-gradient(currentColor,currentColor) center/16px 1px no-repeat}
+.faq__a{margin:0 0 0 42px;padding:0 42px 26px 0;font-size:15px;line-height:2.06;color:var(--sub)}
+.faq__a b{color:var(--ink);font-weight:500}
+
+/* ─────────── お問い合わせ ─────────── */
+.contact{display:grid;gap:clamp(44px,5.6vw,80px);grid-template-columns:minmax(0,1fr)}
+.contact__card{border-top:1px solid rgba(255,255,255,.36);padding-top:28px;max-width:44em}
+.contact__card h3{font-size:19px;letter-spacing:.06em;margin-bottom:14px;color:#fff}
+.contact__card>p:not(.contact__hours){font-size:15px;line-height:2.02;color:rgba(255,255,255,.84);margin-bottom:24px}
+.contact__tel{display:inline-flex;flex-direction:column;gap:8px;text-decoration:none;color:#fff}
+.contact__tel b{font-family:var(--fn);font-weight:600;font-size:clamp(32px,6vw,54px);letter-spacing:.02em;line-height:1.08;display:flex;align-items:center;gap:16px}
+.contact__tel b svg{width:.36em;height:.36em;flex:none;opacity:.8}
+.contact__tel span{font-size:12.5px;letter-spacing:.05em;color:rgba(255,255,255,.86)}
+.contact__hours{font-size:13.5px;line-height:1.95;color:rgba(255,255,255,.86);margin-top:20px}
+@media(min-width:1040px){
+  .contact__card{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,80px);align-items:start}
+  .contact__card h3,.contact__card>p:not(.contact__hours){grid-column:1}
+  .contact__tel,.contact__hours{grid-column:2}
+  .contact__hours{margin-top:20px}
+}
+
+/* ─────────── フッター ─────────── */
+.ft{background:#141B11;color:rgba(255,255,255,.72);padding-block:clamp(54px,7vw,92px) 110px;font-size:13.5px}
+@media(min-width:1040px){.ft{padding-bottom:44px}}
+.ft__in{display:grid;gap:38px}
+@media(min-width:760px){.ft__in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start}}
+.ft b{display:block;color:#fff;font-family:var(--fd);font-weight:700;font-size:19px;letter-spacing:.1em;margin-bottom:16px}
+.ft address{font-style:normal;line-height:2.08}
+.ft a{color:#fff}
+.ft__nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 26px;font-size:13px;border-top:1px solid rgba(255,255,255,.14);padding-top:18px}
+@media(min-width:1000px){.ft__nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ft__nav a{color:rgba(255,255,255,.78);text-decoration:none;letter-spacing:.04em}
+.ft__nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.ft__cr{margin-top:52px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:11.5px;color:rgba(255,255,255,.62);font-family:var(--fn);letter-spacing:.12em}
+
+/* ─────────── スマホ下部の呼び出しバー ─────────── */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:70;display:grid;grid-template-columns:1.25fr 1fr;background:var(--surface);border-top:1px solid var(--line)}
+.dock a{display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;padding:15px 8px;font-weight:500;font-size:14.5px;letter-spacing:.06em;line-height:1.3}
+.dock a svg{width:17px;height:17px;flex:none}
+.dock__tel{background:var(--deep);color:#fff}
+.dock__mail{color:var(--ink)}
+@media(min-width:1040px){.dock{display:none}}
+
+/* ─────────── 出現演出（JSなし・動きを減らす設定では出ない） ─────────── */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.is-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1!important;transform:none!important;transition:none}
+}
+@media print{
+  .hd,.dock,.hint,.draft{display:none!important}
+  .sec{padding-block:24px;break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════ 叩き台バー ══════════ -->
+<div class="draft">
+  <div class="wrap draft__in">
+    <p><span class="nw">ご依頼を</span><span class="nw">いただく</span><span class="nw">前に</span><span class="nw">お作りした</span><b><span class="nw">叩き</span>台</b><span class="nw">です。</span><b><span class="nw">分からない</span><span class="nw">数字は</span>〔　<span class="nw">〕のまま</span></b><span class="nw">にして</span><span class="nw">おります。</span><b class="pv">仮</b>の<span class="nw">付いた</span><span class="nw">場所は、</span><span class="nw">ご相談のうえで</span><span class="nw">入れ替えます。</span></p>
+    <button type="button" id="notesBtn" aria-pressed="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span id="notesLbl">制作メモを表示</span>
+    </button>
+  </div>
+</div>
+<!-- ══════════ ヘッダー（型B：社名中央・ナビ下段） ══════════ -->
+<header class="hd">
+  <div class="wrap hd__in">
+    <div class="hd__row">
+      <a class="brand" href="#top">
+        <b>山本造園土木</b>
+        <small>下野市 ／ 造園・外構</small>
+      </a>
+      <a class="hd__tel" href="tel:0285440605">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span>0285-44-0605<em>お庭のご相談</em></span>
+      </a>
+    </div>
+    <nav class="hd__nav" aria-label="サイト内">
+      <a href="#three">庭の三つの仕事</a>
+      <a href="#works">承っている工事</a>
+      <a href="#price">費用の目安</a>
+      <a href="#cases">施工事例</a>
+      <a href="#about">会社概要</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ══════════ ヒーロー（写真は置かない。三語を左に特大・大見出しとリードは右・電話はその下） ══════════ -->
+<section class="hero">
+  <div class="hero__in">
+    <div class="hero__trio trio" aria-label="庭の三つの仕事">
+      <div class="trio__row"><span class="trio__w">つくる</span><span class="trio__t">庭づくり・花壇・塀と垣根</span></div>
+      <div class="trio__row"><span class="trio__w">整える</span><span class="trio__t">庭木の剪定と伐採、植え替え</span></div>
+      <div class="trio__row"><span class="trio__w">守る</span><span class="trio__t">草取りや芝刈りまで、年間の手入れ</span></div>
+    </div>
+
+    <div class="hero__txt">
+      <p class="hero__place"><span class="nw">栃木県下野市</span>　<span class="nw">造園・</span><span class="nw">外構</span></p>
+      <h1><span class="nw">お庭の</span><span class="nw">ことを、</span><br><span class="nw">つくる</span><span class="nw">ところから</span><br><span class="nw">守る</span><span class="nw">ところまで。</span></h1>
+      <p class="hero__lead"><span class="nw">個人の</span><span class="nw">お宅の</span><span class="nw">庭づくり、</span><span class="nw">花壇、</span><span class="nw">塀と</span><span class="nw">垣根、</span><span class="nw">庭木の</span><span class="nw">剪定と</span><span class="nw">伐採、</span><span class="nw">年間の</span><span class="nw">お手入れまで</span><span class="nw">承って</span><span class="nw">おります。</span></p>
+      <p class="hero__note"><span class="nw">小さな</span><span class="nw">お手入れの</span><span class="nw">ご相談も</span><span class="nw">承ります。</span></p>
+
+      <div class="hero__cta">
+        <a class="btn btn--tel" href="tel:0285440605">
+          <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>0285-44-0605</b>
+          <span>お庭のご相談・お見積りのご依頼</span>
+        </a>
+        <p class="hero__hours"><span class="nw">受付</span>　<span class="blank">〔　　〕</span><span class="nw">時〜</span><span class="blank">〔　　〕</span>時</p>
+      </div>
+
+      <p class="hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        <span><b><span class="nw">この</span><span class="nw">叩き</span><span class="nw">台には、</span><span class="nw">写真を</span><span class="nw">1枚も</span><span class="nw">入れておりません。</span></b><span class="nw">庭の</span><span class="nw">写真は、</span><span class="nw">お預かりした</span><span class="nw">ものを</span><span class="nw">枠に</span><span class="nw">入れて</span><span class="nw">載せる</span><span class="nw">形にできます。</span><span class="nw">いまは</span><span class="nw">文字と</span><span class="nw">罫の</span><span class="nw">組み</span><span class="nw">方だけで、</span><span class="nw">仕事の</span><span class="nw">三つの</span><span class="nw">柱を</span><span class="nw">お見せして</span><span class="nw">おります。</span></span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 庭の三つの仕事 ══════════ -->
+<section class="sec sec--band" id="three">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">THREE WORKS</p>
+      <h2><span class="nw">庭の</span><span class="nw">仕事は、</span><br><span class="nw">三つに</span><span class="nw">分けられます</span></h2>
+      <p><span class="nw">新しく</span><span class="nw">庭をつくる</span><span class="nw">仕事、</span><span class="nw">いまある</span><span class="nw">庭を</span><span class="nw">整える</span><span class="nw">仕事、</span><span class="nw">そして</span><span class="nw">整えた</span><span class="nw">庭を</span><span class="nw">守り</span><span class="nw">続ける</span><span class="nw">仕事です。</span><span class="nw">どれか</span><span class="nw">一つだけでも</span><span class="nw">承ります。</span></p>
+    </div>
+
+    <div class="three rv">
+      <article>
+        <p class="three__en" aria-hidden="true">MAKE</p>
+        <h3><span class="nw">つくる</span></h3>
+        <p><span class="nw">お庭を</span><span class="nw">新しくつくる、</span><span class="nw">いまの</span><span class="nw">庭を</span><span class="nw">改修する、</span><span class="nw">花壇を</span><span class="nw">設ける、</span><span class="nw">塀や</span><span class="nw">垣根を</span><span class="nw">立てる。</span><span class="nw">お住まいの</span><span class="nw">外まわりを、</span><span class="nw">ご要望に</span><span class="nw">合わせて</span><span class="nw">形に</span><span class="nw">いたします。</span></p>
+        <ul>
+          <li><span class="nw">お庭づくり・</span><span class="nw">お庭の</span><span class="nw">改修</span></li>
+          <li><span class="nw">花壇をつくる</span></li>
+          <li><span class="nw">塀・</span><span class="nw">垣根をつくる</span></li>
+          <li><span class="nw">駐車スペースの</span><span class="nw">拡張</span></li>
+        </ul>
+      </article>
+      <article>
+        <p class="three__en" aria-hidden="true">TEND</p>
+        <h3><span class="nw">整える</span></h3>
+        <p><span class="nw">伸びた</span><span class="nw">庭木を</span><span class="nw">切りそろえ、</span><span class="nw">大きくなりすぎた</span><span class="nw">木は</span><span class="nw">伐ります。</span><span class="nw">植え</span><span class="nw">替えや</span><span class="nw">植樹で、</span><span class="nw">お庭の</span><span class="nw">姿を</span><span class="nw">整えます。</span></p>
+        <ul>
+          <li><span class="nw">庭木の</span><span class="nw">剪定</span></li>
+          <li><span class="nw">庭木の</span><span class="nw">伐採</span></li>
+          <li><span class="nw">植木の</span><span class="nw">植え</span><span class="nw">替え・</span><span class="nw">植樹</span></li>
+        </ul>
+      </article>
+      <article>
+        <p class="three__en" aria-hidden="true">KEEP</p>
+        <h3><span class="nw">守る</span></h3>
+        <p><span class="nw">お庭は、</span><span class="nw">つくったあとの</span><span class="nw">手入れで</span><span class="nw">姿が</span><span class="nw">決まります。</span><span class="nw">草取りや</span><span class="nw">芝刈りを、</span><span class="nw">年間の</span><span class="nw">予定を</span><span class="nw">組んで</span><span class="nw">承ります。</span></p>
+        <ul>
+          <li><span class="nw">草取り・</span><span class="nw">除草</span></li>
+          <li><span class="nw">芝刈り</span></li>
+          <li><span class="nw">年間の</span><span class="nw">お手入れ</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 承っている工事 ══════════ -->
+<section class="sec sec--white" id="works">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">WORK</p>
+      <h2><span class="nw">承っている</span><span class="nw">工事</span></h2>
+      <p><span class="nw">小さな</span><span class="nw">手入れの</span><span class="nw">ご相談も</span><span class="nw">承ります。</span></p>
+      <p class="provnote"><b><span class="nw">下の</span><span class="nw">五つは、</span><span class="nw">公開されている</span><span class="nw">求人の</span><span class="nw">仕事内容と、</span><span class="nw">造園業者の</span><span class="nw">紹介ページの</span><span class="nw">記載をもとに、</span><span class="nw">こちらで</span><span class="nw">整理した</span><span class="nw">ものです。</span></b><span class="nw">実際に</span><span class="nw">多い</span><span class="nw">ご依頼の</span><span class="nw">順に</span><span class="nw">並べ替えます。</span></p>
+    </div>
+
+    <div class="works rv">
+      <article class="work">
+        <h3><span class="nw">お庭づくり・</span><span class="nw">お庭の</span><span class="nw">改修</span></h3>
+        <p><span class="nw">新しく</span><span class="nw">庭をつくる</span><span class="nw">工事から、</span><span class="nw">いまの</span><span class="nw">庭を</span><span class="nw">作り</span><span class="nw">直す</span><span class="nw">工事まで。</span><b><span class="nw">ご要望を</span><span class="nw">伺って、</span><span class="nw">プランを</span><span class="nw">ご提案します。</span></b></p>
+      </article>
+      <article class="work">
+        <h3><span class="nw">外構・</span><span class="nw">エクステリア</span><span class="nw">（塀・</span><span class="nw">垣根・</span><span class="nw">花壇）</span></h3>
+        <p><span class="nw">塀や</span><span class="nw">垣根、</span><span class="nw">花壇など、</span><span class="nw">お住まいの</span><span class="nw">外まわりをつくる</span><span class="nw">工事を</span><span class="nw">承ります。</span></p>
+      </article>
+      <article class="work">
+        <h3><span class="nw">駐車スペースの</span><span class="nw">拡張・</span><span class="nw">舗装</span></h3>
+        <p><span class="nw">車の</span><span class="nw">置き</span><span class="nw">場が</span><span class="nw">足りない</span><span class="nw">とき、</span><span class="nw">庭の</span><span class="nw">一部を</span><span class="nw">駐車スペースに</span><span class="nw">作り</span><span class="nw">替えます。</span></p>
+      </article>
+      <article class="work">
+        <h3><span class="nw">庭木の</span><span class="nw">剪定・</span><span class="nw">植木の</span><span class="nw">植え</span><span class="nw">替え</span></h3>
+        <p><span class="nw">剪定、</span><span class="nw">伐採、</span><span class="nw">植え</span><span class="nw">替え、</span><span class="nw">植樹を</span><span class="nw">承ります。</span></p>
+      </article>
+      <article class="work">
+        <h3><span class="nw">年間の</span><span class="nw">お手入れ</span><span class="nw">（草取り・</span><span class="nw">芝刈り）</span></h3>
+        <p><span class="nw">草取りや</span><span class="nw">芝刈りを、</span><span class="nw">年間の</span><span class="nw">予定を</span><span class="nw">組んで</span><span class="nw">承ります。</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 費用の目安 ══════════ -->
+<section class="sec sec--band" id="price">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">PRICE</p>
+      <h2><span class="nw">費用の</span><span class="nw">目安</span><span class="prov">仮</span></h2>
+      <p><span class="nw">三つの</span><span class="nw">仕事ごとに、</span><span class="nw">目安を</span><span class="nw">並べて</span><span class="nw">おります。</span></p>
+      <p class="provnote"><b><span class="nw">金額はすべて</span><span class="nw">空欄です。</span></b><span class="nw">こちらで</span><span class="nw">数字を</span><span class="nw">入れておりません。</span><span class="nw">山本造園土木様の</span><span class="nw">金額を、</span><span class="nw">ご相談のうえで</span><span class="nw">一行ずつ</span><span class="nw">入れます。</span></p>
+    </div>
+
+    <table class="price3 rv">
+      <thead>
+        <tr><th scope="col"><span class="nw">仕事</span></th><th scope="col"><span class="nw">目安</span></th><th scope="col"><span class="nw">単位</span></th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row"><span class="nw">お庭づくり・</span><span class="nw">お庭の</span><span class="nw">改修</span><small>MAKE</small></th><td data-lbl="目安"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></td><td class="u" data-lbl="単位"><span class="nw">一式</span></td></tr>
+        <tr><th scope="row"><span class="nw">花壇をつくる</span><small>MAKE</small></th><td data-lbl="目安"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></td><td class="u" data-lbl="単位"><span class="nw">一式</span></td></tr>
+        <tr><th scope="row"><span class="nw">塀・</span><span class="nw">垣根をつくる</span><small>MAKE</small></th><td data-lbl="目安"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></td><td class="u" data-lbl="単位"><span class="nw">1mあたり</span></td></tr>
+        <tr class="g"><th scope="row"><span class="nw">庭木の</span><span class="nw">剪定</span><small>TEND</small></th><td data-lbl="目安"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></td><td class="u" data-lbl="単位"><span class="nw">1本あたり</span></td></tr>
+        <tr><th scope="row"><span class="nw">庭木の</span><span class="nw">伐採</span><small>TEND</small></th><td data-lbl="目安"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></td><td class="u" data-lbl="単位"><span class="nw">1本あたり</span></td></tr>
+        <tr><th scope="row"><span class="nw">植木の</span><span class="nw">植え</span><span class="nw">替え・</span><span class="nw">植樹</span><small>TEND</small></th><td data-lbl="目安"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></td><td class="u" data-lbl="単位"><span class="nw">1本あたり</span></td></tr>
+        <tr class="g"><th scope="row"><span class="nw">年間の</span><span class="nw">お手入れ</span><small>KEEP</small></th><td data-lbl="目安"><span class="blank">〔　　　〕</span><span class="nw">円〜</span></td><td class="u" data-lbl="単位">年<span class="blank">〔　　〕</span><span class="nw">回で</span></td></tr>
+      </tbody>
+    </table>
+    <p class="price-note rv"><span class="nw">お庭の</span><span class="nw">広さ、</span><span class="nw">木の</span><span class="nw">大きさ、</span><span class="nw">作業をする</span><span class="nw">場所によって</span><span class="nw">金額は</span><span class="nw">変わります。</span><span class="nw">お宅の</span><span class="nw">庭を</span><span class="nw">拝見してから、</span><span class="nw">お見積りを</span><span class="nw">書面で</span><span class="nw">お出しします。</span></p>
+  </div>
+</section>
+
+<!-- ══════════ 庭づくりとエクステリア ══════════ -->
+<section class="sec sec--white" id="garden">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">MAKE</p>
+      <h2><span class="nw">庭づくりと</span><br><span class="nw">エクステリア</span></h2>
+      <p><span class="nw">お庭や</span><span class="nw">お住まいの</span><span class="nw">外まわりは、</span><b><span class="nw">ご家族の</span><span class="nw">暮らし</span><span class="nw">方で</span><span class="nw">形が</span><span class="nw">変わります。</span></b></p>
+    </div>
+
+    <div class="split rv">
+      <div class="split__l">
+        <h3><span class="nw">こんな</span><span class="nw">ご相談を</span><span class="nw">いただきます</span></h3>
+        <ul>
+          <li><span class="nw">庭を</span><span class="nw">作り</span><span class="nw">直したい</span></li>
+          <li><span class="nw">花壇をつくりたい</span></li>
+          <li><span class="nw">塀や</span><span class="nw">垣根を</span><span class="nw">新しくしたい</span></li>
+          <li><span class="nw">駐車スペースが</span><span class="nw">足りない</span></li>
+        </ul>
+      </div>
+      <div class="split__r">
+        <p><span class="nw">まず、</span><span class="nw">どう</span><span class="nw">使いたいか、</span><span class="nw">何に</span><span class="nw">困っているかを</span><span class="nw">お聞かせ</span><span class="nw">ください。</span></p>
+        <p><span class="nw">お聞きした</span><span class="nw">ご要望に</span><span class="nw">合わせて、</span><span class="nw">プランと</span><span class="nw">お見積りを</span><span class="nw">ご用意します。</span><b><span class="nw">一つの</span><span class="nw">工事だけでも、</span><span class="nw">庭まるごとでも</span></b><span class="nw">承ります。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 年間の手入れ ══════════ -->
+<section class="sec sec--band" id="keep">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">KEEP</p>
+      <h2><span class="nw">年間の</span><span class="nw">手入れ</span></h2>
+      <p><span class="nw">草や</span><span class="nw">芝は、</span><span class="nw">伸びる</span><span class="nw">時期に</span><span class="nw">手を</span><span class="nw">入れるのがいちばん</span><span class="nw">楽です。</span></p>
+    </div>
+
+    <div class="split rv">
+      <div class="split__l">
+        <h3><span class="nw">お手入れの</span><span class="nw">内容</span></h3>
+        <ul>
+          <li><span class="nw">草取り・</span><span class="nw">除草</span></li>
+          <li><span class="nw">芝刈り</span></li>
+          <li><span class="nw">庭木の</span><span class="nw">剪定</span></li>
+        </ul>
+      </div>
+      <div class="split__r">
+        <p><b><span class="nw">年間の</span><span class="nw">予定を</span><span class="nw">組んで</span></b>、<span class="nw">伸びる</span><span class="nw">時期に</span><span class="nw">合わせて</span><span class="nw">お伺いします。</span></p>
+        <p><span class="nw">年に</span><span class="nw">何回</span><span class="nw">お伺いするかは、</span><span class="nw">お庭の</span><span class="nw">広さや</span><span class="nw">ご要望に</span><span class="nw">合わせて</span><span class="nw">決めます。</span><span class="nw">多いのは</span>年<span class="blank">〔　　〕</span><span class="nw">回〜</span><span class="blank">〔　　〕</span><span class="nw">回です。</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 施工事例（仮の枠） ══════════ -->
+<section class="sec sec--white" id="cases">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">WORKS</p>
+      <h2><span class="nw">施工事例</span><span class="prov">仮</span></h2>
+      <p><span class="nw">これまでに</span><span class="nw">お手伝いした</span><span class="nw">工事を、</span><span class="nw">ご紹介いたします。</span></p>
+      <p class="provnote"><b><span class="nw">ここに</span><span class="nw">並んでいる</span><span class="nw">6件は、</span><span class="nw">形を</span><span class="nw">お見せする</span><span class="nw">ための</span><span class="nw">仮の</span><span class="nw">枠です。</span></b><span class="nw">工事の</span><span class="nw">種類だけこちらで</span><span class="nw">置いてあり、</span><span class="nw">建物・</span><span class="nw">費用・</span><span class="nw">工期・</span><span class="nw">施工年月は</span><span class="nw">空欄です。</span><span class="nw">実際に</span><span class="nw">お手伝いされた</span><span class="nw">工事に、</span><span class="nw">一件ずつ</span><span class="nw">入れ替えます。</span></p>
+    </div>
+
+    <div class="cases rv">
+      <article class="case">
+        <h3><span class="nw">お庭をつくる・</span><span class="nw">作り</span><span class="nw">直す</span><small><span class="nw">庭づくり</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">費用</span></dt><dd><span class="blank">〔　　〕</span><span class="nw">円〜</span></dd></div>
+          <div><dt><span class="nw">工期</span></dt><dd><span class="blank">〔　　〕</span>日</dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">花壇をつくる</span><small><span class="nw">お庭の</span><span class="nw">一角</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">費用</span></dt><dd><span class="blank">〔　　〕</span><span class="nw">円〜</span></dd></div>
+          <div><dt><span class="nw">工期</span></dt><dd><span class="blank">〔　　〕</span>日</dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">塀・</span><span class="nw">垣根をつくる</span><small><span class="nw">外構</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">費用</span></dt><dd><span class="blank">〔　　〕</span><span class="nw">円〜</span></dd></div>
+          <div><dt><span class="nw">工期</span></dt><dd><span class="blank">〔　　〕</span>日</dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">駐車スペースの</span><span class="nw">拡張</span><small><span class="nw">舗装</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">費用</span></dt><dd><span class="blank">〔　　〕</span><span class="nw">円〜</span></dd></div>
+          <div><dt><span class="nw">工期</span></dt><dd><span class="blank">〔　　〕</span>日</dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">庭木の</span><span class="nw">剪定・</span><span class="nw">伐採</span><small><span class="nw">庭木の</span><span class="nw">手入れ</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">費用</span></dt><dd><span class="blank">〔　　〕</span><span class="nw">円〜</span></dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+      <article class="case">
+        <h3><span class="nw">草取り・</span><span class="nw">芝刈り</span><small><span class="nw">年間の</span><span class="nw">お手入れ</span></small></h3>
+        <dl class="case__facts">
+          <div><dt><span class="nw">建物</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+          <div><dt><span class="nw">費用</span></dt><dd><span class="blank">〔　　〕</span><span class="nw">円〜</span></dd></div>
+          <div><dt><span class="nw">施工年月</span></dt><dd><span class="blank">〔　　　　〕</span></dd></div>
+        </dl>
+      </article>
+    </div>
+
+    <p class="hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span><b><span class="nw">現場で</span><span class="nw">スマホで</span><span class="nw">撮った</span><span class="nw">写真を</span><span class="nw">お送り</span><span class="nw">いただければ、</span><span class="nw">こちらでこの</span><span class="nw">形に</span><span class="nw">整えて</span><span class="nw">追加いたします。</span></b><span class="nw">文章を</span><span class="nw">書いて</span><span class="nw">いただく</span><span class="nw">必要はございません。</span><span class="nw">金額を</span><span class="nw">載せたくない</span><span class="nw">事例は、</span><span class="nw">費用の</span><span class="nw">行を</span><span class="nw">外して</span><span class="nw">載せられます。</span></span>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ 工事の流れ ══════════ -->
+<section class="sec sec--band" id="flow">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">FLOW</p>
+      <h2><span class="nw">ご相談から</span><br><span class="nw">お引き</span><span class="nw">渡しまで</span></h2>
+      <p><span class="nw">庭づくりや</span><span class="nw">塀・</span><span class="nw">垣根の</span><span class="nw">工事の、</span><span class="nw">おおまかな</span><span class="nw">進み</span><span class="nw">方です。</span></p>
+    </div>
+
+    <ol class="flow rv">
+      <li>
+        <h3><span class="nw">お電話で</span><span class="nw">ご相談</span></h3>
+        <p><span class="nw">ご住所と、</span><span class="nw">気になっている</span><span class="nw">場所を</span><span class="nw">お聞かせ</span><span class="nw">ください。</span><b><span class="nw">その</span><span class="nw">場で</span><span class="nw">日取りを</span><span class="nw">お決め</span><span class="nw">いただく</span><span class="nw">必要はございません。</span></b></p>
+      </li>
+      <li>
+        <h3><span class="nw">お庭を</span><span class="nw">拝見</span></h3>
+        <p><span class="nw">お住まいに</span><span class="nw">伺って、</span><span class="nw">お庭の</span><span class="nw">広さや</span><span class="nw">状態を</span><span class="nw">拝見します。</span><span class="nw">ご要望もここで</span><span class="nw">お聞きします。</span></p>
+      </li>
+      <li>
+        <h3><span class="nw">プランと</span><span class="nw">お見積り</span></h3>
+        <p><span class="nw">ご要望に</span><span class="nw">合わせた</span><span class="nw">プランと、</span><span class="nw">書面の</span><span class="nw">お見積りを</span><span class="nw">お出しします。</span><b><span class="nw">ご納得いただけてから</span></b><span class="nw">進めます。</span></p>
+      </li>
+      <li>
+        <h3><span class="nw">ご契約・</span><span class="nw">工事の</span><span class="nw">日取り</span></h3>
+        <p><span class="nw">内容と</span><span class="nw">金額に</span><span class="nw">ご納得いただけたら、</span><span class="nw">工事の</span><span class="nw">日取りを</span><span class="nw">決めます。</span></p>
+      </li>
+      <li>
+        <h3><span class="nw">工事</span></h3>
+        <p><span class="nw">工事の</span><span class="nw">途中で</span><span class="nw">変更が</span><span class="nw">出た</span><span class="nw">ときは、</span><span class="nw">先に</span><span class="nw">ご相談します。</span></p>
+      </li>
+      <li>
+        <h3><span class="nw">お引き</span><span class="nw">渡し</span></h3>
+        <p><span class="nw">仕上がりを</span><span class="nw">ご一緒に</span><span class="nw">ご確認いただいて、</span><span class="nw">お引き</span><span class="nw">渡しします。</span></p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ══════════ 会社概要 ══════════ -->
+<section class="sec sec--white" id="about">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">COMPANY</p>
+      <h2><span class="nw">会社概要</span></h2>
+      <p><span class="nw">昭和</span><span class="nw">38年から、</span><span class="nw">造園の</span><span class="nw">仕事をして</span><span class="nw">おります。</span></p>
+    </div>
+
+    <table class="profile rv">
+      <tbody>
+        <tr><th scope="row"><span class="nw">商号</span></th><td><b><span class="nw">株式会社山本造園土木</span></b><span class="nw">（かぶしきがいしゃ</span> <span class="nw">やまもとぞうえんどぼく）</span></td></tr>
+        <tr><th scope="row"><span class="nw">代表</span></th><td><span class="nw">代表取締役</span>　<span class="nw">山本</span> <span class="nw">幸雄</span></td></tr>
+        <tr><th scope="row"><span class="nw">本社</span></th><td>〒329-0433<br><span class="nw">栃木県下野市緑</span>2-9-1</td></tr>
+        <tr><th scope="row"><span class="nw">営業所</span></th><td>〒329-0433<br><span class="nw">栃木県下野市緑</span><span class="nw">2丁目</span>3287-3</td></tr>
+        <tr><th scope="row"><span class="nw">電話番号</span></th><td><a class="telk" href="tel:0285440605">0285-44-0605</a></td></tr>
+        <tr><th scope="row"><span class="nw">建設業許可</span></th><td><span class="nw">栃木県知事許可</span>　第<span class="nw">011656号</span></td></tr>
+        <tr><th scope="row"><span class="nw">許可の</span><span class="nw">業種</span></th><td><span class="nw">土木／</span><span class="nw">とび・</span><span class="nw">土工／</span><span class="nw">管／</span><span class="nw">舗装／</span><span class="nw">造園／</span><span class="nw">水道施設</span></td></tr>
+        <tr><th scope="row"><span class="nw">法人番号</span></th><td>8060001015001</td></tr>
+        <tr><th scope="row"><span class="nw">お住まい</span><span class="nw">向けの</span><span class="nw">仕事</span></th><td><span class="nw">お庭づくり・</span><span class="nw">外構</span><span class="nw">（塀・</span><span class="nw">垣根・</span><span class="nw">花壇）／</span><span class="nw">庭木の</span><span class="nw">剪定と</span><span class="nw">伐採／</span><span class="nw">年間の</span><span class="nw">お手入れ</span></td></tr>
+        <tr><th scope="row"><span class="nw">対応エリア</span></th><td><span class="nw">下野市を</span><span class="nw">中心に</span><span class="blank">〔　　　　〕</span></td></tr>
+      </tbody>
+    </table>
+
+    <p class="hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span><b><span class="nw">本社</span><span class="nw">（緑</span><span class="nw">2-9-1）と</span><span class="nw">営業所</span><span class="nw">（緑</span><span class="nw">2丁目</span><span class="nw">3287-3）の</span><span class="nw">2つの</span><span class="nw">住所を</span><span class="nw">載せて</span><span class="nw">おります。</span></b><span class="nw">お客様が</span><span class="nw">訪ねてこられる</span><span class="nw">場所は</span><span class="nw">営業所と</span><span class="nw">考え、</span><span class="nw">地図もそちらにしてあります。</span><span class="nw">ご案内の</span><span class="nw">先をどちらにするか、</span><span class="nw">整えます。</span><span class="nw">商号・</span><span class="nw">代表・</span><span class="nw">許可番号・</span><span class="nw">法人番号は、</span><span class="nw">公的な</span><span class="nw">記録で</span><span class="nw">確かめた</span><span class="nw">ものです。</span><span class="nw">人数・</span><span class="nw">売上・</span><span class="nw">営業時間・</span><span class="nw">定休日は、</span><span class="nw">確かな</span><span class="nw">出典が</span><span class="nw">取れなかった</span><span class="nw">ため</span><span class="nw">掲載しておりません。</span></span>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ 会社の場所 ══════════ -->
+<section class="sec sec--band" id="access">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">ACCESS</p>
+      <h2><span class="nw">山本造園土木の</span><span class="nw">場所</span></h2>
+      <p><span class="nw">下野市緑に</span><span class="nw">ございます。</span><span class="nw">ご相談は、</span><span class="nw">お電話で</span><span class="nw">承って</span><span class="nw">おります。</span></p>
+    </div>
+
+    <div class="access rv">
+      <div class="access__info">
+        <p class="access__addr"><span class="lbl"><span class="nw">営業所</span></span>〒329-0433<br><span class="nw">栃木県下野市緑</span><br class="sp-only"><span class="nw">2丁目</span>3287-3</p>
+
+        <dl class="access__rows">
+          <div><dt><span class="nw">お電話</span></dt><dd><a class="telk" href="tel:0285440605">0285-44-0605</a></dd></div>
+          <div><dt><span class="nw">本社</span></dt><dd><span class="nw">栃木県下野市緑</span>2-9-1</dd></div>
+          <div><dt><span class="nw">目印</span></dt><dd><span class="blank">〔　　　　　　　　〕</span></dd></div>
+        </dl>
+
+        <div class="access__btns">
+          <a class="btn btn--line" href="https://www.google.com/maps/dir/?api=1&amp;destination=%E6%A0%83%E6%9C%A8%E7%9C%8C%E4%B8%8B%E9%87%8E%E5%B8%82%E7%B7%912%E4%B8%81%E7%9B%AE3287-3" target="_blank" rel="noopener">道順を調べる</a>
+          <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%B1%E6%9C%AC%E9%80%A0%E5%9C%92%E5%9C%9F%E6%9C%A8%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E4%B8%8B%E9%87%8E%E5%B8%82%E7%B7%912%E4%B8%81%E7%9B%AE3287-3" target="_blank" rel="noopener">地図アプリで開く</a>
+        </div>
+      </div>
+
+      <div class="access__frame">
+        <iframe title="山本造園土木 営業所の所在地（Googleマップ）" src="https://maps.google.com/maps?q=%E6%A0%83%E6%9C%A8%E7%9C%8C%E4%B8%8B%E9%87%8E%E5%B8%82%E7%B7%912%E4%B8%81%E7%9B%AE3287-3&amp;hl=ja&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ お伺いしている地域 ══════════ -->
+<section class="sec sec--white" id="area">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">AREA</p>
+      <h2><span class="nw">お伺いしている</span><span class="nw">地域</span><span class="prov">仮</span></h2>
+      <p><span class="nw">下野市を</span><span class="nw">中心に</span><span class="nw">承って</span><span class="nw">おります。</span><span class="nw">下記以外の</span><span class="nw">地域でも、</span><span class="nw">まずは</span><span class="nw">お電話で</span><span class="nw">ご相談ください。</span></p>
+      <p class="provnote"><b><span class="nw">点線で</span><span class="nw">囲った</span><span class="nw">市町は、</span><span class="nw">下野市の</span><span class="nw">隣接市町からこちらで</span><span class="nw">推測した</span><span class="nw">ものです。</span></b><span class="nw">実際にどこまで</span><span class="nw">お伺いになるかを</span><span class="nw">確かめて</span><span class="nw">直します。</span></p>
+    </div>
+    <ul class="area rv">
+      <li><span class="nw">栃木県</span> <span class="nw">下野市</span></li>
+      <li class="is-blank">〔 <span class="nw">小山市</span> 〕</li>
+      <li class="is-blank">〔 <span class="nw">栃木市</span> 〕</li>
+      <li class="is-blank">〔 <span class="nw">上三川町</span> 〕</li>
+      <li class="is-blank">〔 <span class="nw">壬生町</span> 〕</li>
+      <li class="is-blank">〔 <span class="nw">宇都宮市</span> 〕</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ よくあるご質問 ══════════ -->
+<section class="sec sec--band" id="faq">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">Q&amp;A</p>
+      <h2><span class="nw">よく</span><span class="nw">いただく</span><span class="nw">ご質問</span></h2>
+    </div>
+
+    <div class="faq rv">
+      <details open>
+        <summary><span class="nw">小さな</span><span class="nw">手入れだけでも、</span><span class="nw">頼めますか。</span></summary>
+        <p class="faq__a"><span class="nw">はい、</span><span class="nw">承ります。</span><span class="blank">〔　　　　　　〕</span></p>
+      </details>
+      <details open>
+        <summary><span class="nw">見てもらうだけで、</span><span class="nw">お金はかかりますか。</span></summary>
+        <p class="faq__a"><span class="nw">お庭の</span><span class="nw">拝見と</span><span class="nw">お見積りの</span><span class="nw">費用は</span><span class="blank">〔　　　　〕</span><span class="nw">です。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">お庭を</span><span class="nw">作り</span><span class="nw">直したい</span><span class="nw">のですが、</span><span class="nw">まだ</span><span class="nw">形が</span><span class="nw">決まっていません。</span></summary>
+        <p class="faq__a"><span class="nw">形が</span><span class="nw">決まっていない</span><span class="nw">段階でも</span><span class="nw">構いません。</span><b><span class="nw">どう</span><span class="nw">使いたいか、</span><span class="nw">何に</span><span class="nw">困っているかを</span><span class="nw">お聞かせ</span><span class="nw">ください。</span></b><span class="nw">ご要望に</span><span class="nw">合わせて</span><span class="nw">プランを</span><span class="nw">ご提案します。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">塀や</span><span class="nw">垣根だけの</span><span class="nw">工事も</span><span class="nw">頼めますか。</span></summary>
+        <p class="faq__a"><span class="nw">はい。</span><span class="nw">塀・</span><span class="nw">垣根をつくるだけでも</span><span class="nw">承ります。</span><span class="nw">花壇や</span><span class="nw">庭づくりとあわせての</span><span class="nw">ご依頼も</span><span class="nw">お受けします。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">年間の</span><span class="nw">お手入れは、</span><span class="nw">年に</span><span class="nw">何回来てもらえますか。</span></summary>
+        <p class="faq__a"><span class="nw">年に</span><span class="blank">〔　　〕</span>回<span class="nw">お伺いします。</span><span class="nw">お庭の</span><span class="nw">広さや</span><span class="nw">ご要望に</span><span class="nw">合わせて、</span><span class="nw">回数と</span><span class="nw">内容を</span><span class="nw">決めます。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">下野市以外でも</span><span class="nw">来てもらえますか。</span></summary>
+        <p class="faq__a"><span class="nw">下野市を</span><span class="nw">中心に</span><span class="nw">承って</span><span class="nw">おります。</span><span class="nw">近隣の</span><span class="nw">市町でも</span><span class="nw">ご相談いただけます</span><span class="nw">ので、</span><span class="nw">まずは</span><span class="nw">お電話ください。</span></p>
+      </details>
+      <details>
+        <summary><span class="nw">土曜・</span><span class="nw">日曜でも</span><span class="nw">相談できますか。</span></summary>
+        <p class="faq__a"><span class="nw">お電話の</span><span class="nw">受付は</span><span class="blank">〔　〕</span><span class="nw">時から</span><span class="blank">〔　〕</span><span class="nw">時までです。</span><span class="nw">土曜・</span><span class="nw">日曜は</span><span class="blank">〔　　　　〕</span>。</p>
+      </details>
+    </div>
+    <p class="hint"><span><b><span class="nw">ご質問と</span><span class="nw">答えは、</span><span class="nw">造園・</span><span class="nw">外構の</span><span class="nw">工事で</span><span class="nw">一般によくある</span><span class="nw">ご相談をもとに、</span><span class="nw">こちらで</span><span class="nw">下書きした</span><span class="nw">ものです。</span></b><span class="nw">山本様が</span><span class="nw">実際によく</span><span class="nw">お受けになる</span><span class="nw">ご質問に</span><span class="nw">入れ替えます。</span><span class="nw">土曜・</span><span class="nw">日曜の</span><span class="nw">受付と、</span><span class="nw">お手入れの</span><span class="nw">年間の</span><span class="nw">回数も、</span><span class="nw">決まった</span><span class="nw">ところから</span><span class="nw">埋めます。</span></span></p>
+  </div>
+</section>
+
+<!-- ══════════ お問い合わせ ══════════ -->
+<section class="sec sec--deep" id="contact">
+  <div class="wrap">
+    <div class="sec__hd rv">
+      <p class="sec__en" aria-hidden="true">CONTACT</p>
+      <h2><span class="nw">お庭の</span><span class="nw">ことは、</span><br><span class="nw">まず</span><span class="nw">お電話で</span><span class="nw">ご相談ください</span></h2>
+      <p><span class="nw">「何から</span><span class="nw">頼めばいいのか</span><span class="nw">分からない」という</span><span class="nw">段階でも</span><span class="nw">構いません。</span><span class="nw">ご相談の</span><span class="nw">大きさは</span><span class="nw">問いません。</span></p>
+    </div>
+
+    <div class="contact rv">
+      <div class="contact__card">
+        <h3><span class="nw">お電話での</span><span class="nw">お問い合わせ</span></h3>
+        <p><span class="nw">いちばん</span><span class="nw">早く</span><span class="nw">お答えできます。</span><span class="nw">お聞きするのは、</span><span class="nw">ご住所・</span><span class="nw">お庭のどこを</span><span class="nw">気にされているか・</span><span class="nw">いつごろまでに</span><span class="nw">済ませたいか、</span>の<span class="nw">三つです。</span><span class="nw">その</span><span class="nw">場で</span><span class="nw">日取りを</span><span class="nw">お決め</span><span class="nw">いただく</span><span class="nw">必要はございません。</span></p>
+        <a class="contact__tel" href="tel:0285440605">
+          <b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>0285-44-0605</b>
+          <span>山本造園土木（栃木県下野市緑）</span>
+        </a>
+        <p class="contact__hours"><span class="nw">お電話の</span><span class="nw">受付</span>　<span class="blank">〔　〕</span><span class="nw">時〜</span><span class="blank">〔　　〕</span>時<br><span class="nw">定休日</span>　　<span class="blank">〔　　　　〕</span></p>
+      </div>
+    </div>
+
+    <p class="hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+      <span><b><span class="nw">LINE公式・</span><span class="nw">Instagram・</span><span class="nw">X・</span><span class="nw">Facebookは、</span><span class="nw">いずれも</span><span class="nw">見つかりませんでした。</span></b><span class="nw">連絡の</span><span class="nw">窓口は、</span><span class="nw">いまは</span><span class="nw">お電話のみです。</span><span class="nw">お作りになりたい</span><span class="nw">場合は</span><span class="nw">ご相談ください。</span></span>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ フッター ══════════ -->
+<footer class="ft">
+  <div class="wrap ft__in">
+    <div>
+      <b>山本造園土木</b>
+      <address>
+        営業所　〒329-0433 栃木県下野市緑2丁目3287-3<br>
+        本社　　〒329-0433 栃木県下野市緑2-9-1<br>
+        TEL <a href="tel:0285440605">0285-44-0605</a><br>
+        造園・外構／お庭づくりから年間の手入れまで
+      </address>
+    </div>
+    <nav class="ft__nav" aria-label="フッター">
+      <a href="#three">庭の三つの仕事</a>
+      <a href="#works">承っている工事</a>
+      <a href="#price">費用の目安</a>
+      <a href="#garden">庭づくりとエクステリア</a>
+      <a href="#keep">年間の手入れ</a>
+      <a href="#cases">施工事例</a>
+      <a href="#flow">工事の流れ</a>
+      <a href="#about">会社概要</a>
+      <a href="#access">会社の場所</a>
+      <a href="#area">お伺いしている地域</a>
+      <a href="#faq">よくあるご質問</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+  <div class="wrap"><p class="ft__cr">&copy; YAMAMOTO ZOEN DOBOKU</p></div>
+</footer>
+
+<!-- スマホ下部の呼び出しバー -->
+<div class="dock">
+  <a class="dock__tel" href="tel:0285440605">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    お電話する
+  </a>
+  <a class="dock__mail" href="#contact">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+    お問い合わせ
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "株式会社山本造園土木",
+  "alternateName": "山本造園土木",
+  "description": "栃木県下野市の造園・外構の会社。個人のお宅の庭づくり、花壇、塀と垣根、庭木の剪定と伐採、年間の草取り・芝刈りを承っています。",
+  "telephone": "+81-285-44-0605",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "329-0433",
+    "addressCountry": "JP",
+    "addressRegion": "栃木県",
+    "addressLocality": "下野市",
+    "streetAddress": "緑2丁目3287-3"
+  },
+  "areaServed": { "@type": "City", "name": "下野市" },
+  "knowsAbout": ["造園工事", "庭づくり", "外構工事", "エクステリア", "庭木の剪定", "庭木の伐採", "年間緑化管理"]
+}
+</script>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(function(el){ el.classList.add('is-in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  els.forEach(function(el){ io.observe(el); });
+  requestAnimationFrame(function(){
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top < innerHeight) el.classList.add('is-in');
+    });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var btn = document.getElementById('notesBtn'), lbl = document.getElementById('notesLbl'), root = document.documentElement;
+  function set(on){
+    root.classList.toggle('notes', on);
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    lbl.textContent = on ? 'お客様に見える状態で見る' : '制作メモを表示する';
+    try { localStorage.setItem('yamamoto-notes', on ? '1' : '0'); } catch (e) {}
+  }
+  var saved = '1';
+  try { saved = localStorage.getItem('yamamoto-notes') || '1'; } catch (e) {}
+  set(saved === '1');
+  btn.addEventListener('click', function(){ set(!root.classList.contains('notes')); });
+})();
+</script>
+</body>
+</html>

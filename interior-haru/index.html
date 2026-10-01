@@ -387,8 +387,9 @@ a.case:hover h3{color:var(--deep)}
 .area li.is-blank{color:var(--memo-ink);outline:1px dashed var(--memo);outline-offset:-7px;padding-inline:14px}
 
 /* ─────────── よくあるご質問 ─────────── */
-.faq{display:grid;border-top:1px solid var(--rule)}
-.faq details{border-bottom:1px solid var(--line)}
+.faq{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--rule)}
+.faq details{min-width:0;border-bottom:1px solid var(--line)}
+@media (max-width:480px){.faq summary{padding:22px 40px 22px 30px}.faq__a{margin-left:30px;padding-right:0}}
 .faq summary{list-style:none;cursor:pointer;padding:26px 56px 26px 44px;position:relative;font-family:var(--fd);font-size:17px;line-height:1.8;letter-spacing:.06em;color:var(--ink)}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::before{content:"Q";position:absolute;left:2px;top:24px;font-family:var(--fn);font-size:22px;line-height:1.4;color:var(--accent-ink)}
@@ -423,7 +424,7 @@ a.case:hover h3{color:var(--deep)}
 
 /* ─────────── フッター ─────────── */
 .ft{background:#2A1C1F;color:rgba(255,255,255,.66);padding-block:clamp(56px,7vw,96px) 110px;font-size:13.5px}
-@media(min-width:900px){.ft{padding-bottom:44px}}
+@media(min-width:1040px){.ft{padding-bottom:44px}}
 .ft__in{display:grid;gap:40px}
 @media(min-width:760px){.ft__in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start}}
 .ft__name{color:#fff;font-family:var(--fn);font-weight:400;font-size:24px;letter-spacing:.06em;display:block;margin-bottom:16px}
@@ -441,7 +442,7 @@ a.case:hover h3{color:var(--deep)}
 .dock a svg{width:17px;height:17px;flex:none}
 .dock__tel{background:var(--deep);color:#fff}
 .dock__mail{background:var(--surface);color:var(--ink)}
-@media(min-width:900px){.dock{display:none}}
+@media(min-width:1040px){.dock{display:none}}
 
 /* ─────────── 出現演出（JSなし・動きを減らす設定では出ない） ─────────── */
 .rv{opacity:1;transform:none}
